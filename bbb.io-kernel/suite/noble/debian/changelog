@@ -1,12 +1,8 @@
-bbb.io-kernel (1.20250414.0-0~noble+20250414) noble; urgency=low
+bbb.io-kernel (1.20250417.0-0~noble+20250417) noble; urgency=low
 
   * Kernel Updates
-  * linux-image-6.12.17-ti-arm32-r8
-  * linux-image-6.15.0-rc2-bone3
-  * linux-image-6.15.0-rc2-multiv7-r1
-  * linux-image-6.15.0-rc2-omap2plus-r1
-  * linux-image-6.6.58-ti-arm32-r11
-  * linux-image-6.6.58-ti-rt-arm32-r11
+  * linux-image-6.12.17-ti-arm32-r9
+  * linux-image-6.15.0-rc2-bone4
 
- -- Robert Nelson <robertcnelson@gmail.com>  Mon, 14 Apr 2025 20:19:00 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Thu, 17 Apr 2025 12:57:05 -0500
 
