@@ -14,7 +14,7 @@ override_dh_strip:
 
 override_dh_auto_configure:
 	mkdir -p ./tmp/pkg/
-	mkdir -p ./tmp/u-boot/ ; git -c http.sslVerify=false clone -b $(UB_TAG) $(UB_REPO) --depth=5 ./tmp/u-boot/ ; git --git-dir ./tmp/u-boot/.git log --pretty=oneline
+	mkdir -p ./tmp/u-boot/ ; git clone -b $(UB_TAG) $(UB_REPO) --depth=5 ./tmp/u-boot/ ; git --git-dir ./tmp/u-boot/.git log --pretty=oneline
 	make -C ./tmp/u-boot -j1 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- $(UBOOT_CFG)
 	make -C ./tmp/u-boot -j2 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
 	ls -lha ./tmp/u-boot/spl/
