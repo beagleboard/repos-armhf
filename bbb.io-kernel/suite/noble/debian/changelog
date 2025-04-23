@@ -1,13 +1,7 @@
-bbb.io-kernel (1.20250421.0-0~noble+20250421) noble; urgency=low
+bbb.io-kernel (1.20250423.0-0~noble+20250423) noble; urgency=low
 
   * Kernel Updates
-  * linux-image-6.12.24-armv7-lpae-x4
-  * linux-image-6.12.24-bone20
-  * linux-image-6.13.12-bone16
-  * linux-image-6.14.3-bone11
-  * linux-image-6.15.0-rc3-bone6
-  * linux-image-6.15.0-rc3-multiv7-r1
-  * linux-image-6.15.0-rc3-omap2plus-r1
+  * linux-image-6.15.0-rc3-bone7
 
- -- Robert Nelson <robertcnelson@gmail.com>  Mon, 21 Apr 2025 19:28:05 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Wed, 23 Apr 2025 16:51:25 -0500
 
