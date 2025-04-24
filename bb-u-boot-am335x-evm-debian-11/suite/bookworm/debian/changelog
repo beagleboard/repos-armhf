@@ -1,7 +1,7 @@
-bb-u-boot-am335x-evm (2022.04.20240115.2-0~bookworm+20250417) bookworm; urgency=low
+bb-u-boot-am335x-evm (2022.04.20240115.3-0~bookworm+20250423) bookworm; urgency=low
 
   * v2022.04 - https://openbeagle.org/beagleboard/u-boot/-/tree/v2022.04-bbb.io-am335x-am57xx
   * include binary u-boot-spl.bin for users doing spl serial bootup
 
- -- Robert Nelson <robertcnelson@gmail.com>  Thu, 17 Apr 2025 19:07:26 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Wed, 23 Apr 2025 22:22:59 -0500
 
