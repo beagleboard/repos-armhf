@@ -211,6 +211,8 @@ setup_repo
 
 ###Debian (armhf):
 
+key="A4C46402"
+
 dist="debian"
 
 suite="bullseye"
@@ -221,6 +223,8 @@ suite="bookworm"
 archs="armhf source"
 setup_repo
 
+key="D59E6DAEAE10AE37"
+
 suite="trixie"
 archs="armhf source"
 setup_repo
@@ -229,6 +233,8 @@ suite="sid"
 archs="armhf source"
 setup_repo
 
+key="A4C46402"
+
 #24.04
 #Yes, this is under debian it's to make things easier..
 suite="noble"
@@ -236,6 +242,8 @@ archs="armhf source"
 setup_repo
 
 ###Debian (arm64):
+
+key="A4C46402"
 
 dist="debian-arm64"
 suite="bullseye"
@@ -246,6 +254,8 @@ suite="bookworm"
 archs="arm64 source"
 setup_repo
 
+key="D59E6DAEAE10AE37"
+
 suite="trixie"
 archs="arm64 source"
 setup_repo
@@ -253,6 +263,8 @@ setup_repo
 suite="sid"
 archs="arm64 source"
 setup_repo
+
+key="A4C46402"
 
 #20.04
 #Yes, this is under debian-arm64 it's to match builds with ros...
@@ -276,6 +288,8 @@ setup_repo
 
 dist="debian-riscv64"
 
+key="D59E6DAEAE10AE37"
+
 suite="trixie"
 archs="riscv64 source"
 setup_repo
@@ -283,6 +297,8 @@ setup_repo
 suite="sid"
 archs="riscv64 source"
 setup_repo
+
+key="A4C46402"
 
 #Yes, this also under debian-riscv64, to better sync builds with debian..
 suite="lunar"
@@ -307,6 +323,8 @@ archs="riscv64 source"
 setup_repo
 
 ###Debian (amd64):
+
+key="A4C46402"
 
 dist="debian-amd64"
 suite="bookworm"
