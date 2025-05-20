@@ -223,7 +223,7 @@ suite="bookworm"
 archs="armhf source"
 setup_repo
 
-key="D59E6DAEAE10AE37"
+#key="D59E6DAEAE10AE37"
 
 suite="trixie"
 archs="armhf source"
@@ -254,7 +254,7 @@ suite="bookworm"
 archs="arm64 source"
 setup_repo
 
-key="D59E6DAEAE10AE37"
+#key="D59E6DAEAE10AE37"
 
 suite="trixie"
 archs="arm64 source"
@@ -288,7 +288,7 @@ setup_repo
 
 dist="debian-riscv64"
 
-key="D59E6DAEAE10AE37"
+#key="D59E6DAEAE10AE37"
 
 suite="trixie"
 archs="riscv64 source"
