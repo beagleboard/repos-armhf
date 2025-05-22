@@ -1,8 +1,8 @@
-kmod (34.2-2bbbio0~trixie+20250513) trixie; urgency=low
+kmod (34.2-2bbbio1~trixie+20250522) trixie; urgency=low
 
-  * Revert /boot/config-* checking of: https://salsa.debian.org/md/kmod/-/commit/4a5c3e54dbf2174605f6016bb4be026d05381a3b
+  * Fix library directory: https://wiki.debian.org/Multiarch/Tuples#Architectures_in_Debian
 
- -- Robert Nelson <robertcnelson@gmail.com>  Tue, 13 May 2025 09:35:46 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Thu, 22 May 2025 11:41:18 -0500
 
 kmod (34.2-2) unstable; urgency=medium
 
