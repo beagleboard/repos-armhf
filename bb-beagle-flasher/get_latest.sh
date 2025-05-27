@@ -5,15 +5,14 @@ dl_src () {
 		rm -rf ./src/
 	fi
 
-	git clone git@git.beagleboard.org:beagleboard/usr-customizations.git ./src/
+	git clone https://openbeagle.org/beagleboard/usr-customizations.git ./src/
 }
 
 copy_all () {
-	cp -v ./src/${wfile} ./suite/buster/debian/
 	cp -v ./src/${wfile} ./suite/bullseye/debian/
 	cp -v ./src/${wfile} ./suite/bookworm/debian/
-	cp -v ./src/${wfile} ./suite/focal/debian/
-	cp -v ./src/${wfile} ./suite/jammy/debian/
+	cp -v ./src/${wfile} ./suite/noble/debian/
+	cp -v ./src/${wfile} ./suite/trixie/debian/
 }
 
 dl_src

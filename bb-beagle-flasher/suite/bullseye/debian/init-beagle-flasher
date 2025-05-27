@@ -5,13 +5,13 @@ if ! id | grep -q root; then
 	exit
 fi
 
-version_message="1.20240419.0, merged usr cleanups..."
+version_message="1.20250527.0, add new fat-swap-rootfs layout..."
 
 #Debian 12, Ubuntu Lunar, Mantic, Noble
 #https://packages.debian.org/source/bookworm/e2fsprogs
 #e2fsprogs (1.47.0) added orphan_file first added in v5.15.x
 unset ext4_options
-ext4_options="-O ^metadata_csum,^64bit"
+ext4_options="-O ^metadata_csum,^64bit,^orphan_file"
 
 cylon_leds() {
 	#ls /sys/class/leds/beaglebone\:green\:usr*
@@ -75,7 +75,7 @@ reset_leds() {
 
 		leds_pattern0=${leds_pattern0:-"heartbeat"}
 		leds_pattern1=${leds_pattern1:-"mmc0"}
-		leds_pattern2=${leds_pattern2:-"cpu0"}
+		leds_pattern2=${leds_pattern2:-"none"}
 		leds_pattern3=${leds_pattern3:-"mmc1"}
 		leds_base=/sys/class/leds/beaglebone\:green\:usr
 
@@ -246,15 +246,15 @@ format_boot () {
 }
 
 format_root () {
-	message="mkfs.ext4 ${ext4_options} ${destination}p2 -L ${rootfs_label}"              ; broadcast
-	LC_ALL=C mkfs.ext4 ${ext4_options} ${destination}p2 -L ${rootfs_label}
+	message="mkfs.ext4 ${ext4_options} ${destination}p${media_rootfs} -L ${rootfs_label}"              ; broadcast
+	LC_ALL=C mkfs.ext4 ${ext4_options} ${destination}p${media_rootfs} -L ${rootfs_label}
 	message="--------------------------------------------------------------------------------" ; broadcast
 	flush_cache
 }
 
 format_single_root () {
-	message="mkfs.ext4 ${ext4_options} ${destination}p1 -L ${single_root_label}"         ; broadcast
-	LC_ALL=C mkfs.ext4 ${ext4_options} ${destination}p1 -L ${single_root_label}
+	message="mkfs.ext4 ${ext4_options} ${destination}p${media_rootfs} -L ${single_root_label}"         ; broadcast
+	LC_ALL=C mkfs.ext4 ${ext4_options} ${destination}p${media_rootfs} -L ${single_root_label}
 	message="--------------------------------------------------------------------------------" ; broadcast
 	flush_cache
 }
@@ -274,6 +274,21 @@ copy_boot () {
 	umount /boot/firmware || umount -l /boot/firmware || true
 }
 
+copy_boot_firmware () {
+	message="Copying: ${source}p1 -> ${destination}p1" ; broadcast
+	mkdir -p /tmp/boot/firmware/ || true
+
+	mount ${destination}p1 /tmp/boot/firmware/ -o sync
+
+	message="rsync: (-aHAXx) /boot/firmware/ -> /tmp/boot/firmware/" ; broadcast
+	rsync -aHAXx /boot/firmware/* /tmp/boot/firmware/ || write_failure
+	flush_cache
+
+	umount /tmp/boot/firmware/ || umount -l /tmp/boot/firmware/ || write_failure
+	flush_cache
+	umount /boot/firmware || umount -l /boot/firmware || true
+}
+
 copy_rootfs () {
 	message="INFO: Copying: ${source}p${media_rootfs} -> ${destination}p${media_rootfs}"       ; broadcast
 	mkdir -p /tmp/rootfs/ || true
@@ -282,19 +297,25 @@ copy_rootfs () {
 	mount ${destination}p${media_rootfs} /tmp/rootfs/ -o async,noatime
 
 	message="INFO: rsync: (-aHAXx) [/ -> /tmp/rootfs/]"                                ; broadcast
-	rsync -aHAXx --human-readable --info=progress2 /* /tmp/rootfs/ --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/media/*,/lost+found,/lib/modules/*,/uEnv.txt} || write_failure
+	rsync -aHAXx --human-readable --info=progress2 /* /tmp/rootfs/ --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/media/*,/lost+found,/lib/modules/*,/usr/lib/modules/*,/uEnv.txt} || write_failure
 	message="--------------------------------------------------------------------------------" ; broadcast
 	flush_cache
 
 	message="INFO: rsync: (-aHAXx) [/ -> /tmp/rootfs/]"                                ; broadcast
-	rsync -aHAXx --human-readable --info=progress2 /* /tmp/rootfs/ --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/media/*,/lost+found,/lib/modules/*,/uEnv.txt} || write_failure
+	rsync -aHAXx --human-readable --info=progress2 /* /tmp/rootfs/ --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/media/*,/lost+found,/lib/modules/*,/usr/lib/modules/*,/uEnv.txt} || write_failure
 	message="--------------------------------------------------------------------------------" ; broadcast
 	flush_cache
 
 	message="INFO: Copying: Kernel modules"                                                    ; broadcast
-	mkdir -p /tmp/rootfs/lib/modules/$(uname -r)/ || true
-	message="INFO: rsync: (-aHAXx) /lib/modules/$(uname -r)/ -> /tmp/rootfs/lib/modules/$(uname -r)/" ; broadcast
-	rsync -aHAXx --human-readable --info=progress2 /lib/modules/$(uname -r)/* /tmp/rootfs/lib/modules/$(uname -r)/ || write_failure
+	if [ -d /usr/lib/modules/ ] ; then
+		mkdir -p /tmp/rootfs/usr/lib/modules/$(uname -r)/ || true
+		message="INFO: rsync: (-aHAXx) /usr/lib/modules/$(uname -r)/ -> /tmp/rootfs/usr/lib/modules/$(uname -r)/" ; broadcast
+		rsync -aHAXx --human-readable --info=name0,progress2 /usr/lib/modules/$(uname -r)/* /tmp/rootfs/usr/lib/modules/$(uname -r)/ || write_failure
+	else
+		mkdir -p /tmp/rootfs/lib/modules/$(uname -r)/ || true
+		message="INFO: rsync: (-aHAXx) /lib/modules/$(uname -r)/ -> /tmp/rootfs/lib/modules/$(uname -r)/" ; broadcast
+		rsync -aHAXx --human-readable --info=name0,progress2 /lib/modules/$(uname -r)/* /tmp/rootfs/lib/modules/$(uname -r)/ || write_failure
+	fi
 	message="--------------------------------------------------------------------------------" ; broadcast
 	flush_cache
 
@@ -302,9 +323,16 @@ copy_rootfs () {
 	echo "# /etc/fstab: static file system information." > /tmp/rootfs/etc/fstab
 	echo "#" >> /tmp/rootfs/etc/fstab
 	echo "${destination}p${media_rootfs}  /  ext4  noatime,errors=remount-ro  0  1" >> /tmp/rootfs/etc/fstab
+
 	if [ "x${media_rootfs}" = "x2" ] ; then
-		echo "${destination}p1  /boot/firmware vfat defaults 0 0" >> /tmp/rootfs/etc/fstab
+		echo "${destination}p1  /boot/firmware vfat user,uid=1000,gid=1000,defaults 0 2" >> /tmp/rootfs/etc/fstab
 	fi
+
+	if [ "x${media_rootfs}" = "x3" ] ; then
+		echo "${destination}p1  /boot/firmware vfat user,uid=1000,gid=1000,defaults 0 2" >> /tmp/rootfs/etc/fstab
+		echo "${destination}p2       none    swap    sw      0       0" >> /tmp/rootfs/etc/fstab
+	fi
+
 	echo "debugfs  /sys/kernel/debug  debugfs  mode=755,uid=root,gid=gpio,defaults  0  0" >> /tmp/rootfs/etc/fstab
 	message="INFO: [cat /tmp/rootfs/etc/fstab]"                                                ; broadcast
 	message="`cat /tmp/rootfs/etc/fstab`"                                                      ; broadcast
@@ -456,11 +484,11 @@ partition_drive () {
 
 		flush_cache
 		message="INFO: Formatting: ${destination}"                                                 ; broadcast
+		media_rootfs="1"
 		format_single_root
 		message="INFO: Formatting: ${destination} complete"                                        ; broadcast
 		message="--------------------------------------------------------------------------------" ; broadcast
 
-		media_rootfs="1"
 		copy_rootfs
 	elif [ "x${rfs_partition}" = "xdual" ] ; then
 		rfs_boot_startmb=${rfs_boot_startmb:-"1"}
@@ -489,13 +517,47 @@ partition_drive () {
 		flush_cache
 		message="INFO: Formatting: ${destination}"                                                 ; broadcast
 		format_boot
+		media_rootfs=2
 		format_root
 		message="INFO: Formatting: ${destination} complete"                                        ; broadcast
 		message="--------------------------------------------------------------------------------" ; broadcast
 
 		copy_boot
-		media_rootfs="2"
 		copy_rootfs
+	elif [ "x${rfs_partition}" = "xfat_swap" ] ; then
+		boot_startmb=4
+		boot_endmb=36
+		swap_sizemb=512
+
+		partition_two_start_mb=$(($boot_startmb + $boot_endmb))
+		partition_three_start_mb=$(($partition_two_start_mb + $swap_sizemb))
+
+		sfdisk_options="--force --wipe-partitions always"
+
+		message="INFO: Partitioning: ${destination}"                                               ; broadcast
+		message="INFO: sfdisk: [$(LC_ALL=C sfdisk --version)]"                                     ; broadcast
+		message="INFO: sfdisk: [sfdisk ${sfdisk_options} ${destination}]"                          ; broadcast
+		message="INFO: sfdisk: [${boot_startmb}M,${boot_endmb}M,0xC,*]"                            ; broadcast
+		message="INFO: sfdisk: [${partition_two_start_mb}M,${swap_sizemb}M,0x82,-]"                ; broadcast
+		message="INFO: sfdisk: [${partition_three_start_mb}M,,,-]"                                 ; broadcast
+
+		LC_ALL=C sfdisk ${sfdisk_options} "${destination}" <<-__EOF__
+			${boot_startmb}M,${boot_endmb}M,0xC,*
+			${partition_two_start_mb}M,${swap_sizemb}M,0x82,-
+			${partition_three_start_mb}M,,,-
+		__EOF__
+
+		flush_cache
+		message="INFO: Formatting: ${destination}"                                                 ; broadcast
+		format_boot
+		media_rootfs=3
+		format_root
+		message="INFO: Formatting: ${destination} complete"                                        ; broadcast
+		message="--------------------------------------------------------------------------------" ; broadcast
+
+		copy_boot_firmware
+		copy_rootfs
+
 	else
 		example_failure
 	fi
