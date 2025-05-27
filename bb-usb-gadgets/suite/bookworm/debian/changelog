@@ -1,6 +1,6 @@
-bb-usb-gadgets (1.20250523.0-0~bookworm+20250527) bookworm; urgency=low
+bb-usb-gadgets (1.20250523.1-0~bookworm+20250527) bookworm; urgency=low
 
-  * Rebuild bb-usb-gadgets_1.20250523.0-0 for repos.rcn-ee.com
+  * Rebuild bb-usb-gadgets_1.20250523.1-0 for repos.rcn-ee.com
 
- -- Robert Nelson <robertcnelson@gmail.com>  Tue, 27 May 2025 09:15:13 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Tue, 27 May 2025 10:00:34 -0500
 
