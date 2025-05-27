@@ -2,7 +2,7 @@
 
 package_name="generic-sys-mods"
 debian_pkg_name="${package_name}"
-package_version="1.20240625.0"
+package_version="1.20250523.0"
 package_source=""
 src_dir=""
 
@@ -17,9 +17,7 @@ debian_patch=""
 
 clear_changelog="enable"
 
-bullseye_version="~bullseye+20240625"
-bookworm_version="~bookworm+20240625"
-trixie_version="~trixie+20240625"
-focal_version="~focal+20240625"
-jammy_version="~jammy+20240625"
-noble_version="~noble+20240625"
+bullseye_version="~bullseye+20250527"
+bookworm_version="~bookworm+20250527"
+trixie_version="~trixie+20250527"
+noble_version="~noble+20250527"
