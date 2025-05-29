@@ -4,7 +4,7 @@ DIR="$PWD"
 apache_dir="/var/www/html/repos"
 
 setup_repo () {
-	echo "${dist}"
+	echo "dir: ${dist}; suite: ${suite}"
 	if [ ! -d ${apache_dir}/${dist}/dists/${suite}/ ] ; then
 		mkdir -p ${apache_dir}/${dist}/conf/
 	fi
