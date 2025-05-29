@@ -233,6 +233,16 @@ suite="sid"
 archs="armhf source"
 setup_repo
 
+dist="debian-trixie-armhf"
+suite="trixie"
+archs="armhf source"
+setup_repo
+
+dist="debian-sid-armhf"
+suite="sid"
+archs="armhf source"
+setup_repo
+
 key="A4C46402"
 
 #24.04
@@ -250,16 +260,29 @@ suite="bullseye"
 archs="arm64 source"
 setup_repo
 
+dist="debian-arm64"
 suite="bookworm"
 archs="arm64 source"
 setup_repo
 
 #key="D59E6DAEAE10AE37"
 
+dist="debian-arm64"
 suite="trixie"
 archs="arm64 source"
 setup_repo
 
+dist="debian-arm64"
+suite="sid"
+archs="arm64 source"
+setup_repo
+
+dist="debian-trixie-arm64"
+suite="trixie"
+archs="arm64 source"
+setup_repo
+
+dist="debian-sid-arm64"
 suite="sid"
 archs="arm64 source"
 setup_repo
@@ -298,6 +321,16 @@ suite="sid"
 archs="riscv64 source"
 setup_repo
 
+dist="debian-trixie-riscv64"
+suite="trixie"
+archs="riscv64 source"
+setup_repo
+
+dist="debian-sid-riscv64"
+suite="sid"
+archs="riscv64 source"
+setup_repo
+
 key="A4C46402"
 
 #Yes, this also under debian-riscv64, to better sync builds with debian..
@@ -332,6 +365,11 @@ archs="amd64 source"
 setup_repo
 
 dist="debian-amd64"
+suite="trixie"
+archs="amd64 source"
+setup_repo
+
+dist="debian-trixie-amd64"
 suite="trixie"
 archs="amd64 source"
 setup_repo
