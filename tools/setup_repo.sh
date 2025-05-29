@@ -4,11 +4,12 @@ DIR="$PWD"
 apache_dir="/var/www/html/repos"
 
 setup_repo () {
-	echo "${dist}-${suite}"
+	echo "${dist}"
 	if [ ! -d ${apache_dir}/${dist}/dists/${suite}/ ] ; then
 		mkdir -p ${apache_dir}/${dist}/conf/
 	fi
 
+	echo "${dist}/conf/distributions"
 	echo "Origin: rcn-ee.net" >> ${apache_dir}/${dist}/conf/distributions
 	echo "Label: rcn-ee.net" >> ${apache_dir}/${dist}/conf/distributions
 	echo "Codename: ${suite}" >> ${apache_dir}/${dist}/conf/distributions
