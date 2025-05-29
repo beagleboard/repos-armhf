@@ -78,19 +78,19 @@ if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
 	rm -f ${apache_dir}/${dist}/conf/distributions || true
 fi
 
-dist="debian-amd64"
-if [ -f ${apache_dir}/${dist}-*/conf/distributions ] ; then
-	rm -f ${apache_dir}/${dist}-*/conf/distributions || true
+dist="debian-sid-amd64"
+if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
+	rm -f ${apache_dir}/${dist}/conf/distributions || true
 fi
 
-dist="debian-arm64"
-if [ -f ${apache_dir}/${dist}-*/conf/distributions ] ; then
-	rm -f ${apache_dir}/${dist}-*/conf/distributions || true
+dist="debian-sid-arm64"
+if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
+	rm -f ${apache_dir}/${dist}/conf/distributions || true
 fi
 
-dist="debian-riscv64"
-if [ -f ${apache_dir}/${dist}-*/conf/distributions ] ; then
-	rm -f ${apache_dir}/${dist}-*/conf/distributions || true
+dist="debian-sid-riscv64"
+if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
+	rm -f ${apache_dir}/${dist}/conf/distributions || true
 fi
 
 key="A4C46402"
