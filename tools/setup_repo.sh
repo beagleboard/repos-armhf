@@ -9,7 +9,6 @@ setup_repo () {
 		mkdir -p ${apache_dir}/${dist}/conf/
 	fi
 
-	echo "${dist}/conf/distributions"
 	echo "Origin: rcn-ee.net" >> ${apache_dir}/${dist}/conf/distributions
 	echo "Label: rcn-ee.net" >> ${apache_dir}/${dist}/conf/distributions
 	echo "Codename: ${suite}" >> ${apache_dir}/${dist}/conf/distributions
@@ -79,19 +78,19 @@ if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
 	rm -f ${apache_dir}/${dist}/conf/distributions || true
 fi
 
-dist="debian-amd64-sid"
-if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
-	rm -f ${apache_dir}/${dist}/conf/distributions || true
+dist="debian-amd64"
+if [ -f ${apache_dir}/${dist}-*/conf/distributions ] ; then
+	rm -f ${apache_dir}/${dist}-*/conf/distributions || true
 fi
 
-dist="debian-arm64-sid"
-if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
-	rm -f ${apache_dir}/${dist}/conf/distributions || true
+dist="debian-arm64"
+if [ -f ${apache_dir}/${dist}-*/conf/distributions ] ; then
+	rm -f ${apache_dir}/${dist}-*/conf/distributions || true
 fi
 
-dist="debian-riscv64-sid"
-if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
-	rm -f ${apache_dir}/${dist}/conf/distributions || true
+dist="debian-riscv64"
+if [ -f ${apache_dir}/${dist}-*/conf/distributions ] ; then
+	rm -f ${apache_dir}/${dist}-*/conf/distributions || true
 fi
 
 key="A4C46402"
