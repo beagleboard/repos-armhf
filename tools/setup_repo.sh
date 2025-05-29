@@ -307,12 +307,14 @@ key="A4C46402"
 
 #20.04
 #Yes, this is under debian-arm64 it's to match builds with ros...
+dist="debian-arm64"
 suite="focal"
 archs="arm64 source"
 setup_repo
 
 #22.04
 #Yes, this is under debian-arm64, to better sync builds with debian..
+dist="debian-arm64"
 suite="jammy"
 archs="arm64 source"
 setup_repo
@@ -350,23 +352,27 @@ setup_repo
 key="A4C46402"
 
 #Yes, this also under debian-riscv64, to better sync builds with debian..
+dist="debian-riscv64"
 suite="lunar"
 archs="riscv64 source"
 setup_repo
 
 #Yes, this also under debian-riscv64, to better sync builds with debian..
+dist="debian-riscv64"
 suite="mantic"
 archs="riscv64 source"
 setup_repo
 
 #24.04
 #Yes, this also under debian-riscv64, to better sync builds with debian..
+dist="debian-riscv64"
 suite="noble"
 archs="riscv64 source"
 setup_repo
 
 #24.10
 #Yes, this also under debian-riscv64, to better sync builds with debian..
+dist="debian-riscv64"
 suite="oracular"
 archs="riscv64 source"
 setup_repo
