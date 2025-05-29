@@ -80,101 +80,6 @@ fi
 
 key="A4C46402"
 
-###Debian (armhf) EOL repos:
-
-dist="debian"
-suite="wheezy"
-archs="armhf source"
-setup_repo
-
-suite="jessie"
-archs="armhf source"
-setup_repo
-
-suite="stretch"
-archs="armhf source"
-setup_repo
-
-suite="buster"
-archs="armhf source"
-setup_repo
-
-###Ubuntu (armhf) eol repos:
-
-dist="ubuntu"
-
-#eol: july 25 2015
-#14.10
-suite="utopic"
-archs="armhf source"
-setup_repo
-
-#eol: feb 4 2016
-#15.04
-suite="vivid"
-archs="armhf source"
-setup_repo
-
-#eol: July 28 2016
-#15.10
-suite="wily"
-archs="armhf source"
-setup_repo
-
-#16.10
-#eol: July 20 2017
-suite="yakkety"
-archs="armhf source"
-setup_repo
-
-#17.04
-#eol: January 2018
-suite="zesty"
-archs="armhf source"
-setup_repo
-
-#17.10
-#eol: July 2018
-suite="artful"
-archs="armhf source"
-setup_repo
-
-#18.10
-#eol: July 18, 2019
-suite="cosmic"
-archs="armhf source"
-setup_repo
-
-#19.04
-#eol: Jan 23, 2020
-suite="disco"
-archs="armhf source"
-setup_repo
-
-#19.10
-#eol: July 17, 2020
-suite="eoan"
-archs="armhf source"
-setup_repo
-
-#20.10
-#eol: July 22, 2021
-suite="groovy"
-archs="armhf source"
-setup_repo
-
-#21.04
-#eol: Jan 20, 2022
-suite="hirsute"
-archs="armhf source"
-setup_repo
-
-#21.10
-#eol: July 14, 2022
-suite="impish"
-archs="armhf source"
-setup_repo
-
 ###Ubuntu (armhf) LTS:
 
 dist="ubuntu"
@@ -225,10 +130,12 @@ setup_repo
 
 #key="D59E6DAEAE10AE37"
 
+dist="debian-trixie-armhf"
 suite="trixie"
 archs="armhf source"
 setup_repo
 
+dist="debian-sid-armhf"
 suite="sid"
 archs="armhf source"
 setup_repo
@@ -256,10 +163,12 @@ setup_repo
 
 #key="D59E6DAEAE10AE37"
 
+dist="debian-trixie-arm64"
 suite="trixie"
 archs="arm64 source"
 setup_repo
 
+dist="debian-sid-arm64"
 suite="sid"
 archs="arm64 source"
 setup_repo
@@ -290,35 +199,21 @@ dist="debian-riscv64"
 
 #key="D59E6DAEAE10AE37"
 
+dist="debian-trixie-riscv64"
 suite="trixie"
 archs="riscv64 source"
 setup_repo
 
+dist="debian-sid-riscv64"
 suite="sid"
 archs="riscv64 source"
 setup_repo
 
 key="A4C46402"
 
-#Yes, this also under debian-riscv64, to better sync builds with debian..
-suite="lunar"
-archs="riscv64 source"
-setup_repo
-
-#Yes, this also under debian-riscv64, to better sync builds with debian..
-suite="mantic"
-archs="riscv64 source"
-setup_repo
-
 #24.04
 #Yes, this also under debian-riscv64, to better sync builds with debian..
 suite="noble"
-archs="riscv64 source"
-setup_repo
-
-#24.10
-#Yes, this also under debian-riscv64, to better sync builds with debian..
-suite="oracular"
 archs="riscv64 source"
 setup_repo
 
@@ -331,7 +226,7 @@ suite="bookworm"
 archs="amd64 source"
 setup_repo
 
-dist="debian-amd64"
+dist="debian-trixie-amd64"
 suite="trixie"
 archs="amd64 source"
 setup_repo
