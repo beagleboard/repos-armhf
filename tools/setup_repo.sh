@@ -262,6 +262,7 @@ key="A4C46402"
 
 #24.04
 #Yes, this is under debian it's to make things easier..
+dist="debian"
 suite="noble"
 archs="armhf source"
 setup_repo
