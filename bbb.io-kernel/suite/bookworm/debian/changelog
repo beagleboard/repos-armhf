@@ -1,9 +1,7 @@
-bbb.io-kernel (1.20250527.0-0~bookworm+20250527) bookworm; urgency=low
+bbb.io-kernel (1.20250529.0-0~bookworm+20250529) bookworm; urgency=low
 
   * Kernel Updates
-  * linux-image-6.15.0-bone13
-  * linux-image-6.15.0-multiv7-r1
-  * linux-image-6.15.0-omap2plus-r1
+  * linux-image-6.12.28-bone26
 
- -- Robert Nelson <robertcnelson@gmail.com>  Tue, 27 May 2025 16:02:49 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Thu, 29 May 2025 13:45:49 -0500
 
