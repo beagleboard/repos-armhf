@@ -1,7 +1,16 @@
-bbb.io-kernel (1.20250529.0-0~bookworm+20250529) bookworm; urgency=low
+bbb.io-kernel (1.20250530.0-0~bookworm+20250530) bookworm; urgency=low
 
   * Kernel Updates
-  * linux-image-6.12.28-bone26
+  * linux-image-6.12.28-bone27
+  * linux-image-6.12.28-bone-rt-r27
+  * linux-image-6.13.12-bone21
+  * linux-image-6.14.9-bone17
+  * linux-image-6.15.0-bone14
+  * linux-image-6.6.87-armv7-lpae-x26
+  * linux-image-6.6.87-armv7-rt-x26
+  * linux-image-6.6.87-armv7-x26
+  * linux-image-6.6.87-bone28
+  * linux-image-6.6.87-bone-rt-r28
 
- -- Robert Nelson <robertcnelson@gmail.com>  Thu, 29 May 2025 13:45:49 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Fri, 30 May 2025 08:18:12 -0500
 
