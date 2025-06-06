@@ -1,16 +1,11 @@
-bbb.io-kernel (1.20250530.0-0~bullseye+20250530) bullseye; urgency=low
+bbb.io-kernel (1.20250606.0-0~bullseye+20250606) bullseye; urgency=low
 
   * Kernel Updates
-  * linux-image-6.12.28-bone27
-  * linux-image-6.12.28-bone-rt-r27
-  * linux-image-6.13.12-bone21
-  * linux-image-6.14.9-bone17
-  * linux-image-6.15.0-bone14
-  * linux-image-6.6.87-armv7-lpae-x26
-  * linux-image-6.6.87-armv7-rt-x26
-  * linux-image-6.6.87-armv7-x26
-  * linux-image-6.6.87-bone28
-  * linux-image-6.6.87-bone-rt-r28
+  * linux-image-6.12.32-armv7-lpae-x7
+  * linux-image-6.12.32-bone28
+  * linux-image-6.12.32-bone-rt-r28
+  * linux-image-6.14.10-bone18
+  * linux-image-6.15.1-bone15
 
- -- Robert Nelson <robertcnelson@gmail.com>  Fri, 30 May 2025 08:18:12 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Fri, 06 Jun 2025 12:58:47 -0500
 
