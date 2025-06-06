@@ -2,10 +2,11 @@ Source: cloud-initramfs-tools
 Section: admin
 Priority: optional
 Maintainer: Scott Moser <smoser@ubuntu.com>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.5
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
 Homepage: http://launchpad.net/cloud-initramfs-tools
 Vcs-Git: https://git.launchpad.net/cloud-initramfs-tools
+Rules-Requires-Root: no
 
 Package: cloud-initramfs-rescuevol
 Architecture: all
@@ -35,7 +36,7 @@ Description: automatically resize the root partition on first boot
  .
  You most likely do not want this package unless you know what you are
  doing.  It is primarily interesting in a virtualized environment when
- a disk can provisioned with a size larger than its original size.
+ a disk can be provisioned with a size larger than its original size.
  In this case, with this package installed, you can automatically use
  the new space without requiring a reboot to re-read the partition table.
 
