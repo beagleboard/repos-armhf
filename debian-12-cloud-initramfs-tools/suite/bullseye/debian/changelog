@@ -1,8 +1,15 @@
-cloud-initramfs-tools (0.48bbbio0~bullseye+20250606) bullseye; urgency=low
+cloud-initramfs-tools (0.49bbbio0~bullseye+20250606) bullseye; urgency=low
 
-  * Rebuild cloud-initramfs-tools_0.48 for repos.rcn-ee.com
+  * Rebuild cloud-initramfs-tools_0.49 for repos.rcn-ee.com
 
- -- Robert Nelson <robertcnelson@gmail.com>  Fri, 06 Jun 2025 13:26:16 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Fri, 06 Jun 2025 15:14:50 -0500
+
+cloud-initramfs-tools (0.49) oracular; urgency=medium
+
+  [ Benjamin Drung ]
+  * overlayroot: Combine calls to manual_add_modules (LP: #2065180)
+
+ -- Paride Legovini <paride@ubuntu.com>  Tue, 02 Jul 2024 12:38:14 +0200
 
 cloud-initramfs-tools (0.48) noble; urgency=medium
 
@@ -99,13 +106,13 @@ cloud-initramfs-tools (0.40ubuntu1) bionic; urgency=medium
 
 cloud-initramfs-tools (0.39ubuntu1) artful; urgency=medium
 
-  * overlayroot, rooturl: fix usage of log_warning_msg. 
+  * overlayroot, rooturl: fix usage of log_warning_msg.
 
  -- Scott Moser <smoser@ubuntu.com>  Thu, 31 Aug 2017 16:12:43 -0400
 
 cloud-initramfs-tools (0.38ubuntu1) artful; urgency=medium
 
-  * overlayroot: add 'noauto' to the options for the /media/root-ro 
+  * overlayroot: add 'noauto' to the options for the /media/root-ro
     fstab entry (LP: #1666573).
 
  -- Scott Moser <smoser@ubuntu.com>  Tue, 13 Jun 2017 16:52:16 -0400
@@ -446,14 +453,14 @@ cloud-initramfs-tools (0.3ubuntu1) precise; urgency=low
 
 cloud-initramfs-tools (0.2ubuntu1) oneiric; urgency=low
 
-  * invoke blkid to search for the rescue volume rather than relying on 
+  * invoke blkid to search for the rescue volume rather than relying on
     /dev/disk/by-label/LABEL .  The by-label entries would sometimes
     not exist while the device would.
   * improve failed boot message
   * update debian/README.source to point at upstream location
 
   [Neil Wilson]
-  * fix race condition that resulted in intermittent mount failures 
+  * fix race condition that resulted in intermittent mount failures
     after 'growroot'. (LP: #765843)
 
  -- Scott Moser <smoser@ubuntu.com>  Wed, 08 Jun 2011 09:46:57 -0400
