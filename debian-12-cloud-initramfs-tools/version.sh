@@ -19,7 +19,7 @@ dl_path="pool/main/${reprepro_dir}/"
 debian_version="${package_version}"
 debian_untar=""
 debian_patch=""
-local_patch="bbbio0"
+local_patch="bbbio1"
 
 bullseye_version="~bullseye+20250606"
 bookworm_version="~bookworm+20250606"
