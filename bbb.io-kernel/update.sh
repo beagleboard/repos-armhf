@@ -236,6 +236,7 @@ do_some_bone () {
 	msg="6.13-bone" ; var="omap-psp" ; ver="V613X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.14-bone" ; var="omap-psp" ; ver="V614X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.15-bone" ; var="omap-psp" ; ver="V615X" ; current_kernel ; generate_kernel_mainline_bone
+	msg="6.16-bone" ; var="omap-psp" ; ver="V616X" ; current_kernel ; generate_kernel_mainline_bone
 }
 
 do_jammy () {

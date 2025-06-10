@@ -501,7 +501,7 @@ Description: BeagleBoard.org 4.19-armv7-lpae for armv7-lpae
 Package: bbb.io-kernel-omap2plus
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.15.0-omap2plus-r1
+Pre-Depends: linux-image-6.16.0-rc1-omap2plus-r1
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
@@ -509,7 +509,7 @@ Description: BeagleBoard.org Mainline
 Package: bbb.io-kernel-multiv7
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.15.0-multiv7-r1
+Pre-Depends: linux-image-6.16.0-rc1-multiv7-r1
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
@@ -918,3 +918,12 @@ Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.15.1-bone15
 Description: BeagleBoard.org 6.15-bone for am335x
  This metapackage will install linux-image-6.15-bone for am335x in Debian.
+
+Package: bbb.io-kernel-6.16-bone
+Section: metapackages
+Architecture: armhf
+Pre-Depends: linux-image-6.16.0-rc1-bone1,
+Depends: ${misc:Depends}, bbb.io-kernel-tasks
+Recommends: libpruio-modules-6.16.0-rc1-bone1
+Description: BeagleBoard.org 6.16-bone for am335x
+ This metapackage will install linux-image-6.16-bone for am335x in Debian.
