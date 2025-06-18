@@ -1,9 +1,9 @@
-bb-beagle-flasher (1.20250527.6-0~bullseye+20250527) bullseye; urgency=low
+bb-beagle-flasher (1.20250618.0-0~bullseye+20250618) bullseye; urgency=low
 
   * Use /proc/sysrq-trigger to shutdown flasher in single user mode
   * Add timeout around /proc/sysrq-trigger to log what is happening
   * Remove beagle-flasher-init-shutdown.service, single user will now shutdown
   * e2fsprogs (1.47.0) disable metadata_csum,64bit,orphan_file, needs v5.15.x kernel
 
- -- Robert Nelson <robertcnelson@gmail.com>  Tue, 27 May 2025 18:40:01 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Wed, 18 Jun 2025 08:36:49 -0500
 

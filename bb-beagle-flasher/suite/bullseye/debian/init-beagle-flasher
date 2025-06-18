@@ -11,7 +11,7 @@ version_message="1.20250527.0, add new fat-swap-rootfs layout..."
 #https://packages.debian.org/source/bookworm/e2fsprogs
 #e2fsprogs (1.47.0) added orphan_file first added in v5.15.x
 unset ext4_options
-ext4_options="-O ^metadata_csum,^64bit,^orphan_file"
+ext4_options="-O ^metadata_csum,^64bit"
 
 cylon_leds() {
 	#ls /sys/class/leds/beaglebone\:green\:usr*
