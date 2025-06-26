@@ -1,7 +1,9 @@
-bb-u-boot-am335x-evm (2022.04.20240115.3-0~trixie+20250423) trixie; urgency=low
+bb-u-boot-am335x-evm (2022.04.20240115.4-0~trixie+20250626) trixie; urgency=low
 
   * v2022.04 - https://openbeagle.org/beagleboard/u-boot/-/tree/v2022.04-bbb.io-am335x-am57xx
   * include binary u-boot-spl.bin for users doing spl serial bootup
+  * am335x-boneblack-revd.dtb
+  * am335x-bonegreen-eco.dtb
 
- -- Robert Nelson <robertcnelson@gmail.com>  Wed, 23 Apr 2025 22:22:59 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Thu, 26 Jun 2025 17:58:15 -0500
 
