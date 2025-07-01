@@ -334,7 +334,7 @@ setup_repo
 
 dist="debian-riscv64"
 
-#key="D59E6DAEAE10AE37"
+key="A4C46402"
 
 suite="trixie"
 archs="riscv64 source"
@@ -344,10 +344,14 @@ suite="sid"
 archs="riscv64 source"
 setup_repo
 
+key="D59E6DAEAE10AE37"
+
 dist="debian-trixie-riscv64"
 suite="trixie"
 archs="riscv64 source"
 setup_repo
+
+key="D59E6DAEAE10AE37"
 
 dist="debian-sid-riscv64"
 suite="sid"
