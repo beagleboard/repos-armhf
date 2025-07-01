@@ -83,12 +83,27 @@ if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
 	rm -f ${apache_dir}/${dist}/conf/distributions || true
 fi
 
+dist="debian-trixie-armhf"
+if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
+	rm -f ${apache_dir}/${dist}/conf/distributions || true
+fi
+
 dist="debian-sid-armhf"
 if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
 	rm -f ${apache_dir}/${dist}/conf/distributions || true
 fi
 
+dist="debian-trixie-arm64"
+if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
+	rm -f ${apache_dir}/${dist}/conf/distributions || true
+fi
+
 dist="debian-sid-arm64"
+if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
+	rm -f ${apache_dir}/${dist}/conf/distributions || true
+fi
+
+dist="debian-trixie-riscv64"
 if [ -f ${apache_dir}/${dist}/conf/distributions ] ; then
 	rm -f ${apache_dir}/${dist}/conf/distributions || true
 fi
