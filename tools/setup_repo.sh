@@ -313,10 +313,14 @@ suite="sid"
 archs="arm64 source"
 setup_repo
 
+key="D59E6DAEAE10AE37"
+
 dist="debian-trixie-arm64"
 suite="trixie"
 archs="arm64 source"
 setup_repo
+
+key="D59E6DAEAE10AE37"
 
 dist="debian-sid-arm64"
 suite="sid"
