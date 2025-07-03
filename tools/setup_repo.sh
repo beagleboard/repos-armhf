@@ -268,10 +268,14 @@ suite="sid"
 archs="armhf source"
 setup_repo
 
+key="D59E6DAEAE10AE37"
+
 dist="debian-trixie-armhf"
 suite="trixie"
 archs="armhf source"
 setup_repo
+
+key="D59E6DAEAE10AE37"
 
 dist="debian-sid-armhf"
 suite="sid"
