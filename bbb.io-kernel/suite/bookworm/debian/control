@@ -419,23 +419,24 @@ Description: BeagleBoard.org 6.6-ti-rt for am57xx
 Package: bbb.io-kernel-6.12-ti
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.12.23-ti-arm32-r11
+Pre-Depends: linux-image-6.12.34-ti-arm32-r12
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.12.23-ti-arm32-r11
+Recommends: libpruio-modules-6.12.34-ti-arm32-r12
 Description: BeagleBoard.org 6.12-ti
  This metapackage will install linux-image-6.12-ti in Debian.
 
 Package: bbb.io-kernel-6.12-ti-am335x
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.12.23-ti-arm32-r11
+Pre-Depends: linux-image-6.12.34-ti-arm32-r12
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
 Recommends:
- libpruio-modules-6.12.23-ti-arm32-r11
+ libpruio-modules-6.12.34-ti-arm32-r12
+ , rtw88-modules-6.12.34-ti-arm32-r12
  , bb-u-boot-am335x-evm
 Description: BeagleBoard.org 6.12-ti for am335x
  This metapackage will install linux-image-6.12-ti for am335x in Debian.
@@ -443,12 +444,13 @@ Description: BeagleBoard.org 6.12-ti for am335x
 Package: bbb.io-kernel-6.12-ti-am57xx
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.12.23-ti-arm32-r11
+Pre-Depends: linux-image-6.12.34-ti-arm32-r12
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
 Recommends:
- libpruio-modules-6.12.23-ti-arm32-r11
+ libpruio-modules-6.12.34-ti-arm32-r12
+ , rtw88-modules-6.12.34-ti-arm32-r12
  , bb-u-boot-am57xx-evm
 Description: BeagleBoard.org 6.12-ti for am57xx
  This metapackage will install linux-image-6.12-ti for am57xx in Debian.
@@ -456,7 +458,7 @@ Description: BeagleBoard.org 6.12-ti for am57xx
 Package: bbb.io-kernel-omap2plus
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.16.0-rc6-omap2plus-r1
+Pre-Depends: linux-image-6.16.0-rc7-omap2plus-r1
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
@@ -464,7 +466,7 @@ Description: BeagleBoard.org Mainline
 Package: bbb.io-kernel-multiv7
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.16.0-rc6-multiv7-r1
+Pre-Depends: linux-image-6.16.0-rc7-multiv7-r1
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
@@ -823,17 +825,18 @@ Description: BeagleBoard.org 6.14-bone for am335x
 Package: bbb.io-kernel-6.15-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.15.6-bone20,
+Pre-Depends: linux-image-6.15.7-bone21,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.15.6-bone20
+Recommends: libpruio-modules-6.15.7-bone21
+ , rtw88-modules-6.15.7-bone21
 Description: BeagleBoard.org 6.15-bone for am335x
  This metapackage will install linux-image-6.15-bone for am335x in Debian.
 
 Package: bbb.io-kernel-6.16-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.16.0-rc6-bone8,
+Pre-Depends: linux-image-6.16.0-rc7-bone9,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.16.0-rc6-bone8
+Recommends: libpruio-modules-6.16.0-rc7-bone9
 Description: BeagleBoard.org 6.16-bone for am335x
  This metapackage will install linux-image-6.16-bone for am335x in Debian.

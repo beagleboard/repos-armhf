@@ -75,6 +75,9 @@ generate_kernel_ti () {
 		if [ "x${qcacld}" = "xenabled" ] ; then
 			echo " , qcacld-2.0-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		fi
+		if [ "x${rtw88}" = "xenabled" ] ; then
+			echo " , rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
+		fi
 		echo " , bb-u-boot-am335x-evm" >> ./suite/${dist}/debian/${wfile}
 		echo "Description: BeagleBoard.org ${msg} for am335x" >> ./suite/${dist}/debian/${wfile}
 		echo " This metapackage will install linux-image-${msg} for am335x in Debian." >> ./suite/${dist}/debian/${wfile}
@@ -91,6 +94,9 @@ generate_kernel_ti () {
 		echo " libpruio-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${sgxjacinto6evm}" = "xenabled" ] ; then
 			echo " , ti-sgx-jacinto6evm-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
+		fi
+		if [ "x${rtw88}" = "xenabled" ] ; then
+			echo " , rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		fi
 		echo " , bb-u-boot-am57xx-evm" >> ./suite/${dist}/debian/${wfile}
 		echo "Description: BeagleBoard.org ${msg} for am57xx" >> ./suite/${dist}/debian/${wfile}
@@ -121,6 +127,9 @@ generate_kernel_mainline_bone () {
 		echo "Pre-Depends: linux-image-${latest_kernel}," >> ./suite/${dist}/debian/${wfile}
 		echo "Depends: \${misc:Depends}, bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
 		echo "Recommends: libpruio-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
+		if [ "x${rtw88}" = "xenabled" ] ; then
+			echo " , rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
+		fi
 		echo "Description: BeagleBoard.org ${msg} for am335x" >> ./suite/${dist}/debian/${wfile}
 		echo " This metapackage will install linux-image-${msg} for am335x in Debian." >> ./suite/${dist}/debian/${wfile}
 	fi
@@ -135,6 +144,9 @@ generate_kernel_mainline_armv7 () {
 		echo "Pre-Depends: linux-image-${latest_kernel}," >> ./suite/${dist}/debian/${wfile}
 		echo "Depends: \${misc:Depends}, bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
 		echo "Recommends: libpruio-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
+		if [ "x${rtw88}" = "xenabled" ] ; then
+			echo " , rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
+		fi
 		echo "Description: BeagleBoard.org ${msg} for armv7" >> ./suite/${dist}/debian/${wfile}
 		echo " This metapackage will install linux-image-${msg} for armv7 in Debian." >> ./suite/${dist}/debian/${wfile}
 	fi
@@ -149,6 +161,9 @@ generate_kernel_mainline_armv7_lpae () {
 		echo "Pre-Depends: linux-image-${latest_kernel}," >> ./suite/${dist}/debian/${wfile}
 		echo "Depends: \${misc:Depends}, bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
 		echo "Recommends: libpruio-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
+		if [ "x${rtw88}" = "xenabled" ] ; then
+			echo " , rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
+		fi
 		echo "Description: BeagleBoard.org ${msg} for armv7-lpae" >> ./suite/${dist}/debian/${wfile}
 		echo " This metapackage will install linux-image-${msg} for armv7-lpae in Debian." >> ./suite/${dist}/debian/${wfile}
 	fi
@@ -235,7 +250,11 @@ do_some_bone () {
 
 	msg="6.13-bone" ; var="omap-psp" ; ver="V613X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.14-bone" ; var="omap-psp" ; ver="V614X" ; current_kernel ; generate_kernel_mainline_bone
+
+	rtw88="enabled"
 	msg="6.15-bone" ; var="omap-psp" ; ver="V615X" ; current_kernel ; generate_kernel_mainline_bone
+	unset rtw88
+
 	msg="6.16-bone" ; var="omap-psp" ; ver="V616X" ; current_kernel ; generate_kernel_mainline_bone
 }
 
@@ -314,7 +333,9 @@ do_noble () {
 	msg="6.6-ti"     ; var="ti"    ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 	msg="6.6-ti-rt"  ; var="ti-rt" ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 
+	rtw88="enabled"
 	msg="6.12-ti"    ; var="ti"    ; ver="LTS612X" ; current_kernel ; generate_kernel_ti
+	unset rtw88
 
 	do_all_lts
 
@@ -420,7 +441,9 @@ do_bookworm () {
 	msg="6.6-ti"     ; var="ti"    ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 	msg="6.6-ti-rt"  ; var="ti-rt" ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 
+	rtw88="enabled"
 	msg="6.12-ti"    ; var="ti"    ; ver="LTS612X" ; current_kernel ; generate_kernel_ti
+	unset rtw88
 
 	do_all_lts
 
@@ -461,7 +484,9 @@ do_trixie () {
 	msg="6.6-ti"     ; var="ti"    ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 	msg="6.6-ti-rt"  ; var="ti-rt" ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 
+	rtw88="enabled"
 	msg="6.12-ti"    ; var="ti"    ; ver="LTS612X" ; current_kernel ; generate_kernel_ti
+	unset rtw88
 
 	do_all_lts
 
