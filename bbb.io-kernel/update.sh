@@ -248,9 +248,8 @@ do_some_bone () {
 	msg="6.12-bone"    ; var="omap-psp" ; ver="V612X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.12-bone-rt" ; var="bone-rt"  ; ver="V612X" ; current_kernel ; generate_kernel_mainline_bone
 
-	msg="6.13-bone" ; var="omap-psp" ; ver="V613X" ; current_kernel ; generate_kernel_mainline_bone
-
 	rtw88="enabled"
+	msg="6.13-bone" ; var="omap-psp" ; ver="V613X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.14-bone" ; var="omap-psp" ; ver="V614X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.15-bone" ; var="omap-psp" ; ver="V615X" ; current_kernel ; generate_kernel_mainline_bone
 	unset rtw88
