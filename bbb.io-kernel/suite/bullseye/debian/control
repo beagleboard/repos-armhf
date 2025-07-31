@@ -436,6 +436,7 @@ Depends:
  , bbb.io-kernel-tasks
 Recommends:
  libpruio-modules-6.12.34-ti-arm32-r12
+ , rtw88-modules-6.12.34-ti-arm32-r12
  , bb-u-boot-am335x-evm
 Description: BeagleBoard.org 6.12-ti for am335x
  This metapackage will install linux-image-6.12-ti for am335x in Debian.
@@ -449,6 +450,7 @@ Depends:
  , bbb.io-kernel-tasks
 Recommends:
  libpruio-modules-6.12.34-ti-arm32-r12
+ , rtw88-modules-6.12.34-ti-arm32-r12
  , bb-u-boot-am57xx-evm
 Description: BeagleBoard.org 6.12-ti for am57xx
  This metapackage will install linux-image-6.12-ti for am57xx in Debian.
@@ -476,7 +478,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-4.19.280-armv7-x76,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-4.19.280-armv7-x76
 Description: BeagleBoard.org 4.19-armv7 for armv7
  This metapackage will install linux-image-4.19-armv7 for armv7 in Debian.
 
@@ -485,7 +486,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-4.19.280-armv7-rt-x76,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-4.19.280-armv7-rt-x76
 Description: BeagleBoard.org 4.19-armv7-rt for armv7
  This metapackage will install linux-image-4.19-armv7-rt for armv7 in Debian.
 
@@ -494,7 +494,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-4.19.280-armv7-lpae-x76,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-4.19.280-armv7-lpae-x76
 Description: BeagleBoard.org 4.19-armv7-lpae for armv7-lpae
  This metapackage will install linux-image-4.19-armv7-lpae for armv7-lpae in Debian.
 
@@ -609,7 +608,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-5.4.288-armv7-x69,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-5.4.288-armv7-x69
 Description: BeagleBoard.org 5.4-armv7 for armv7
  This metapackage will install linux-image-5.4-armv7 for armv7 in Debian.
 
@@ -618,7 +616,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-5.10.233-armv7-x79,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-5.10.233-armv7-x79
 Description: BeagleBoard.org 5.10-armv7 for armv7
  This metapackage will install linux-image-5.10-armv7 for armv7 in Debian.
 
@@ -627,7 +624,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-5.15.177-armv7-x43,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-5.15.177-armv7-x43
 Description: BeagleBoard.org 5.15-armv7 for armv7
  This metapackage will install linux-image-5.15-armv7 for armv7 in Debian.
 
@@ -636,7 +632,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-6.1.134-armv7-x13,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.1.134-armv7-x13
 Description: BeagleBoard.org 6.1-armv7 for armv7
  This metapackage will install linux-image-6.1-armv7 for armv7 in Debian.
 
@@ -645,7 +640,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-6.6.87-armv7-x26,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.6.87-armv7-x26
 Description: BeagleBoard.org 6.6-armv7 for armv7
  This metapackage will install linux-image-6.6-armv7 for armv7 in Debian.
 
@@ -654,7 +648,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-5.4.288-armv7-rt-x69,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-5.4.288-armv7-rt-x69
 Description: BeagleBoard.org 5.4-armv7-rt for armv7
  This metapackage will install linux-image-5.4-armv7-rt for armv7 in Debian.
 
@@ -663,7 +656,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-5.10.233-armv7-rt-x79,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-5.10.233-armv7-rt-x79
 Description: BeagleBoard.org 5.10-armv7-rt for armv7
  This metapackage will install linux-image-5.10-armv7-rt for armv7 in Debian.
 
@@ -672,7 +664,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-5.15.177-armv7-rt-x43,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-5.15.177-armv7-rt-x43
 Description: BeagleBoard.org 5.15-armv7-rt for armv7
  This metapackage will install linux-image-5.15-armv7-rt for armv7 in Debian.
 
@@ -681,7 +672,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-6.1.134-armv7-rt-x13,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.1.134-armv7-rt-x13
 Description: BeagleBoard.org 6.1-armv7-rt for armv7
  This metapackage will install linux-image-6.1-armv7-rt for armv7 in Debian.
 
@@ -690,7 +680,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-6.6.87-armv7-rt-x26,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.6.87-armv7-rt-x26
 Description: BeagleBoard.org 6.6-armv7-rt for armv7
  This metapackage will install linux-image-6.6-armv7-rt for armv7 in Debian.
 
@@ -699,7 +688,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-5.4.288-armv7-lpae-x69,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-5.4.288-armv7-lpae-x69
 Description: BeagleBoard.org 5.4-armv7-lpae for armv7-lpae
  This metapackage will install linux-image-5.4-armv7-lpae for armv7-lpae in Debian.
 
@@ -708,7 +696,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-5.10.233-armv7-lpae-x79,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-5.10.233-armv7-lpae-x79
 Description: BeagleBoard.org 5.10-armv7-lpae for armv7-lpae
  This metapackage will install linux-image-5.10-armv7-lpae for armv7-lpae in Debian.
 
@@ -717,7 +704,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-5.15.177-armv7-lpae-x43,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-5.15.177-armv7-lpae-x43
 Description: BeagleBoard.org 5.15-armv7-lpae for armv7-lpae
  This metapackage will install linux-image-5.15-armv7-lpae for armv7-lpae in Debian.
 
@@ -726,7 +712,6 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-6.1.134-armv7-lpae-x13,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.1.134-armv7-lpae-x13
 Description: BeagleBoard.org 6.1-armv7-lpae for armv7-lpae
  This metapackage will install linux-image-6.1-armv7-lpae for armv7-lpae in Debian.
 
@@ -735,16 +720,15 @@ Section: metapackages
 Architecture: armhf
 Pre-Depends: linux-image-6.6.87-armv7-lpae-x26,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.6.87-armv7-lpae-x26
 Description: BeagleBoard.org 6.6-armv7-lpae for armv7-lpae
  This metapackage will install linux-image-6.6-armv7-lpae for armv7-lpae in Debian.
 
 Package: bbb.io-kernel-6.12-armv7-lpae
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.12.32-armv7-lpae-x7,
+Pre-Depends: linux-image-6.12.40-armv7-lpae-x8,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.12.32-armv7-lpae-x7
+Recommends: rtw88-modules-6.12.40-armv7-lpae-x8
 Description: BeagleBoard.org 6.12-armv7-lpae for armv7-lpae
  This metapackage will install linux-image-6.12-armv7-lpae for armv7-lpae in Debian.
 
@@ -877,18 +861,20 @@ Description: BeagleBoard.org 6.11-bone for am335x
 Package: bbb.io-kernel-6.12-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.12.36-bone29,
+Pre-Depends: linux-image-6.12.40-bone30,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.12.36-bone29
+Recommends: libpruio-modules-6.12.40-bone30
+ , rtw88-modules-6.12.40-bone30
 Description: BeagleBoard.org 6.12-bone for am335x
  This metapackage will install linux-image-6.12-bone for am335x in Debian.
 
 Package: bbb.io-kernel-6.12-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.12.36-bone-rt-r29,
+Pre-Depends: linux-image-6.12.40-bone-rt-r30,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.12.36-bone-rt-r29
+Recommends: libpruio-modules-6.12.40-bone-rt-r30
+ , rtw88-modules-6.12.40-bone-rt-r30
 Description: BeagleBoard.org 6.12-bone-rt for am335x
  This metapackage will install linux-image-6.12-bone-rt for am335x in Debian.
 

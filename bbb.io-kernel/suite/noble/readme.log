@@ -1,2 +1,4 @@
   * Kernel Updates
-  * linux-image-6.13.12-bone22
+  * linux-image-6.12.40-armv7-lpae-x8
+  * linux-image-6.12.40-bone30
+  * linux-image-6.12.40-bone-rt-r30

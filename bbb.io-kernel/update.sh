@@ -143,9 +143,8 @@ generate_kernel_mainline_armv7 () {
 		echo "Architecture: armhf" >> ./suite/${dist}/debian/${wfile}
 		echo "Pre-Depends: linux-image-${latest_kernel}," >> ./suite/${dist}/debian/${wfile}
 		echo "Depends: \${misc:Depends}, bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
-		echo "Recommends: libpruio-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${rtw88}" = "xenabled" ] ; then
-			echo " , rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
+			echo "Recommends: rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		fi
 		echo "Description: BeagleBoard.org ${msg} for armv7" >> ./suite/${dist}/debian/${wfile}
 		echo " This metapackage will install linux-image-${msg} for armv7 in Debian." >> ./suite/${dist}/debian/${wfile}
@@ -160,9 +159,8 @@ generate_kernel_mainline_armv7_lpae () {
 		echo "Architecture: armhf" >> ./suite/${dist}/debian/${wfile}
 		echo "Pre-Depends: linux-image-${latest_kernel}," >> ./suite/${dist}/debian/${wfile}
 		echo "Depends: \${misc:Depends}, bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
-		echo "Recommends: libpruio-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${rtw88}" = "xenabled" ] ; then
-			echo " , rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
+			echo "Recommends: rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		fi
 		echo "Description: BeagleBoard.org ${msg} for armv7-lpae" >> ./suite/${dist}/debian/${wfile}
 		echo " This metapackage will install linux-image-${msg} for armv7-lpae in Debian." >> ./suite/${dist}/debian/${wfile}
@@ -211,7 +209,10 @@ do_all_lts () {
 	msg="5.15-armv7-lpae" ; var="armv7-lpae" ; ver="LTS515X" ; current_kernel ; generate_kernel_mainline_armv7_lpae
 	msg="6.1-armv7-lpae"  ; var="armv7-lpae" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_armv7_lpae
 	msg="6.6-armv7-lpae"  ; var="armv7-lpae" ; ver="LTS66X"  ; current_kernel ; generate_kernel_mainline_armv7_lpae
+
+	rtw88="enabled"
 	msg="6.12-armv7-lpae" ; var="armv7-lpae" ; ver="LTS612X" ; current_kernel ; generate_kernel_mainline_armv7_lpae
+	unset rtw88
 }
 
 do_some_lts () {
@@ -230,7 +231,9 @@ do_some_lts () {
 	msg="6.1-armv7-lpae"  ; var="armv7-lpae" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_armv7_lpae
 	msg="6.6-armv7-lpae"  ; var="armv7-lpae" ; ver="LTS66X"  ; current_kernel ; generate_kernel_mainline_armv7_lpae
 
+	rtw88="enabled"
 	msg="6.12-armv7-lpae" ; var="armv7-lpae" ; ver="LTS612X" ; current_kernel ; generate_kernel_mainline_armv7_lpae
+	unset rtw88
 }
 
 do_some_bone () {
@@ -245,59 +248,16 @@ do_some_bone () {
 	msg="6.10-bone" ; var="omap-psp" ; ver="V610X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.11-bone" ; var="omap-psp" ; ver="V611X" ; current_kernel ; generate_kernel_mainline_bone
 
+	rtw88="enabled"
 	msg="6.12-bone"    ; var="omap-psp" ; ver="V612X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.12-bone-rt" ; var="bone-rt"  ; ver="V612X" ; current_kernel ; generate_kernel_mainline_bone
 
-	rtw88="enabled"
 	msg="6.13-bone" ; var="omap-psp" ; ver="V613X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.14-bone" ; var="omap-psp" ; ver="V614X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.15-bone" ; var="omap-psp" ; ver="V615X" ; current_kernel ; generate_kernel_mainline_bone
 	unset rtw88
 
 	msg="6.16-bone" ; var="omap-psp" ; ver="V616X" ; current_kernel ; generate_kernel_mainline_bone
-}
-
-do_jammy () {
-	#22.04
-	arch="armhf"
-	dist="jammy"
-	debhelper="13"
-	wfile="control"
-	generate_header
-
-	sgxti335x="enabled"
-	sgxjacinto6evm="enabled"
-	rtl8723bu="enabled"
-	rtl8821cu="enabled"
-
-	rtl8723du="enabled"
-	qcacld="enabled"
-
-	msg="5.10-ti"    ; var="ti"    ; ver="LTS510X" ; current_kernel ; generate_kernel_ti
-	msg="5.10-ti-rt" ; var="ti-rt" ; ver="LTS510X" ; current_kernel ; generate_kernel_ti
-
-	unset qcacld
-	unset rtl8723bu
-	unset rtl8821cu
-	unset sgxjacinto6evm
-	unset sgxti335x
-
-	msg="6.1-ti"     ; var="ti"    ; ver="LTS61X"  ; current_kernel ; generate_kernel_ti
-	msg="6.1-ti-rt"  ; var="ti-rt" ; ver="LTS61X"  ; current_kernel ; generate_kernel_ti
-	unset rtl8723du
-
-	msg="6.6-ti"     ; var="ti"    ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
-	msg="6.6-ti-rt"  ; var="ti-rt" ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
-
-	msg="6.12-ti"    ; var="ti"    ; ver="LTS612X" ; current_kernel ; generate_kernel_ti
-
-	do_all_lts
-
-	msg="5.19-bone" ; var="omap-psp" ; ver="V519X"  ; current_kernel ; generate_kernel_mainline_bone
-
-	do_some_bone
-
-	changelog
 }
 
 do_noble () {
@@ -382,7 +342,9 @@ do_bullseye () {
 	msg="6.6-ti"     ; var="ti"    ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 	msg="6.6-ti-rt"  ; var="ti-rt" ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 
+	rtw88="enabled"
 	msg="6.12-ti"    ; var="ti"    ; ver="LTS612X" ; current_kernel ; generate_kernel_ti
+	unset rtw88
 
 	msg="4.19-bone" ; var="omap-psp" ; ver="LTS419X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="4.19-bone-rt" ; var="bone-rt" ; ver="LTS419X" ; current_kernel ; generate_kernel_mainline_bone
