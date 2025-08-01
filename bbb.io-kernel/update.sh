@@ -289,10 +289,10 @@ do_noble () {
 	msg="6.1-ti-rt"  ; var="ti-rt" ; ver="LTS61X"  ; current_kernel ; generate_kernel_ti
 	unset rtl8723du
 
+	rtw88="enabled"
 	msg="6.6-ti"     ; var="ti"    ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 	msg="6.6-ti-rt"  ; var="ti-rt" ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 
-	rtw88="enabled"
 	msg="6.12-ti"    ; var="ti"    ; ver="LTS612X" ; current_kernel ; generate_kernel_ti
 	unset rtw88
 
@@ -339,10 +339,10 @@ do_bullseye () {
 	msg="6.1-ti-rt"  ; var="ti-rt" ; ver="LTS61X"  ; current_kernel ; generate_kernel_ti
 	unset rtl8723du
 
+	rtw88="enabled"
 	msg="6.6-ti"     ; var="ti"    ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 	msg="6.6-ti-rt"  ; var="ti-rt" ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 
-	rtw88="enabled"
 	msg="6.12-ti"    ; var="ti"    ; ver="LTS612X" ; current_kernel ; generate_kernel_ti
 	unset rtw88
 
@@ -399,10 +399,10 @@ do_bookworm () {
 	msg="6.1-ti-rt"  ; var="ti-rt" ; ver="LTS61X"  ; current_kernel ; generate_kernel_ti
 	unset rtl8723du
 
+	rtw88="enabled"
 	msg="6.6-ti"     ; var="ti"    ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 	msg="6.6-ti-rt"  ; var="ti-rt" ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 
-	rtw88="enabled"
 	msg="6.12-ti"    ; var="ti"    ; ver="LTS612X" ; current_kernel ; generate_kernel_ti
 	unset rtw88
 
@@ -442,10 +442,10 @@ do_trixie () {
 	msg="6.1-ti-rt"  ; var="ti-rt" ; ver="LTS61X"  ; current_kernel ; generate_kernel_ti
 	unset rtl8723du
 
+	rtw88="enabled"
 	msg="6.6-ti"     ; var="ti"    ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 	msg="6.6-ti-rt"  ; var="ti-rt" ; ver="LTS66X"  ; current_kernel ; generate_kernel_ti
 
-	rtw88="enabled"
 	msg="6.12-ti"    ; var="ti"    ; ver="LTS612X" ; current_kernel ; generate_kernel_ti
 	unset rtw88
 
