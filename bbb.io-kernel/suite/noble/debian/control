@@ -654,10 +654,10 @@ Description: BeagleBoard.org 6.14-bone for am335x
 Package: bbb.io-kernel-6.15-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.15.8-bone23,
+Pre-Depends: linux-image-6.15.9-bone24,
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.15.8-bone23
- , rtw88-modules-6.15.8-bone23
+Recommends: libpruio-modules-6.15.9-bone24
+ , rtw88-modules-6.15.9-bone24
 Description: BeagleBoard.org 6.15-bone for am335x
  This metapackage will install linux-image-6.15-bone for am335x in Debian.
 
