@@ -1,2 +1,6 @@
   * Kernel Updates
-  * linux-image-6.15.9-bone24
+  * linux-image-6.6.99-armv7-lpae-x27
+  * linux-image-6.6.99-armv7-rt-x27
+  * linux-image-6.6.99-armv7-x27
+  * linux-image-6.6.99-bone29
+  * linux-image-6.6.99-bone-rt-r29
