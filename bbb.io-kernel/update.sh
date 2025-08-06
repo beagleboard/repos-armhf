@@ -216,74 +216,66 @@ do_bone_bookworm () {
 	msg="5.4-bone"  ; var="omap-psp" ; ver="LTS54X"  ; current_kernel ; generate_kernel_mainline_bone
 	msg="5.10-bone" ; var="omap-psp" ; ver="LTS510X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="5.15-bone" ; var="omap-psp" ; ver="LTS515X" ; current_kernel ; generate_kernel_mainline_bone
-	msg="6.1-bone"  ; var="omap-psp" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_bone
+
 	rtw88="enabled"
+	msg="6.1-bone"  ; var="omap-psp" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.6-bone"  ; var="omap-psp" ; ver="LTS66X"  ; current_kernel ; generate_kernel_mainline_bone
 	unset rtw88
 
 	msg="5.4-bone-rt"  ; var="bone-rt" ; ver="LTS54X"  ; current_kernel ; generate_kernel_mainline_bone
 	msg="5.10-bone-rt" ; var="bone-rt" ; ver="LTS510X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="5.15-bone-rt" ; var="bone-rt" ; ver="LTS515X" ; current_kernel ; generate_kernel_mainline_bone
-	msg="6.1-bone-rt"  ; var="bone-rt" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_bone
+
 	rtw88="enabled"
+	msg="6.1-bone-rt"  ; var="bone-rt" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.6-bone-rt"  ; var="bone-rt" ; ver="LTS66X"  ; current_kernel ; generate_kernel_mainline_bone
 	unset rtw88
 
 	msg="5.4-armv7"  ; var="armv7" ; ver="LTS54X"  ; current_kernel ; generate_kernel_mainline_armv7
 	msg="5.10-armv7" ; var="armv7" ; ver="LTS510X" ; current_kernel ; generate_kernel_mainline_armv7
 	msg="5.15-armv7" ; var="armv7" ; ver="LTS515X" ; current_kernel ; generate_kernel_mainline_armv7
-	msg="6.1-armv7"  ; var="armv7" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_armv7
+
 	rtw88="enabled"
+	msg="6.1-armv7"  ; var="armv7" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_armv7
 	msg="6.6-armv7"  ; var="armv7" ; ver="LTS66X"  ; current_kernel ; generate_kernel_mainline_armv7
 	unset rtw88
 
 	msg="5.4-armv7-rt"  ; var="armv7-rt" ; ver="LTS54X"  ; current_kernel ; generate_kernel_mainline_armv7
 	msg="5.10-armv7-rt" ; var="armv7-rt" ; ver="LTS510X" ; current_kernel ; generate_kernel_mainline_armv7
 	msg="5.15-armv7-rt" ; var="armv7-rt" ; ver="LTS515X" ; current_kernel ; generate_kernel_mainline_armv7
-	msg="6.1-armv7-rt"  ; var="armv7-rt" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_armv7
+
 	rtw88="enabled"
+	msg="6.1-armv7-rt"  ; var="armv7-rt" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_armv7
 	msg="6.6-armv7-rt"  ; var="armv7-rt" ; ver="LTS66X"  ; current_kernel ; generate_kernel_mainline_armv7
 	unset rtw88
 
 	msg="5.4-armv7-lpae"  ; var="armv7-lpae" ; ver="LTS54X"  ; current_kernel ; generate_kernel_mainline_armv7_lpae
 	msg="5.10-armv7-lpae" ; var="armv7-lpae" ; ver="LTS510X" ; current_kernel ; generate_kernel_mainline_armv7_lpae
 	msg="5.15-armv7-lpae" ; var="armv7-lpae" ; ver="LTS515X" ; current_kernel ; generate_kernel_mainline_armv7_lpae
-	msg="6.1-armv7-lpae"  ; var="armv7-lpae" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_armv7_lpae
 
 	rtw88="enabled"
+	msg="6.1-armv7-lpae"  ; var="armv7-lpae" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_armv7_lpae
+
 	msg="6.6-armv7-lpae"  ; var="armv7-lpae" ; ver="LTS66X"  ; current_kernel ; generate_kernel_mainline_armv7_lpae
 	msg="6.12-armv7-lpae" ; var="armv7-lpae" ; ver="LTS612X" ; current_kernel ; generate_kernel_mainline_armv7_lpae
 	unset rtw88
 }
 
 do_some_lts () {
-	msg="6.1-bone"  ; var="omap-psp" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_bone
-
 	rtw88="enabled"
+	msg="6.1-bone"  ; var="omap-psp" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.6-bone"  ; var="omap-psp" ; ver="LTS66X"  ; current_kernel ; generate_kernel_mainline_bone
-	unset rtw88
 
 	msg="6.1-bone-rt"  ; var="bone-rt" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_bone
-
-	rtw88="enabled"
 	msg="6.6-bone-rt"  ; var="bone-rt" ; ver="LTS66X"  ; current_kernel ; generate_kernel_mainline_bone
-	unset rtw88
 
 	msg="6.1-armv7"  ; var="armv7" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_armv7
-
-	rtw88="enabled"
 	msg="6.6-armv7"  ; var="armv7" ; ver="LTS66X"  ; current_kernel ; generate_kernel_mainline_armv7
-	unset rtw88
 
 	msg="6.1-armv7-rt"  ; var="armv7-rt" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_armv7
-
-	rtw88="enabled"
 	msg="6.6-armv7-rt"  ; var="armv7-rt" ; ver="LTS66X"  ; current_kernel ; generate_kernel_mainline_armv7
-	unset rtw88
 
 	msg="6.1-armv7-lpae"  ; var="armv7-lpae" ; ver="LTS61X"  ; current_kernel ; generate_kernel_mainline_armv7_lpae
-
-	rtw88="enabled"
 	msg="6.6-armv7-lpae"  ; var="armv7-lpae" ; ver="LTS66X"  ; current_kernel ; generate_kernel_mainline_armv7_lpae
 	msg="6.12-armv7-lpae" ; var="armv7-lpae" ; ver="LTS612X" ; current_kernel ; generate_kernel_mainline_armv7_lpae
 	unset rtw88
