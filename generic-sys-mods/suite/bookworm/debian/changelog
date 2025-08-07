@@ -1,8 +1,8 @@
-generic-sys-mods (1.20250523.1-0~bookworm+20250528) bookworm; urgency=low
+generic-sys-mods (1.20250807.0-0~bookworm+20250807) bookworm; urgency=low
 
   * Call bb-setup-mac-address directly in the usb scripts
   * add basic bbbio-set-sysconf.service
   * raspi-config 20240424
 
- -- Robert Nelson <robertcnelson@gmail.com>  Wed, 28 May 2025 14:57:30 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Thu, 07 Aug 2025 16:21:29 -0500
 
