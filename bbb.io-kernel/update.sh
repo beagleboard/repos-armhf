@@ -349,13 +349,6 @@ do_bullseye () {
 	msg="4.19-armv7-lpae" ; var="armv7-lpae" ; ver="LTS419X" ; current_kernel ; generate_kernel_mainline_armv7_lpae
 
 	do_bone_bookworm
-
-	msg="5.16-bone" ; var="omap-psp" ; ver="V516X" ; current_kernel ; generate_kernel_mainline_bone
-	msg="5.17-bone" ; var="omap-psp" ; ver="V517X" ; current_kernel ; generate_kernel_mainline_bone
-	msg="5.18-bone" ; var="omap-psp" ; ver="V518X" ; current_kernel ; generate_kernel_mainline_bone
-	msg="5.19-bone" ; var="omap-psp" ; ver="V519X" ; current_kernel ; generate_kernel_mainline_bone
-	msg="6.0-bone"  ; var="omap-psp" ; ver="V60X"  ; current_kernel ; generate_kernel_mainline_bone
-
 	do_some_bone
 
 	changelog
