@@ -1,8 +1,9 @@
-generic-sys-mods (1.20250808.0-0~trixie+20250808) trixie; urgency=low
+generic-sys-mods (1.20250808.1-0~trixie+20250808) trixie; urgency=low
 
   * Call bb-setup-mac-address directly in the usb scripts
   * add basic bbbio-set-sysconf.service
   * raspi-config 20240424
+  * rtw88.conf https://raw.githubusercontent.com/lwfinger/rtw88/refs/heads/master/rtw88.conf under /etc/bbb.io/kernel/
 
- -- Robert Nelson <robertcnelson@gmail.com>  Fri, 08 Aug 2025 09:44:56 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Fri, 08 Aug 2025 13:27:43 -0500
 
