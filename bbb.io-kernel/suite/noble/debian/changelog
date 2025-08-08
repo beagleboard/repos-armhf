@@ -1,13 +1,13 @@
-bbb.io-kernel (1.20250807.0-0~noble+20250807) noble; urgency=low
+bbb.io-kernel (1.20250807.1-0~noble+20250807) noble; urgency=low
 
   * Kernel Updates
-  * linux-image-5.15.189-armv7-lpae-x44
-  * linux-image-5.15.189-armv7-rt-x44
-  * linux-image-5.15.189-armv7-x44
-  * linux-image-5.15.189-bone44
-  * linux-image-5.15.189-bone-rt-r44
-  * linux-image-6.1.83-ti-r40
-  * linux-image-6.1.83-ti-rt-r40
+  * linux-image-5.10.168-ti-r83
+  * linux-image-5.10.168-ti-rt-r83
+  * linux-image-5.10.240-armv7-lpae-x80
+  * linux-image-5.10.240-armv7-rt-x80
+  * linux-image-5.10.240-armv7-x80
+  * linux-image-5.10.240-bone80
+  * linux-image-5.10.240-bone-rt-r80
 
- -- Robert Nelson <robertcnelson@gmail.com>  Thu, 07 Aug 2025 10:10:39 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Thu, 07 Aug 2025 19:44:51 -0500
 
