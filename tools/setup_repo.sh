@@ -277,6 +277,13 @@ setup_repo
 
 key="D59E6DAEAE10AE37"
 
+dist="debian-forky-armhf"
+suite="forky"
+archs="armhf source"
+setup_repo
+
+key="D59E6DAEAE10AE37"
+
 dist="debian-sid-armhf"
 suite="sid"
 archs="armhf source"
@@ -321,6 +328,13 @@ key="D59E6DAEAE10AE37"
 
 dist="debian-trixie-arm64"
 suite="trixie"
+archs="arm64 source"
+setup_repo
+
+key="D59E6DAEAE10AE37"
+
+dist="debian-forky-arm64"
+suite="forky"
 archs="arm64 source"
 setup_repo
 
@@ -371,6 +385,13 @@ key="D59E6DAEAE10AE37"
 
 dist="debian-trixie-riscv64"
 suite="trixie"
+archs="riscv64 source"
+setup_repo
+
+key="D59E6DAEAE10AE37"
+
+dist="debian-forky-riscv64"
+suite="forky"
 archs="riscv64 source"
 setup_repo
 
