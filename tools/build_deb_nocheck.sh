@@ -77,14 +77,14 @@ runner () {
 
 start_run () {
 	deb_arch="armhf"
-	suite="bullseye" ; runner
+	#suite="bullseye" ; runner
 	suite="bookworm" ; runner
 	suite="trixie" ; runner
 	suite="noble" ; runner
 }
 
 cleanup () {
-	suite="bullseye" ; cleanup_suite
+	#suite="bullseye" ; cleanup_suite
 	suite="bookworm" ; cleanup_suite
 	suite="trixie" ; cleanup_suite
 	suite="noble" ; cleanup_suite

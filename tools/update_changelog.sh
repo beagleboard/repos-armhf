@@ -50,15 +50,15 @@ run () {
 new_date=`LANG=C date -R`
 simple_date=`LANG=C date +%Y%m%d`
 
-dist="debian"
-suite="bullseye"
-if [ -d ${DIR}/suite/${suite}/ ] ; then
-	rcn_ee_version="${bullseye_version}"
-	cat ${DIR}/version.sh | grep -v bullseye_version > ${DIR}/new-version.sh
-	echo "${suite}_version=\"~${suite}+${simple_date}\"" >> ${DIR}/new-version.sh
-	mv ${DIR}/new-version.sh ${DIR}/version.sh
-	run
-fi
+#dist="debian"
+#suite="bullseye"
+#if [ -d ${DIR}/suite/${suite}/ ] ; then
+#	rcn_ee_version="${bullseye_version}"
+#	cat ${DIR}/version.sh | grep -v bullseye_version > ${DIR}/new-version.sh
+#	echo "${suite}_version=\"~${suite}+${simple_date}\"" >> ${DIR}/new-version.sh
+#	mv ${DIR}/new-version.sh ${DIR}/version.sh
+#	run
+#fi
 
 dist="debian"
 suite="bookworm"

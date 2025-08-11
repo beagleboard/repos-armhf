@@ -46,10 +46,10 @@ echo "\$distribution = 'bookworm';" >> ~/.sbuildrc
 mirror="http://${proxy}${debian_server}"
 #deboot="sid"
 
-dist="bullseye"
-arch="armhf"
-options="--exclude=debfoster"
-setup_update_sbuild
+#dist="bullseye"
+#arch="armhf"
+#options="--exclude=debfoster"
+#setup_update_sbuild
 
 dist="bookworm"
 arch="armhf"
