@@ -48,22 +48,22 @@ mirror="http://${proxy}${debian_server}"
 
 #dist="bullseye"
 #arch="armhf"
-#options="--exclude=debfoster"
+#options="--include=ca-certificates --exclude=debfoster"
 #setup_update_sbuild
 
 dist="bookworm"
 arch="armhf"
-options="--exclude=debfoster"
+options="--include=ca-certificates --exclude=debfoster"
 setup_update_sbuild
 
 dist="trixie"
 arch="armhf"
-options="--exclude=debfoster"
+options="--include=ca-certificates --exclude=debfoster"
 setup_update_sbuild
 
 dist="forky"
 arch="armhf"
-options="--exclude=debfoster"
+options="--include=ca-certificates --exclude=debfoster"
 setup_update_sbuild
 
 mirror="http://${proxy}${ubuntu_server}"
@@ -71,12 +71,12 @@ mirror="http://${proxy}${ubuntu_server}"
 
 dist="jammy"
 arch="armhf"
-options="--exclude=debfoster"
+options="--include=ca-certificates --exclude=debfoster"
 setup_update_sbuild
 
 dist="noble"
 arch="armhf"
-options="--exclude=debfoster"
+options="--include=ca-certificates --exclude=debfoster"
 setup_update_sbuild
 
 #
