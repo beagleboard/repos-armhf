@@ -460,7 +460,7 @@ Description: BeagleBoard.org 6.12-ti for am57xx
 Package: bbb.io-kernel-omap2plus
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.16.0-omap2plus-r1
+Pre-Depends: linux-image-6.17.0-rc1-omap2plus-r1
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
@@ -468,7 +468,7 @@ Description: BeagleBoard.org Mainline
 Package: bbb.io-kernel-multiv7
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.16.0-multiv7-r1
+Pre-Depends: linux-image-6.17.0-rc1-multiv7-r1
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
@@ -476,7 +476,7 @@ Description: BeagleBoard.org Mainline
 Package: bbb.io-kernel-5.10-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-5.10.240-bone80,
+Pre-Depends: linux-image-5.10.240-bone80
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-5.10.240-bone80
  , rtw88-modules-5.10.240-bone80
@@ -486,7 +486,7 @@ Description: BeagleBoard.org 5.10-bone for am335x
 Package: bbb.io-kernel-5.15-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-5.15.189-bone44,
+Pre-Depends: linux-image-5.15.189-bone44
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-5.15.189-bone44
  , rtw88-modules-5.15.189-bone44
@@ -496,7 +496,7 @@ Description: BeagleBoard.org 5.15-bone for am335x
 Package: bbb.io-kernel-6.1-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.146-bone40,
+Pre-Depends: linux-image-6.1.146-bone40
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.1.146-bone40
  , rtw88-modules-6.1.146-bone40
@@ -506,7 +506,7 @@ Description: BeagleBoard.org 6.1-bone for am335x
 Package: bbb.io-kernel-6.6-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.99-bone29,
+Pre-Depends: linux-image-6.6.99-bone29
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.6.99-bone29
  , rtw88-modules-6.6.99-bone29
@@ -516,7 +516,7 @@ Description: BeagleBoard.org 6.6-bone for am335x
 Package: bbb.io-kernel-5.10-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-5.10.240-bone-rt-r80,
+Pre-Depends: linux-image-5.10.240-bone-rt-r80
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-5.10.240-bone-rt-r80
  , rtw88-modules-5.10.240-bone-rt-r80
@@ -526,7 +526,7 @@ Description: BeagleBoard.org 5.10-bone-rt for am335x
 Package: bbb.io-kernel-5.15-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-5.15.189-bone-rt-r44,
+Pre-Depends: linux-image-5.15.189-bone-rt-r44
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-5.15.189-bone-rt-r44
  , rtw88-modules-5.15.189-bone-rt-r44
@@ -536,7 +536,7 @@ Description: BeagleBoard.org 5.15-bone-rt for am335x
 Package: bbb.io-kernel-6.1-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.146-bone-rt-r40,
+Pre-Depends: linux-image-6.1.146-bone-rt-r40
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.1.146-bone-rt-r40
  , rtw88-modules-6.1.146-bone-rt-r40
@@ -546,7 +546,7 @@ Description: BeagleBoard.org 6.1-bone-rt for am335x
 Package: bbb.io-kernel-6.6-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.99-bone-rt-r29,
+Pre-Depends: linux-image-6.6.99-bone-rt-r29
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.6.99-bone-rt-r29
  , rtw88-modules-6.6.99-bone-rt-r29
@@ -556,7 +556,7 @@ Description: BeagleBoard.org 6.6-bone-rt for am335x
 Package: bbb.io-kernel-5.10-armv7
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-5.10.240-armv7-x80,
+Pre-Depends: linux-image-5.10.240-armv7-x80
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: rtw88-modules-5.10.240-armv7-x80
 Description: BeagleBoard.org 5.10-armv7 for armv7
@@ -565,7 +565,7 @@ Description: BeagleBoard.org 5.10-armv7 for armv7
 Package: bbb.io-kernel-5.15-armv7
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-5.15.189-armv7-x44,
+Pre-Depends: linux-image-5.15.189-armv7-x44
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: rtw88-modules-5.15.189-armv7-x44
 Description: BeagleBoard.org 5.15-armv7 for armv7
@@ -574,7 +574,7 @@ Description: BeagleBoard.org 5.15-armv7 for armv7
 Package: bbb.io-kernel-6.1-armv7
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.146-armv7-x14,
+Pre-Depends: linux-image-6.1.146-armv7-x14
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: rtw88-modules-6.1.146-armv7-x14
 Description: BeagleBoard.org 6.1-armv7 for armv7
@@ -583,7 +583,7 @@ Description: BeagleBoard.org 6.1-armv7 for armv7
 Package: bbb.io-kernel-6.6-armv7
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.99-armv7-x27,
+Pre-Depends: linux-image-6.6.99-armv7-x27
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: rtw88-modules-6.6.99-armv7-x27
 Description: BeagleBoard.org 6.6-armv7 for armv7
@@ -592,7 +592,7 @@ Description: BeagleBoard.org 6.6-armv7 for armv7
 Package: bbb.io-kernel-5.10-armv7-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-5.10.240-armv7-rt-x80,
+Pre-Depends: linux-image-5.10.240-armv7-rt-x80
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: rtw88-modules-5.10.240-armv7-rt-x80
 Description: BeagleBoard.org 5.10-armv7-rt for armv7
@@ -601,7 +601,7 @@ Description: BeagleBoard.org 5.10-armv7-rt for armv7
 Package: bbb.io-kernel-5.15-armv7-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-5.15.189-armv7-rt-x44,
+Pre-Depends: linux-image-5.15.189-armv7-rt-x44
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: rtw88-modules-5.15.189-armv7-rt-x44
 Description: BeagleBoard.org 5.15-armv7-rt for armv7
@@ -610,7 +610,7 @@ Description: BeagleBoard.org 5.15-armv7-rt for armv7
 Package: bbb.io-kernel-6.1-armv7-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.146-armv7-rt-x14,
+Pre-Depends: linux-image-6.1.146-armv7-rt-x14
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: rtw88-modules-6.1.146-armv7-rt-x14
 Description: BeagleBoard.org 6.1-armv7-rt for armv7
@@ -619,7 +619,7 @@ Description: BeagleBoard.org 6.1-armv7-rt for armv7
 Package: bbb.io-kernel-6.6-armv7-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.99-armv7-rt-x27,
+Pre-Depends: linux-image-6.6.99-armv7-rt-x27
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: rtw88-modules-6.6.99-armv7-rt-x27
 Description: BeagleBoard.org 6.6-armv7-rt for armv7
@@ -628,7 +628,7 @@ Description: BeagleBoard.org 6.6-armv7-rt for armv7
 Package: bbb.io-kernel-5.10-armv7-lpae
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-5.10.240-armv7-lpae-x80,
+Pre-Depends: linux-image-5.10.240-armv7-lpae-x80
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: rtw88-modules-5.10.240-armv7-lpae-x80
 Description: BeagleBoard.org 5.10-armv7-lpae for armv7-lpae
@@ -637,7 +637,7 @@ Description: BeagleBoard.org 5.10-armv7-lpae for armv7-lpae
 Package: bbb.io-kernel-5.15-armv7-lpae
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-5.15.189-armv7-lpae-x44,
+Pre-Depends: linux-image-5.15.189-armv7-lpae-x44
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: rtw88-modules-5.15.189-armv7-lpae-x44
 Description: BeagleBoard.org 5.15-armv7-lpae for armv7-lpae
@@ -646,7 +646,7 @@ Description: BeagleBoard.org 5.15-armv7-lpae for armv7-lpae
 Package: bbb.io-kernel-6.1-armv7-lpae
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.146-armv7-lpae-x14,
+Pre-Depends: linux-image-6.1.146-armv7-lpae-x14
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: rtw88-modules-6.1.146-armv7-lpae-x14
 Description: BeagleBoard.org 6.1-armv7-lpae for armv7-lpae
@@ -655,7 +655,7 @@ Description: BeagleBoard.org 6.1-armv7-lpae for armv7-lpae
 Package: bbb.io-kernel-6.6-armv7-lpae
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.99-armv7-lpae-x27,
+Pre-Depends: linux-image-6.6.99-armv7-lpae-x27
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: rtw88-modules-6.6.99-armv7-lpae-x27
 Description: BeagleBoard.org 6.6-armv7-lpae for armv7-lpae
@@ -664,7 +664,7 @@ Description: BeagleBoard.org 6.6-armv7-lpae for armv7-lpae
 Package: bbb.io-kernel-6.12-armv7-lpae
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.12.40-armv7-lpae-x8,
+Pre-Depends: linux-image-6.12.40-armv7-lpae-x8
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: rtw88-modules-6.12.40-armv7-lpae-x8
 Description: BeagleBoard.org 6.12-armv7-lpae for armv7-lpae
@@ -673,7 +673,7 @@ Description: BeagleBoard.org 6.12-armv7-lpae for armv7-lpae
 Package: bbb.io-kernel-6.2-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.2.16-bone23,
+Pre-Depends: linux-image-6.2.16-bone23
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.2.16-bone23
 Description: BeagleBoard.org 6.2-bone for am335x
@@ -682,7 +682,7 @@ Description: BeagleBoard.org 6.2-bone for am335x
 Package: bbb.io-kernel-6.3-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.3.13-bone33,
+Pre-Depends: linux-image-6.3.13-bone33
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.3.13-bone33
 Description: BeagleBoard.org 6.3-bone for am335x
@@ -691,7 +691,7 @@ Description: BeagleBoard.org 6.3-bone for am335x
 Package: bbb.io-kernel-6.4-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.4.16-bone25,
+Pre-Depends: linux-image-6.4.16-bone25
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.4.16-bone25
 Description: BeagleBoard.org 6.4-bone for am335x
@@ -700,7 +700,7 @@ Description: BeagleBoard.org 6.4-bone for am335x
 Package: bbb.io-kernel-6.5-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.5.13-bone18,
+Pre-Depends: linux-image-6.5.13-bone18
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.5.13-bone18
 Description: BeagleBoard.org 6.5-bone for am335x
@@ -709,7 +709,7 @@ Description: BeagleBoard.org 6.5-bone for am335x
 Package: bbb.io-kernel-6.7-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.7.12-bone25,
+Pre-Depends: linux-image-6.7.12-bone25
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.7.12-bone25
 Description: BeagleBoard.org 6.7-bone for am335x
@@ -718,7 +718,7 @@ Description: BeagleBoard.org 6.7-bone for am335x
 Package: bbb.io-kernel-6.8-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.8.12-bone21,
+Pre-Depends: linux-image-6.8.12-bone21
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.8.12-bone21
 Description: BeagleBoard.org 6.8-bone for am335x
@@ -727,7 +727,7 @@ Description: BeagleBoard.org 6.8-bone for am335x
 Package: bbb.io-kernel-6.9-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.9.12-bone16,
+Pre-Depends: linux-image-6.9.12-bone16
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.9.12-bone16
 Description: BeagleBoard.org 6.9-bone for am335x
@@ -736,7 +736,7 @@ Description: BeagleBoard.org 6.9-bone for am335x
 Package: bbb.io-kernel-6.10-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.10.14-bone19,
+Pre-Depends: linux-image-6.10.14-bone19
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.10.14-bone19
 Description: BeagleBoard.org 6.10-bone for am335x
@@ -745,7 +745,7 @@ Description: BeagleBoard.org 6.10-bone for am335x
 Package: bbb.io-kernel-6.11-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.11.11-bone15,
+Pre-Depends: linux-image-6.11.11-bone15
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.11.11-bone15
 Description: BeagleBoard.org 6.11-bone for am335x
@@ -754,7 +754,7 @@ Description: BeagleBoard.org 6.11-bone for am335x
 Package: bbb.io-kernel-6.12-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.12.40-bone31,
+Pre-Depends: linux-image-6.12.40-bone31
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.12.40-bone31
  , rtw88-modules-6.12.40-bone31
@@ -764,7 +764,7 @@ Description: BeagleBoard.org 6.12-bone for am335x
 Package: bbb.io-kernel-6.12-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.12.40-bone-rt-r31,
+Pre-Depends: linux-image-6.12.40-bone-rt-r31
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.12.40-bone-rt-r31
  , rtw88-modules-6.12.40-bone-rt-r31
@@ -774,7 +774,7 @@ Description: BeagleBoard.org 6.12-bone-rt for am335x
 Package: bbb.io-kernel-6.13-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.13.12-bone22,
+Pre-Depends: linux-image-6.13.12-bone22
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.13.12-bone22
  , rtw88-modules-6.13.12-bone22
@@ -784,7 +784,7 @@ Description: BeagleBoard.org 6.13-bone for am335x
 Package: bbb.io-kernel-6.14-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.14.10-bone19,
+Pre-Depends: linux-image-6.14.10-bone19
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.14.10-bone19
  , rtw88-modules-6.14.10-bone19
@@ -794,7 +794,7 @@ Description: BeagleBoard.org 6.14-bone for am335x
 Package: bbb.io-kernel-6.15-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.15.9-bone25,
+Pre-Depends: linux-image-6.15.9-bone25
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.15.9-bone25
  , rtw88-modules-6.15.9-bone25
@@ -804,8 +804,17 @@ Description: BeagleBoard.org 6.15-bone for am335x
 Package: bbb.io-kernel-6.16-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.16.0-bone13,
+Pre-Depends: linux-image-6.16.0-bone13
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.16.0-bone13
 Description: BeagleBoard.org 6.16-bone for am335x
  This metapackage will install linux-image-6.16-bone for am335x in Debian.
+
+Package: bbb.io-kernel-6.17-bone
+Section: metapackages
+Architecture: armhf
+Pre-Depends: linux-image-6.17.0-rc1-bone1
+Depends: ${misc:Depends}, bbb.io-kernel-tasks
+Recommends: libpruio-modules-6.17.0-rc1-bone1
+Description: BeagleBoard.org 6.17-bone for am335x
+ This metapackage will install linux-image-6.17-bone for am335x in Debian.

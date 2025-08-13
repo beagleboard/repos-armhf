@@ -124,7 +124,7 @@ generate_kernel_mainline_bone () {
 		echo "Package: bbb.io-kernel-${msg}" >> ./suite/${dist}/debian/${wfile}
 		echo "Section: metapackages" >> ./suite/${dist}/debian/${wfile}
 		echo "Architecture: armhf" >> ./suite/${dist}/debian/${wfile}
-		echo "Pre-Depends: linux-image-${latest_kernel}," >> ./suite/${dist}/debian/${wfile}
+		echo "Pre-Depends: linux-image-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		echo "Depends: \${misc:Depends}, bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
 		echo "Recommends: libpruio-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${rtw88}" = "xenabled" ] ; then
@@ -141,7 +141,7 @@ generate_kernel_mainline_armv7 () {
 		echo "Package: bbb.io-kernel-${msg}" >> ./suite/${dist}/debian/${wfile}
 		echo "Section: metapackages" >> ./suite/${dist}/debian/${wfile}
 		echo "Architecture: armhf" >> ./suite/${dist}/debian/${wfile}
-		echo "Pre-Depends: linux-image-${latest_kernel}," >> ./suite/${dist}/debian/${wfile}
+		echo "Pre-Depends: linux-image-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		echo "Depends: \${misc:Depends}, bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${rtw88}" = "xenabled" ] ; then
 			echo "Recommends: rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
@@ -157,7 +157,7 @@ generate_kernel_mainline_armv7_lpae () {
 		echo "Package: bbb.io-kernel-${msg}" >> ./suite/${dist}/debian/${wfile}
 		echo "Section: metapackages" >> ./suite/${dist}/debian/${wfile}
 		echo "Architecture: armhf" >> ./suite/${dist}/debian/${wfile}
-		echo "Pre-Depends: linux-image-${latest_kernel}," >> ./suite/${dist}/debian/${wfile}
+		echo "Pre-Depends: linux-image-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		echo "Depends: \${misc:Depends}, bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${rtw88}" = "xenabled" ] ; then
 			echo "Recommends: rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
@@ -296,6 +296,7 @@ do_some_bone () {
 	unset rtw88
 
 	msg="6.16-bone" ; var="omap-psp" ; ver="V616X" ; current_kernel ; generate_kernel_mainline_bone
+	msg="6.17-bone" ; var="omap-psp" ; ver="V617X" ; current_kernel ; generate_kernel_mainline_bone
 }
 
 do_noble () {
@@ -399,8 +400,32 @@ do_trixie () {
 	changelog
 }
 
+do_forky () {
+	#14.x
+	arch="armhf"
+	dist="forky"
+	debhelper="13"
+	wfile="control"
+	generate_header
+
+	unset_all
+
+	sgxti335x="enabled"
+	sgxjacinto6evm="enabled"
+	rtl8723bu="enabled"
+	rtl8821cu="enabled"
+
+	msg="omap2plus" ; var="omap2plus" ; ver="STABLE" ; current_kernel ; generate_mainline_kernel
+	msg="multiv7"   ; var="multiv7"   ; ver="STABLE" ; current_kernel ; generate_mainline_kernel
+
+	do_some_bone
+
+	changelog
+}
+
 do_noble
-do_bullseye
+#do_bullseye
 do_bookworm
 do_trixie
+do_forky
 
