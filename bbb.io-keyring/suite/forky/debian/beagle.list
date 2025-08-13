@@ -1,0 +1,2 @@
+deb [arch=armhf signed-by=/usr/share/keyrings/rcn-ee-2025-archive-keyring.gpg] https://rcn-ee.com/repos/debian-forky-armhf/ forky main
+#deb-src [arch=armhf signed-by=/usr/share/keyrings/rcn-ee-2025-archive-keyring.gpg] https://rcn-ee.com/repos/debian-forky-armhf/ forky main
