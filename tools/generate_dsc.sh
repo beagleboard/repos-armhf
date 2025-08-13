@@ -187,9 +187,9 @@ runner () {
 start_run () {
 	dist="debian"
 	deb_arch="armhf"
-	#suite="bullseye" ; runner
 	suite="bookworm" ; runner
 	suite="trixie" ; runner
+	suite="forky" ; runner
 
 	dist="ubuntu"
 	suite="noble" ; runner

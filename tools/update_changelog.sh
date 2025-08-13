@@ -80,6 +80,16 @@ if [ -d ${DIR}/suite/${suite}/ ] ; then
 	run
 fi
 
+dist="debian"
+suite="forky"
+if [ -d ${DIR}/suite/${suite}/ ] ; then
+	rcn_ee_version="${forky_version}"
+	cat ${DIR}/version.sh | grep -v forky_version > ${DIR}/new-version.sh
+	echo "${suite}_version=\"~${suite}+${simple_date}\"" >> ${DIR}/new-version.sh
+	mv ${DIR}/new-version.sh ${DIR}/version.sh
+	run
+fi
+
 dist="ubuntu"
 suite="noble"
 if [ -d ${DIR}/suite/${suite}/ ] ; then

@@ -43,7 +43,7 @@ cleanup_suite () {
 run () {
 	touch /tmp/sbuild-BUILDING.lock
 	out_dir="${localdir}/outgoing/${suite}/${deb_arch}/${debian_pkg_name}_${debian_version}/"
-	if [ -f /var/lib/sbuild/${suite}-${deb_arch}.tar.gz ] ; then
+	if [ -f /var/lib/sbuild/${suite}-${deb_arch}.tar.gz ] || [ -f /var/lib/sbuild/${suite}-${deb_arch}.tar ] ; then
 
 		if [ ! -f ./${suite}/PKG_BUILT ] ; then
 			cleanup_suite
@@ -77,16 +77,16 @@ runner () {
 
 start_run () {
 	deb_arch="armhf"
-	#suite="bullseye" ; runner
 	suite="bookworm" ; runner
 	suite="trixie" ; runner
+	suite="forky" ; runner
 	suite="noble" ; runner
 }
 
 cleanup () {
-	#suite="bullseye" ; cleanup_suite
 	suite="bookworm" ; cleanup_suite
 	suite="trixie" ; cleanup_suite
+	suite="forky" ; cleanup_suite
 	suite="noble" ; cleanup_suite
 }
 
