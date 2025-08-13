@@ -61,6 +61,11 @@ arch="armhf"
 options="--exclude=debfoster"
 setup_update_sbuild
 
+dist="forky"
+arch="armhf"
+options="--exclude=debfoster"
+setup_update_sbuild
+
 mirror="http://${proxy}${ubuntu_server}"
 #deboot="gutsy"
 
