@@ -76,6 +76,7 @@ generate_kernel_ti () {
 			echo " , qcacld-2.0-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		fi
 		if [ "x${rtw88}" = "xenabled" ] ; then
+			echo " , rtw88-modprobe-conf" >> ./suite/${dist}/debian/${wfile}
 			echo " , rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		fi
 		echo " , bb-u-boot-am335x-evm" >> ./suite/${dist}/debian/${wfile}

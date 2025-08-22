@@ -201,6 +201,7 @@ Depends:
 Recommends:
  libpruio-modules-5.10.168-ti-r83
  , ti-sgx-ti335x-modules-5.10.168-ti-r83
+ , rtw88-modprobe-conf
  , rtw88-modules-5.10.168-ti-r83
  , bb-u-boot-am335x-evm
 Description: BeagleBoard.org 5.10-ti for am335x
@@ -242,6 +243,7 @@ Depends:
 Recommends:
  libpruio-modules-5.10.168-ti-rt-r83
  , ti-sgx-ti335x-modules-5.10.168-ti-rt-r83
+ , rtw88-modprobe-conf
  , rtw88-modules-5.10.168-ti-rt-r83
  , bb-u-boot-am335x-evm
 Description: BeagleBoard.org 5.10-ti-rt for am335x
@@ -282,6 +284,7 @@ Depends:
  , bbb.io-kernel-tasks
 Recommends:
  libpruio-modules-6.1.83-ti-r40
+ , rtw88-modprobe-conf
  , rtw88-modules-6.1.83-ti-r40
  , bb-u-boot-am335x-evm
 Description: BeagleBoard.org 6.1-ti for am335x
@@ -321,6 +324,7 @@ Depends:
  , bbb.io-kernel-tasks
 Recommends:
  libpruio-modules-6.1.83-ti-rt-r40
+ , rtw88-modprobe-conf
  , rtw88-modules-6.1.83-ti-rt-r40
  , bb-u-boot-am335x-evm
 Description: BeagleBoard.org 6.1-ti-rt for am335x
@@ -360,6 +364,7 @@ Depends:
  , bbb.io-kernel-tasks
 Recommends:
  libpruio-modules-6.6.58-ti-arm32-r12
+ , rtw88-modprobe-conf
  , rtw88-modules-6.6.58-ti-arm32-r12
  , bb-u-boot-am335x-evm
 Description: BeagleBoard.org 6.6-ti for am335x
@@ -399,6 +404,7 @@ Depends:
  , bbb.io-kernel-tasks
 Recommends:
  libpruio-modules-6.6.58-ti-rt-arm32-r12
+ , rtw88-modprobe-conf
  , rtw88-modules-6.6.58-ti-rt-arm32-r12
  , bb-u-boot-am335x-evm
 Description: BeagleBoard.org 6.6-ti-rt for am335x
@@ -438,6 +444,7 @@ Depends:
  , bbb.io-kernel-tasks
 Recommends:
  libpruio-modules-6.12.34-ti-arm32-r12
+ , rtw88-modprobe-conf
  , rtw88-modules-6.12.34-ti-arm32-r12
  , bb-u-boot-am335x-evm
 Description: BeagleBoard.org 6.12-ti for am335x
