@@ -1,10 +1,10 @@
 Source: rtw88-modprobe-conf
 Section: misc
-Priority: extra
+Priority: optional
 Maintainer: Robert Nelson <robertcnelson@gmail.com>
 Build-Depends:
- debhelper (>= 10)
-Standards-Version: 4.5.1
+ debhelper-compat (= 13)
+Standards-Version: 4.5.0
 Homepage: https://github.com/lwfinger/rtw88
 
 Package: rtw88-modprobe-conf
