@@ -1,6 +1,7 @@
 [Unit]
 Description=BeagleBoard Set up system configuration
-Before=ssh.service
+Requires=boot-firmware.mount
+After=boot-firmware.mount
 
 [Service]
 Type=oneshot

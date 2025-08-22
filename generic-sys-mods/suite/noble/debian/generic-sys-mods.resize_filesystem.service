@@ -7,6 +7,7 @@ ConditionFileIsExecutable=/usr/bin/bb-resizefs
 Type=oneshot
 ExecStart=/usr/bin/bb-resizefs
 ExecStartPost=systemctl disable resize_filesystem
+StandardOutput=journal+console
 
 [Install]
 WantedBy=multi-user.target

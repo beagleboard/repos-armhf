@@ -1,8 +1,8 @@
-generic-sys-mods (1.20250822.0-0~noble+20250822) noble; urgency=low
+generic-sys-mods (1.20250822.1-0~noble+20250822) noble; urgency=low
 
   * Call bb-setup-mac-address directly in the usb scripts
   * add basic bbbio-set-sysconf.service
   * raspi-config 20240424
 
- -- Robert Nelson <robertcnelson@gmail.com>  Fri, 22 Aug 2025 14:47:19 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Fri, 22 Aug 2025 15:04:37 -0500
 
