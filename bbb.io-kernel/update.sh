@@ -97,6 +97,7 @@ generate_kernel_ti () {
 			echo " , ti-sgx-jacinto6evm-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		fi
 		if [ "x${rtw88}" = "xenabled" ] ; then
+			echo " , rtw88-modprobe-conf" >> ./suite/${dist}/debian/${wfile}
 			echo " , rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		fi
 		echo " , bb-u-boot-am57xx-evm" >> ./suite/${dist}/debian/${wfile}
@@ -129,6 +130,7 @@ generate_kernel_mainline_bone () {
 		echo "Depends: \${misc:Depends}, bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
 		echo "Recommends: libpruio-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${rtw88}" = "xenabled" ] ; then
+			echo " , rtw88-modprobe-conf" >> ./suite/${dist}/debian/${wfile}
 			echo " , rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		fi
 		echo "Description: BeagleBoard.org ${msg} for am335x" >> ./suite/${dist}/debian/${wfile}
@@ -145,7 +147,7 @@ generate_kernel_mainline_armv7 () {
 		echo "Pre-Depends: linux-image-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		echo "Depends: \${misc:Depends}, bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${rtw88}" = "xenabled" ] ; then
-			echo "Recommends: rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
+			echo "Recommends: rtw88-modprobe-conf, rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		fi
 		echo "Description: BeagleBoard.org ${msg} for armv7" >> ./suite/${dist}/debian/${wfile}
 		echo " This metapackage will install linux-image-${msg} for armv7 in Debian." >> ./suite/${dist}/debian/${wfile}
@@ -161,7 +163,7 @@ generate_kernel_mainline_armv7_lpae () {
 		echo "Pre-Depends: linux-image-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		echo "Depends: \${misc:Depends}, bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${rtw88}" = "xenabled" ] ; then
-			echo "Recommends: rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
+			echo "Recommends: rtw88-modprobe-conf, rtw88-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		fi
 		echo "Description: BeagleBoard.org ${msg} for armv7-lpae" >> ./suite/${dist}/debian/${wfile}
 		echo " This metapackage will install linux-image-${msg} for armv7-lpae in Debian." >> ./suite/${dist}/debian/${wfile}

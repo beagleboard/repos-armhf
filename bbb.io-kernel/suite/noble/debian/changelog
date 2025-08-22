@@ -1,6 +1,6 @@
-bbb.io-kernel (1.20250822.0-0~noble+20250822) noble; urgency=low
+bbb.io-kernel (1.20250822.1-0~noble+20250822) noble; urgency=low
 
   * Kernel Updates
 
- -- Robert Nelson <robertcnelson@gmail.com>  Fri, 22 Aug 2025 14:29:53 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Fri, 22 Aug 2025 14:40:47 -0500
 
