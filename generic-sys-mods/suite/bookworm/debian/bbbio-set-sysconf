@@ -20,6 +20,11 @@ $filename = '/boot/firmware/sysconf.txt';
 logger('info', "Reading the system configuration settings from $filename");
 $conf = read_conf($filename);
 
+if( -f "/etc/bbb.io/growpart_done") {
+    logger('info', "RootFS: Resizing Root File System");
+    system("/usr/bin/bb-resizefs");
+}
+
 if (my $pass = delete($conf->{root_password})) {
     my $pipe;
     logger('info', 'Resetting root password');

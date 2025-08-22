@@ -8,5 +8,7 @@ if [ ! "x${ROOT_DRIVE}" = "x" ] ; then
 	if [ ! "x${ROOT_PARTITION}" = "x" ] ; then
 		echo "growpart -v ${ROOT_DRIVE} ${ROOT_PARTITION}"
 		growpart -v ${ROOT_DRIVE} ${ROOT_PARTITION} || true
+		touch /etc/bbb.io/growpart_done || true
+		sync
 	fi
 fi
