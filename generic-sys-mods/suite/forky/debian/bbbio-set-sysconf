@@ -31,6 +31,13 @@ if( -f "/etc/bbb.io/growpart") {
     $call_reboot = 1;
 }
 
+if( -f "/etc/bbb.io/ssh_regenerate") {
+    system("systemctl stop ssh.service");
+    logger('info', "SSH: Regenerate Host Keys");
+    system("/usr/bin/bb-regenerate-ssh-host-keys");
+    $call_reboot = 1;
+}
+
 if (my $pass = delete($conf->{root_password})) {
     my $pipe;
     logger('info', 'Resetting root password');

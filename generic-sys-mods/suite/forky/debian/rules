@@ -27,17 +27,13 @@ include /usr/share/dpkg/default.mk
 #	dh_auto_configure -- \
 #	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
 
-
 override_dh_installinit:
-	dh_installinit --name=regenerate_ssh_host_keys --no-stop-on-upgrade --no-start
 	dh_installinit --name=bbbio-set-sysconf --no-stop-on-upgrade --no-start
 
 override_dh_systemd_enable:
-	dh_systemd_enable --name=regenerate_ssh_host_keys --no-enable
 	dh_systemd_enable --name=bbbio-set-sysconf --no-enable
 
 override_dh_systemd_start:
-	dh_systemd_start --name=regenerate_ssh_host_keys --no-start
 	dh_systemd_start --name=bbbio-set-sysconf --no-start
 
 override_dh_builddeb:
