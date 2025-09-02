@@ -444,6 +444,8 @@ suite="trixie"
 archs="amd64 source"
 setup_repo
 
+key="D59E6DAEAE10AE37"
+
 dist="debian-trixie-amd64"
 suite="trixie"
 archs="amd64 source"
