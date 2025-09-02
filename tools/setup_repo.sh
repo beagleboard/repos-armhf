@@ -451,4 +451,11 @@ suite="trixie"
 archs="amd64 source"
 setup_repo
 
+key="D59E6DAEAE10AE37"
+
+dist="debian-forky-amd64"
+suite="forky"
+archs="amd64 source"
+setup_repo
+
 #
