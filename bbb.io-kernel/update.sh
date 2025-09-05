@@ -421,6 +421,7 @@ do_forky () {
 	msg="omap2plus" ; var="omap2plus" ; ver="STABLE" ; current_kernel ; generate_mainline_kernel
 	msg="multiv7"   ; var="multiv7"   ; ver="STABLE" ; current_kernel ; generate_mainline_kernel
 
+	do_bone_bookworm
 	do_some_bone
 
 	changelog
