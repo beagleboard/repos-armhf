@@ -32,22 +32,6 @@ Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
 
-Package: bbb.io-kernel-omap2plus
-Section: metapackages
-Architecture: armhf
-Pre-Depends: linux-image-6.17.0-rc4-omap2plus-r1
-Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Description: BeagleBoard.org Mainline
- This metapackage will install Mainline in Debian.
-
-Package: bbb.io-kernel-multiv7
-Section: metapackages
-Architecture: armhf
-Pre-Depends: linux-image-6.17.0-rc4-multiv7-r1
-Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Description: BeagleBoard.org Mainline
- This metapackage will install Mainline in Debian.
-
 Package: bbb.io-kernel-6.6-bone
 Section: metapackages
 Architecture: armhf
