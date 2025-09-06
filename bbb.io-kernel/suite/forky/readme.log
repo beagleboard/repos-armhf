@@ -1,12 +1,3 @@
   * Kernel Updates
-  * linux-image-6.12.42-armv7-lpae-x9
-  * linux-image-6.12.45-bone34
-  * linux-image-6.12.45-bone-rt-r34
-  * linux-image-6.16.5-bone16
-  * linux-image-6.17.0-rc4-multiv7-r1
-  * linux-image-6.17.0-rc4-omap2plus-r1
-  * linux-image-6.6.101-armv7-rt-x28
-  * linux-image-6.6.101-bone-rt-r30
-  * linux-image-6.6.104-armv7-lpae-x28
-  * linux-image-6.6.104-armv7-x28
-  * linux-image-6.6.104-bone30
+  * linux-image-6.1.146-bone41
+  * linux-image-6.1.146-bone-rt-r41
