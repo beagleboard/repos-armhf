@@ -189,7 +189,7 @@ start_run () {
 	deb_arch="armhf"
 	suite="bookworm" ; runner
 	suite="trixie" ; runner
-#	suite="forky" ; runner
+	suite="forky" ; runner
 
 	dist="ubuntu"
 	suite="noble" ; runner

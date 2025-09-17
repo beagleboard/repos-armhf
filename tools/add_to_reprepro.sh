@@ -29,7 +29,7 @@ start_run () {
 	deb_arch="armhf"
 	suite="bookworm" ; runner
 	suite="noble" ; runner
-	suite="trixie" ; runner
+#	suite="trixie" ; runner
 
 	dist="ubuntu"
 	suite="noble" ; runner
@@ -37,8 +37,8 @@ start_run () {
 	dist="debian-trixie-armhf"
 	suite="trixie" ; runner
 
-#	dist="debian-forky-armhf"
-#	suite="forky" ; runner
+	dist="debian-forky-armhf"
+	suite="forky" ; runner
 }
 
 if [ ! -f /tmp/cron.lock ] ; then

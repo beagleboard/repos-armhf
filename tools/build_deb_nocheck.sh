@@ -79,14 +79,14 @@ start_run () {
 	deb_arch="armhf"
 	suite="bookworm" ; runner
 	suite="trixie" ; runner
-#	suite="forky" ; runner
+	suite="forky" ; runner
 	suite="noble" ; runner
 }
 
 cleanup () {
 	suite="bookworm" ; cleanup_suite
 	suite="trixie" ; cleanup_suite
-#	suite="forky" ; cleanup_suite
+	suite="forky" ; cleanup_suite
 	suite="noble" ; cleanup_suite
 }
 
