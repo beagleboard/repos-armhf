@@ -1,6 +1,8 @@
 [Unit]
 Description=BeagleBoard Set up system configuration
-Before=ssh.service
+Requires=local-fs.target
+After=local-fs.target
+ConditionPathExists=/boot/firmware/sysconf.txt
 
 [Service]
 Type=oneshot

@@ -1,7 +1,8 @@
 [Unit]
 Description=BeagleBoard Set up system configuration
-Requires=boot-firmware.mount
-After=boot-firmware.mount
+Requires=local-fs.target
+After=local-fs.target
+ConditionPathExists=/boot/firmware/sysconf.txt
 
 [Service]
 Type=oneshot
