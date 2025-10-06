@@ -169,31 +169,12 @@ if [ -f /boot/uEnv.txt ] ; then
 fi
 
 echo "pkg check: to individually upgrade run: [sudo apt install --only-upgrade <pkg>]"
-pkg="bb-cape-overlays" ; dpkg_check_version
 pkg="bb-customizations" ; dpkg_check_version
 pkg="bb-usb-gadgets" ; dpkg_check_version
 pkg="bb-wl18xx-firmware" ; dpkg_check_version
 pkg="kmod" ; dpkg_check_version
-pkg="roboticscape" ; dpkg_check_version_replaced
-pkg="librobotcontrol" ; dpkg_check_version
 
-if [ -d /home/debian/ ] ; then
-	pkg="firmware-ti-connectivity" ; dpkg_check_version
-	echo "groups:[`groups debian`]"
-fi
-
-if [ -d /home/machinekit/ ] ; then
-	pkg="firmware-ti-connectivity" ; dpkg_check_version
-	echo "groups:[`groups machinekit`]"
-fi
-
-if [ -d /home/ubuntu/ ] ; then
-	echo "groups:[`groups ubuntu`]"
-fi
-
-if [ -d /home/beagle/ ] ; then
-	echo "groups:[`groups beagle`]"
-fi
+echo "groups:[`groups $(id -nu 1000)`]"
 
 echo "cmdline:[`cat /proc/cmdline`]"
 
@@ -210,10 +191,6 @@ dmesg | grep wlcore || true
 if [ -f /usr/bin/lsusb ] ; then
 	echo "lsusb"
 	lsusb || true
-fi
-if [ -f /usr/bin/lspci ] ; then
-	echo "lspci"
-	lspci || true
 fi
 echo "END"
 
