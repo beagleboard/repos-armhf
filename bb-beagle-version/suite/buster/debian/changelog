@@ -1,6 +1,0 @@
-bb-beagle-version (1.20231006.0-0~buster+20231006) buster; urgency=low
-
-  * Rebuild for repos.rcn-ee.com
-
- -- Robert Nelson <robertcnelson@gmail.com>  Fri, 06 Oct 2023 16:26:40 -0500
-

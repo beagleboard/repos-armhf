@@ -1,6 +1,0 @@
-bb-beagle-version (1.20240703.0-0~focal+20240703) focal; urgency=low
-
-  * Rebuild bb-beagle-version_1.20240703.0-0 for repos.rcn-ee.com
-
- -- Robert Nelson <robertcnelson@gmail.com>  Wed, 03 Jul 2024 11:33:50 -0500
-
