@@ -1,15 +1,9 @@
-bbb.io-kernel (1.20250926.0-0~trixie+20250926) trixie; urgency=low
+bbb.io-kernel (1.20251007.0-0~trixie+20251007) trixie; urgency=low
 
   * Kernel Updates
-  * linux-image-6.12.45-bone-rt-r36
-  * linux-image-6.12.49-armv7-lpae-x10
-  * linux-image-6.12.49-bone36
-  * linux-image-6.16.9-bone18
-  * linux-image-6.6.108-armv7-lpae-x30
-  * linux-image-6.6.108-armv7-rt-x30
-  * linux-image-6.6.108-armv7-x30
-  * linux-image-6.6.108-bone32
-  * linux-image-6.6.108-bone-rt-r32
+  * linux-image-6.17.0-multiv7-r1
+  * linux-image-6.17.0-omap2plus-r1
+  * linux-image-6.17.1-bone9
 
- -- Robert Nelson <robertcnelson@gmail.com>  Fri, 26 Sep 2025 10:55:33 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Tue, 07 Oct 2025 13:09:38 -0500
 
