@@ -297,9 +297,10 @@ do_some_bone () {
 	msg="6.14-bone" ; var="omap-psp" ; ver="V614X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.15-bone" ; var="omap-psp" ; ver="V615X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.16-bone" ; var="omap-psp" ; ver="V616X" ; current_kernel ; generate_kernel_mainline_bone
+	msg="6.17-bone" ; var="omap-psp" ; ver="V617X" ; current_kernel ; generate_kernel_mainline_bone
 	unset rtw88
 
-	msg="6.17-bone" ; var="omap-psp" ; ver="V617X" ; current_kernel ; generate_kernel_mainline_bone
+	msg="6.18-bone" ; var="omap-psp" ; ver="V618X" ; current_kernel ; generate_kernel_mainline_bone
 }
 
 do_noble () {
