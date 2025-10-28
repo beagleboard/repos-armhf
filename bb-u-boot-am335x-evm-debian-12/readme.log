@@ -2,3 +2,4 @@
   * include binary u-boot-spl.bin for users doing spl serial bootup
   * am335x-boneblack-revd.dtb
   * am335x-bonegreen-eco.dtb
+  * add revd overlay hdmi lookup
