@@ -1,0 +1,2 @@
+debian/fbdev.xorg.conf /etc/bbb.io/templates/
+debian/modesetting.xorg.conf /etc/bbb.io/templates/
