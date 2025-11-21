@@ -31,7 +31,6 @@ Depends:
  , wireless-regdb
  , bbb.io-keyring
  , gnome-desktop3-data
- , gnome-system-tools
  , file-roller
  , iwgtk
 Description: BeagleBoard.org xfce4 desktop

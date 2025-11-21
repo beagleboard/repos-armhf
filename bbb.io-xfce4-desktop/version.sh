@@ -2,7 +2,7 @@
 
 package_name="bbb.io-xfce4-desktop"
 debian_pkg_name="${package_name}"
-package_version="1.20251121.0"
+package_version="1.20251121.1"
 package_source=""
 src_dir=""
 
