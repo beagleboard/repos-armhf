@@ -1,7 +1,4 @@
   * Kernel Updates
-  * linux-image-6.17.9-bone17
-  * linux-image-6.18.0-rc7-bone8
-  * linux-image-6.18.0-rc7-multiv7-r1
-  * linux-image-6.18.0-rc7-omap2plus-r1
-  * linux-image-6.6.116-bone36
-  * linux-image-6.6.116-bone-rt-r36
+  * linux-image-6.18.0-bone9
+  * linux-image-6.18.0-multiv7-r1
+  * linux-image-6.18.0-omap2plus-r1
