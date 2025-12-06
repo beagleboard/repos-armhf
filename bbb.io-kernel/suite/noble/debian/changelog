@@ -1,9 +1,14 @@
-bbb.io-kernel (1.20251202.0-0~noble+20251202) noble; urgency=low
+bbb.io-kernel (1.20251206.0-0~noble+20251206) noble; urgency=low
 
   * Kernel Updates
-  * linux-image-6.18.0-bone9
-  * linux-image-6.18.0-multiv7-r1
-  * linux-image-6.18.0-omap2plus-r1
+  * linux-image-6.12.57-bone41
+  * linux-image-6.12.57-bone-rt-r41
+  * linux-image-6.13.12-bone26
+  * linux-image-6.14.10-bone23
+  * linux-image-6.15.11-bone30
+  * linux-image-6.16.12-bone24
+  * linux-image-6.17.10-bone18
+  * linux-image-6.18.0-bone10
 
- -- Robert Nelson <robertcnelson@gmail.com>  Tue, 02 Dec 2025 08:51:21 -0600
+ -- Robert Nelson <robertcnelson@gmail.com>  Sat, 06 Dec 2025 10:33:28 -0600
 
