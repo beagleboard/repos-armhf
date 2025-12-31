@@ -1,5 +1,5 @@
   * v2022.04 - https://openbeagle.org/beagleboard/u-boot/-/tree/v2022.04-bbb.io-am335x-am57xx
   * include binary u-boot-spl.bin for users doing spl serial bootup
   * am335x-boneblack-revd.dtb
-  * am335x-bonegreen-eco.dtb
+  * am335x-bonegreen-eco.dtb (better overlay support)
   * add revd overlay hdmi lookup
