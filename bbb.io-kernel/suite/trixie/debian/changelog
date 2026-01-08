@@ -1,9 +1,12 @@
-bbb.io-kernel (1.20260106.0-0~trixie+20260106) trixie; urgency=low
+bbb.io-kernel (1.20260108.0-0~trixie+20260108) trixie; urgency=low
 
   * Kernel Updates
-  * linux-image-6.19.0-rc4-bone3
-  * linux-image-6.19.0-rc4-multiv7-r1
-  * linux-image-6.19.0-rc4-omap2plus-r1
+  * linux-image-6.13.12-bone28
+  * linux-image-6.14.10-bone25
+  * linux-image-6.15.11-bone32
+  * linux-image-6.16.12-bone26
+  * linux-image-6.17.13-bone21
+  * linux-image-6.18.3-bone13
 
- -- Robert Nelson <robertcnelson@gmail.com>  Tue, 06 Jan 2026 15:40:15 -0600
+ -- Robert Nelson <robertcnelson@gmail.com>  Thu, 08 Jan 2026 10:30:10 -0600
 
