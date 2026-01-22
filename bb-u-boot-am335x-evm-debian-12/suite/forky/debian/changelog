@@ -1,10 +1,11 @@
-bb-u-boot-am335x-evm (2022.04.20240115.7-0~forky+20251230) forky; urgency=low
+bb-u-boot-am335x-evm (2022.04.20240115.8-0~forky+20260122) forky; urgency=low
 
   * v2022.04 - https://openbeagle.org/beagleboard/u-boot/-/tree/v2022.04-bbb.io-am335x-am57xx
   * include binary u-boot-spl.bin for users doing spl serial bootup
   * am335x-boneblack-revd.dtb
   * am335x-bonegreen-eco.dtb (better overlay support)
   * add revd overlay hdmi lookup
+  * add BeagleBone Black Industrial Rev D overlay hdmi lookup
 
- -- Robert Nelson <robertcnelson@gmail.com>  Tue, 30 Dec 2025 18:30:32 -0600
+ -- Robert Nelson <robertcnelson@gmail.com>  Thu, 22 Jan 2026 13:56:08 -0600
 

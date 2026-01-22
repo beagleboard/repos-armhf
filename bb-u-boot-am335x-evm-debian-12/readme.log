@@ -3,3 +3,4 @@
   * am335x-boneblack-revd.dtb
   * am335x-bonegreen-eco.dtb (better overlay support)
   * add revd overlay hdmi lookup
+  * add BeagleBone Black Industrial Rev D overlay hdmi lookup
