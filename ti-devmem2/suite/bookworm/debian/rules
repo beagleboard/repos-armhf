@@ -13,3 +13,5 @@ export CROSS_COMPILE=arm-linux-gnueabihf-
 %:
 	dh $@
 
+override_dh_builddeb:
+	dh_builddeb -- -Zxz

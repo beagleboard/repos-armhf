@@ -19,5 +19,7 @@ debian_diff=""
 
 clear_changelog="enable"
 
-buster_version="~buster+20220302"
-bullseye_version="~bullseye+20220302"
+bookworm_version="~bookworm+20260127"
+trixie_version="~trixie+20260127"
+forky_version="~forky+20260127"
+noble_version="~noble+20260127"
