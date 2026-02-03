@@ -474,7 +474,7 @@ Description: BeagleBoard.org 6.12-ti for am57xx
 Package: bbb.io-kernel-omap2plus
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.19.0-rc7-omap2plus-r1
+Pre-Depends: linux-image-6.19.0-rc8-omap2plus-r1
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
@@ -482,7 +482,7 @@ Description: BeagleBoard.org Mainline
 Package: bbb.io-kernel-multiv7
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.19.0-rc7-multiv7-r1
+Pre-Depends: linux-image-6.19.0-rc8-multiv7-r1
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
