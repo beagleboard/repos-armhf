@@ -17,7 +17,7 @@ debian_patch=""
 
 clear_changelog="enable"
 
-bookworm_version="~bookworm+20260131"
-trixie_version="~trixie+20260131"
-forky_version="~forky+20260131"
-noble_version="~noble+20260131"
+bookworm_version="~bookworm+20260203"
+trixie_version="~trixie+20260203"
+forky_version="~forky+20260203"
+noble_version="~noble+20260203"

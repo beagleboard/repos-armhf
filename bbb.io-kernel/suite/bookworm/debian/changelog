@@ -1,8 +1,7 @@
-bbb.io-kernel (1.20260131.1-0~bookworm+20260131) bookworm; urgency=low
+bbb.io-kernel (1.20260131.1-0~bookworm+20260203) bookworm; urgency=low
 
   * Kernel Updates
-  * linux-image-6.12.68-bone46
-  * linux-image-6.12.68-bone-rt-r46
+  * linux-image-6.19.0-rc8-bone7
 
- -- Robert Nelson <robertcnelson@gmail.com>  Sat, 31 Jan 2026 19:20:40 -0600
+ -- Robert Nelson <robertcnelson@gmail.com>  Tue, 03 Feb 2026 09:13:21 -0600
 
