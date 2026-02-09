@@ -474,7 +474,7 @@ Description: BeagleBoard.org 6.12-ti for am57xx
 Package: bbb.io-kernel-omap2plus
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.19.0-rc8-omap2plus-r1
+Pre-Depends: linux-image-6.19.0-omap2plus-r1
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
@@ -482,7 +482,7 @@ Description: BeagleBoard.org Mainline
 Package: bbb.io-kernel-multiv7
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.19.0-rc8-multiv7-r1
+Pre-Depends: linux-image-6.19.0-multiv7-r1
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
@@ -512,22 +512,22 @@ Description: BeagleBoard.org 5.15-bone for am335x
 Package: bbb.io-kernel-6.1-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.157-bone43
+Pre-Depends: linux-image-6.1.158-bone44
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.1.157-bone43
+Recommends: libpruio-modules-6.1.158-bone44
  , rtw88-modprobe-conf
- , rtw88-modules-6.1.157-bone43
+ , rtw88-modules-6.1.158-bone44
 Description: BeagleBoard.org 6.1-bone for am335x
  This metapackage will install linux-image-6.1-bone for am335x in Debian.
 
 Package: bbb.io-kernel-6.6-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.122-bone38
+Pre-Depends: linux-image-6.6.123-bone39
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.6.122-bone38
+Recommends: libpruio-modules-6.6.123-bone39
  , rtw88-modprobe-conf
- , rtw88-modules-6.6.122-bone38
+ , rtw88-modules-6.6.123-bone39
 Description: BeagleBoard.org 6.6-bone for am335x
  This metapackage will install linux-image-6.6-bone for am335x in Debian.
 
@@ -556,22 +556,22 @@ Description: BeagleBoard.org 5.15-bone-rt for am335x
 Package: bbb.io-kernel-6.1-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.157-bone-rt-r43
+Pre-Depends: linux-image-6.1.158-bone-rt-r44
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.1.157-bone-rt-r43
+Recommends: libpruio-modules-6.1.158-bone-rt-r44
  , rtw88-modprobe-conf
- , rtw88-modules-6.1.157-bone-rt-r43
+ , rtw88-modules-6.1.158-bone-rt-r44
 Description: BeagleBoard.org 6.1-bone-rt for am335x
  This metapackage will install linux-image-6.1-bone-rt for am335x in Debian.
 
 Package: bbb.io-kernel-6.6-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.119-bone-rt-r38
+Pre-Depends: linux-image-6.6.119-bone-rt-r39
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.6.119-bone-rt-r38
+Recommends: libpruio-modules-6.6.119-bone-rt-r39
  , rtw88-modprobe-conf
- , rtw88-modules-6.6.119-bone-rt-r38
+ , rtw88-modules-6.6.119-bone-rt-r39
 Description: BeagleBoard.org 6.6-bone-rt for am335x
  This metapackage will install linux-image-6.6-bone-rt for am335x in Debian.
 
@@ -776,22 +776,22 @@ Description: BeagleBoard.org 6.11-bone for am335x
 Package: bbb.io-kernel-6.12-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.12.68-bone46
+Pre-Depends: linux-image-6.12.69-bone47
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.12.68-bone46
+Recommends: libpruio-modules-6.12.69-bone47
  , rtw88-modprobe-conf
- , rtw88-modules-6.12.68-bone46
+ , rtw88-modules-6.12.69-bone47
 Description: BeagleBoard.org 6.12-bone for am335x
  This metapackage will install linux-image-6.12-bone for am335x in Debian.
 
 Package: bbb.io-kernel-6.12-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.12.68-bone-rt-r46
+Pre-Depends: linux-image-6.12.69-bone-rt-r47
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.12.68-bone-rt-r46
+Recommends: libpruio-modules-6.12.69-bone-rt-r47
  , rtw88-modprobe-conf
- , rtw88-modules-6.12.68-bone-rt-r46
+ , rtw88-modules-6.12.69-bone-rt-r47
 Description: BeagleBoard.org 6.12-bone-rt for am335x
  This metapackage will install linux-image-6.12-bone-rt for am335x in Debian.
 
@@ -853,19 +853,19 @@ Description: BeagleBoard.org 6.17-bone for am335x
 Package: bbb.io-kernel-6.18-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.18.8-bone18
+Pre-Depends: linux-image-6.18.9-bone19
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.18.8-bone18
+Recommends: libpruio-modules-6.18.9-bone19
  , rtw88-modprobe-conf
- , rtw88-modules-6.18.8-bone18
+ , rtw88-modules-6.18.9-bone19
 Description: BeagleBoard.org 6.18-bone for am335x
  This metapackage will install linux-image-6.18-bone for am335x in Debian.
 
 Package: bbb.io-kernel-6.19-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.19.0-rc8-bone7
+Pre-Depends: linux-image-6.19.0-bone8
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.19.0-rc8-bone7
+Recommends: libpruio-modules-6.19.0-bone8
 Description: BeagleBoard.org 6.19-bone for am335x
  This metapackage will install linux-image-6.19-bone for am335x in Debian.
