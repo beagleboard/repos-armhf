@@ -703,5 +703,7 @@ Architecture: armhf
 Pre-Depends: linux-image-6.19.0-bone8
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Recommends: libpruio-modules-6.19.0-bone8
+ , rtw88-modprobe-conf
+ , rtw88-modules-6.19.0-bone8
 Description: BeagleBoard.org 6.19-bone for am335x
  This metapackage will install linux-image-6.19-bone for am335x in Debian.
