@@ -1,9 +1,9 @@
-bbb.io-kernel (1.20260403.0-0~trixie+20260403) trixie; urgency=low
+bbb.io-kernel (1.20260403.1-0~trixie+20260403) trixie; urgency=low
 
   * Kernel Updates
   * linux-image-6.18.21-bone26
   * linux-image-6.19.11-bone14
   * linux-image-7.0.0-rc6-bone7
 
- -- Robert Nelson <robertcnelson@gmail.com>  Fri, 03 Apr 2026 08:41:59 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Fri, 03 Apr 2026 08:47:01 -0500
 
