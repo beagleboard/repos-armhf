@@ -1,9 +1,11 @@
-bbb.io-kernel (1.20260406.0-0~noble+20260406) noble; urgency=low
+bbb.io-kernel (1.20260413.0-0~noble+20260413) noble; urgency=low
 
   * Kernel Updates
-  * linux-image-7.0.0-rc7-bone8
-  * linux-image-7.0.0-rc7-multiv7-r1
-  * linux-image-7.0.0-rc7-omap2plus-r1
+  * linux-image-6.18.22-bone27
+  * linux-image-6.19.12-bone15
+  * linux-image-7.0.0-bone9
+  * linux-image-7.0.0-multiv7-r1
+  * linux-image-7.0.0-omap2plus-r1
 
- -- Robert Nelson <robertcnelson@gmail.com>  Mon, 06 Apr 2026 09:43:49 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Mon, 13 Apr 2026 08:17:16 -0500
 
