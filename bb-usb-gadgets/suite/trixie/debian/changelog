@@ -1,6 +1,6 @@
-bb-usb-gadgets (1.20260421.2-0~trixie+20260421) trixie; urgency=low
+bb-usb-gadgets (1.20260421.3-0~trixie+20260421) trixie; urgency=low
 
-  * Rebuild bb-usb-gadgets_1.20260421.2-0 for repos.rcn-ee.com
+  * Rebuild bb-usb-gadgets_1.20260421.3-0 for repos.rcn-ee.com
 
- -- Robert Nelson <robertcnelson@gmail.com>  Tue, 21 Apr 2026 14:33:29 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Tue, 21 Apr 2026 14:54:35 -0500
 
