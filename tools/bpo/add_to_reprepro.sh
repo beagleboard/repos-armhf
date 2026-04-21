@@ -19,7 +19,6 @@ run () {
 if [ ! "x${dist}" = "x" ] ; then
 	if [ ! "x${suite}" = "x" ] ; then
 		repo="${base}${dist}/"
-		deb_arch=armhf
 		run
 	else
 		echo "no suite"
