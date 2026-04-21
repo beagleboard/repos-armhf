@@ -7,7 +7,6 @@ ConditionFileIsExecutable=/usr/bin/bb-start-usb-gadgets
 Type=forking
 ExecStartPre=/sbin/modprobe libcomposite
 ExecStart=/usr/bin/bb-start-usb-gadgets
-ExecStop=/usr/bin/remove-usbgadget-network.sh
 
 [Install]
 WantedBy=multi-user.target

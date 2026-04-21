@@ -17,4 +17,3 @@ dl_src
 
 wfile="bb-start-acm-ncm-rndis-old-gadget"     ; wdir="/arm32/usr/bin/" ; copy_all
 wfile="bb-start-usb-gadgets"                  ; wdir="/arm32/usr/bin/" ; copy_all
-wfile="remove-usbgadget-network.sh"           ; wdir="/arm32/usr/bin/" ; copy_all
