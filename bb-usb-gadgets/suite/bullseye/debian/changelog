@@ -1,6 +1,0 @@
-bb-usb-gadgets (1.20250523.1-0~bullseye+20250527) bullseye; urgency=low
-
-  * Rebuild bb-usb-gadgets_1.20250523.1-0 for repos.rcn-ee.com
-
- -- Robert Nelson <robertcnelson@gmail.com>  Tue, 27 May 2025 10:00:34 -0500
-

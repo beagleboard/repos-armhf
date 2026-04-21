@@ -170,6 +170,8 @@ run_libcomposite () {
 	ls /sys/class/udc/ > UDC
 
 	echo "${log} g_multi Created"
+	systemctl start serial-getty@ttyGS0.service || true
+	echo "${log} start serial-getty@ttyGS0.service"
 }
 
 use_libcomposite () {

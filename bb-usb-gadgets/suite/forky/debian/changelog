@@ -1,4 +1,4 @@
-bb-usb-gadgets (1.20260421.0-0~bookworm+20260421) bookworm; urgency=low
+bb-usb-gadgets (1.20260421.0-0~forky+20260421) forky; urgency=low
 
   * Rebuild bb-usb-gadgets_1.20260421.0-0 for repos.rcn-ee.com
 
