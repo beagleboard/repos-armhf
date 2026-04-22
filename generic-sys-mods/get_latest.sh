@@ -30,8 +30,12 @@ wfile="src/bbbio-set-sysconf" ; copy_all
 
 dl_usr_src
 
+wfile="arm32/usr/bin/beagle-dtb-source" ; copy_all
+
 wfile="arm32/usr/sbin/bb-growpart" ; copy_all
 wfile="arm32/usr/sbin/bb-regenerate-ssh-host-keys" ; copy_all
 wfile="arm32/usr/sbin/bb-resizefs" ; copy_all
 wfile="arm32/usr/sbin/bb-setup-mac-address" ; copy_all
 wfile="arm32/usr/sbin/bb-smsc95xx-set-mac-address" ; copy_all
+
+#
