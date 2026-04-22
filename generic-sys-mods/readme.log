@@ -2,3 +2,4 @@
   * add basic bbbio-set-sysconf.service
   * raspi-config 20240424
   * add beagle-dtb-source script to sync /opt/source/
+  * add pkg git for beagle-dtb-source
