@@ -1,6 +1,6 @@
-bb-usb-gadgets (1.20260427.0-0~noble+20260427) noble; urgency=low
+bb-usb-gadgets (1.20260427.1-0~noble+20260427) noble; urgency=low
 
-  * Rebuild bb-usb-gadgets_1.20260427.0-0 for repos.rcn-ee.com
+  * Rebuild bb-usb-gadgets_1.20260427.1-0 for repos.rcn-ee.com
 
- -- Robert Nelson <robertcnelson@gmail.com>  Mon, 27 Apr 2026 11:56:36 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Mon, 27 Apr 2026 12:00:36 -0500
 
