@@ -1,6 +1,6 @@
-bb-usb-gadgets (1.20260421.8-0~forky+20260421) forky; urgency=low
+bb-usb-gadgets (1.20260427.0-0~forky+20260427) forky; urgency=low
 
-  * Rebuild bb-usb-gadgets_1.20260421.8-0 for repos.rcn-ee.com
+  * Rebuild bb-usb-gadgets_1.20260427.0-0 for repos.rcn-ee.com
 
- -- Robert Nelson <robertcnelson@gmail.com>  Tue, 21 Apr 2026 16:06:54 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Mon, 27 Apr 2026 11:56:36 -0500
 
