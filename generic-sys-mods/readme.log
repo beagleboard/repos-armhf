@@ -3,3 +3,4 @@
   * raspi-config 20240424
   * add beagle-dtb-source script to sync /opt/source/
   * add pkg git for beagle-dtb-source
+  * beagle-dtb-source: v7.1.x branch
