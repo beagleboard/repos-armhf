@@ -1,8 +1,9 @@
-bbb.io-kernel (1.20260428.1-0~forky+20260428) forky; urgency=low
+bbb.io-kernel (1.20260504.0-0~forky+20260504) forky; urgency=low
 
   * Kernel Updates
-  * linux-image-6.12.79-bone54
-  * linux-image-6.12.79-bone-rt-r54
+  * linux-image-7.1.0-rc2-bone2
+  * linux-image-7.1.0-rc2-multiv7-r1
+  * linux-image-7.1.0-rc2-omap2plus-r1
 
- -- Robert Nelson <robertcnelson@gmail.com>  Tue, 28 Apr 2026 18:38:16 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Mon, 04 May 2026 14:15:36 -0500
 
