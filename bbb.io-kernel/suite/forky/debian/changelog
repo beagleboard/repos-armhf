@@ -1,14 +1,10 @@
-bbb.io-kernel (1.20260505.0-0~forky+20260505) forky; urgency=low
+bbb.io-kernel (1.20260507.0-0~forky+20260507) forky; urgency=low
 
   * Kernel Updates
-  * linux-image-5.15.204-bone49
-  * linux-image-5.15.204-bone-rt-r49
-  * linux-image-6.1.170-bone48
-  * linux-image-6.1.170-bone-rt-r48
-  * linux-image-6.12.85-bone55
-  * linux-image-6.12.85-bone-rt-r55
-  * linux-image-6.6.137-bone43
-  * linux-image-6.6.137-bone-rt-r43
+  * linux-image-6.1.83-ti-r41
+  * linux-image-6.1.83-ti-rt-r41
+  * linux-image-6.6.58-ti-arm32-r13
+  * linux-image-6.6.58-ti-rt-arm32-r13
 
- -- Robert Nelson <robertcnelson@gmail.com>  Tue, 05 May 2026 19:59:51 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Thu, 07 May 2026 08:20:16 -0500
 
