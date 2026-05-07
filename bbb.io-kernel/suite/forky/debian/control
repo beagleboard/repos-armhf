@@ -16,28 +16,114 @@ Depends:
 Description: BeagleBoard.org Kernel Branches
  This package contains tasksel information for the BeagleBoard.org Kernel Branch.
 
-Package: bbb.io-kernel-6.1-ti
+Package: bbb.io-kernel-5.10-ti
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.83-ti-r41
+Pre-Depends: linux-image-5.10.168-ti-r84
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.1.83-ti-r41
+Recommends: libpruio-modules-5.10.168-ti-r84
+Description: BeagleBoard.org 5.10-ti
+ This metapackage will install linux-image-5.10-ti in Debian.
+
+Package: bbb.io-kernel-5.10-ti-am335x
+Section: metapackages
+Architecture: armhf
+Pre-Depends: linux-image-5.10.168-ti-r84
+Depends:
+ ${misc:Depends}
+ , bbb.io-kernel-tasks
+Recommends:
+ libpruio-modules-5.10.168-ti-r84
+ , ti-sgx-ti335x-modules-5.10.168-ti-r84
+ , rtw88-modprobe-conf
+ , rtw88-modules-5.10.168-ti-r84
+ , bb-u-boot-am335x-evm
+Description: BeagleBoard.org 5.10-ti for am335x
+ This metapackage will install linux-image-5.10-ti for am335x in Debian.
+
+Package: bbb.io-kernel-5.10-ti-am57xx
+Section: metapackages
+Architecture: armhf
+Pre-Depends: linux-image-5.10.168-ti-r84
+Depends:
+ ${misc:Depends}
+ , bbb.io-kernel-tasks
+Recommends:
+ libpruio-modules-5.10.168-ti-r84
+ , ti-sgx-jacinto6evm-modules-5.10.168-ti-r84
+ , rtw88-modprobe-conf
+ , rtw88-modules-5.10.168-ti-r84
+ , bb-u-boot-am57xx-evm
+Description: BeagleBoard.org 5.10-ti for am57xx
+ This metapackage will install linux-image-5.10-ti for am57xx in Debian.
+
+Package: bbb.io-kernel-5.10-ti-rt
+Section: metapackages
+Architecture: armhf
+Pre-Depends: linux-image-5.10.168-ti-rt-r84
+Depends:
+ ${misc:Depends}
+ , bbb.io-kernel-tasks
+Recommends: libpruio-modules-5.10.168-ti-rt-r84
+Description: BeagleBoard.org 5.10-ti-rt
+ This metapackage will install linux-image-5.10-ti-rt in Debian.
+
+Package: bbb.io-kernel-5.10-ti-rt-am335x
+Section: metapackages
+Architecture: armhf
+Pre-Depends: linux-image-5.10.168-ti-rt-r84
+Depends:
+ ${misc:Depends}
+ , bbb.io-kernel-tasks
+Recommends:
+ libpruio-modules-5.10.168-ti-rt-r84
+ , ti-sgx-ti335x-modules-5.10.168-ti-rt-r84
+ , rtw88-modprobe-conf
+ , rtw88-modules-5.10.168-ti-rt-r84
+ , bb-u-boot-am335x-evm
+Description: BeagleBoard.org 5.10-ti-rt for am335x
+ This metapackage will install linux-image-5.10-ti-rt for am335x in Debian.
+
+Package: bbb.io-kernel-5.10-ti-rt-am57xx
+Section: metapackages
+Architecture: armhf
+Pre-Depends: linux-image-5.10.168-ti-rt-r84
+Depends:
+ ${misc:Depends}
+ , bbb.io-kernel-tasks
+Recommends:
+ libpruio-modules-5.10.168-ti-rt-r84
+ , ti-sgx-jacinto6evm-modules-5.10.168-ti-rt-r84
+ , rtw88-modprobe-conf
+ , rtw88-modules-5.10.168-ti-rt-r84
+ , bb-u-boot-am57xx-evm
+Description: BeagleBoard.org 5.10-ti-rt for am57xx
+ This metapackage will install linux-image-5.10-ti-rt for am57xx in Debian.
+
+Package: bbb.io-kernel-6.1-ti
+Section: metapackages
+Architecture: armhf
+Pre-Depends: linux-image-6.1.83-ti-r42
+Depends:
+ ${misc:Depends}
+ , bbb.io-kernel-tasks
+Recommends: libpruio-modules-6.1.83-ti-r42
 Description: BeagleBoard.org 6.1-ti
  This metapackage will install linux-image-6.1-ti in Debian.
 
 Package: bbb.io-kernel-6.1-ti-am335x
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.83-ti-r41
+Pre-Depends: linux-image-6.1.83-ti-r42
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
 Recommends:
- libpruio-modules-6.1.83-ti-r41
+ libpruio-modules-6.1.83-ti-r42
  , rtw88-modprobe-conf
- , rtw88-modules-6.1.83-ti-r41
+ , rtw88-modules-6.1.83-ti-r42
  , bb-u-boot-am335x-evm
 Description: BeagleBoard.org 6.1-ti for am335x
  This metapackage will install linux-image-6.1-ti for am335x in Debian.
@@ -45,14 +131,14 @@ Description: BeagleBoard.org 6.1-ti for am335x
 Package: bbb.io-kernel-6.1-ti-am57xx
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.83-ti-r41
+Pre-Depends: linux-image-6.1.83-ti-r42
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
 Recommends:
- libpruio-modules-6.1.83-ti-r41
+ libpruio-modules-6.1.83-ti-r42
  , rtw88-modprobe-conf
- , rtw88-modules-6.1.83-ti-r41
+ , rtw88-modules-6.1.83-ti-r42
  , bb-u-boot-am57xx-evm
 Description: BeagleBoard.org 6.1-ti for am57xx
  This metapackage will install linux-image-6.1-ti for am57xx in Debian.
@@ -60,25 +146,25 @@ Description: BeagleBoard.org 6.1-ti for am57xx
 Package: bbb.io-kernel-6.1-ti-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.83-ti-rt-r41
+Pre-Depends: linux-image-6.1.83-ti-rt-r42
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.1.83-ti-rt-r41
+Recommends: libpruio-modules-6.1.83-ti-rt-r42
 Description: BeagleBoard.org 6.1-ti-rt
  This metapackage will install linux-image-6.1-ti-rt in Debian.
 
 Package: bbb.io-kernel-6.1-ti-rt-am335x
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.83-ti-rt-r41
+Pre-Depends: linux-image-6.1.83-ti-rt-r42
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
 Recommends:
- libpruio-modules-6.1.83-ti-rt-r41
+ libpruio-modules-6.1.83-ti-rt-r42
  , rtw88-modprobe-conf
- , rtw88-modules-6.1.83-ti-rt-r41
+ , rtw88-modules-6.1.83-ti-rt-r42
  , bb-u-boot-am335x-evm
 Description: BeagleBoard.org 6.1-ti-rt for am335x
  This metapackage will install linux-image-6.1-ti-rt for am335x in Debian.
@@ -86,14 +172,14 @@ Description: BeagleBoard.org 6.1-ti-rt for am335x
 Package: bbb.io-kernel-6.1-ti-rt-am57xx
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.83-ti-rt-r41
+Pre-Depends: linux-image-6.1.83-ti-rt-r42
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
 Recommends:
- libpruio-modules-6.1.83-ti-rt-r41
+ libpruio-modules-6.1.83-ti-rt-r42
  , rtw88-modprobe-conf
- , rtw88-modules-6.1.83-ti-rt-r41
+ , rtw88-modules-6.1.83-ti-rt-r42
  , bb-u-boot-am57xx-evm
 Description: BeagleBoard.org 6.1-ti-rt for am57xx
  This metapackage will install linux-image-6.1-ti-rt for am57xx in Debian.
@@ -101,25 +187,25 @@ Description: BeagleBoard.org 6.1-ti-rt for am57xx
 Package: bbb.io-kernel-6.6-ti
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.58-ti-arm32-r13
+Pre-Depends: linux-image-6.6.58-ti-arm32-r14
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.6.58-ti-arm32-r13
+Recommends: libpruio-modules-6.6.58-ti-arm32-r14
 Description: BeagleBoard.org 6.6-ti
  This metapackage will install linux-image-6.6-ti in Debian.
 
 Package: bbb.io-kernel-6.6-ti-am335x
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.58-ti-arm32-r13
+Pre-Depends: linux-image-6.6.58-ti-arm32-r14
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
 Recommends:
- libpruio-modules-6.6.58-ti-arm32-r13
+ libpruio-modules-6.6.58-ti-arm32-r14
  , rtw88-modprobe-conf
- , rtw88-modules-6.6.58-ti-arm32-r13
+ , rtw88-modules-6.6.58-ti-arm32-r14
  , bb-u-boot-am335x-evm
 Description: BeagleBoard.org 6.6-ti for am335x
  This metapackage will install linux-image-6.6-ti for am335x in Debian.
@@ -127,14 +213,14 @@ Description: BeagleBoard.org 6.6-ti for am335x
 Package: bbb.io-kernel-6.6-ti-am57xx
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.58-ti-arm32-r13
+Pre-Depends: linux-image-6.6.58-ti-arm32-r14
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
 Recommends:
- libpruio-modules-6.6.58-ti-arm32-r13
+ libpruio-modules-6.6.58-ti-arm32-r14
  , rtw88-modprobe-conf
- , rtw88-modules-6.6.58-ti-arm32-r13
+ , rtw88-modules-6.6.58-ti-arm32-r14
  , bb-u-boot-am57xx-evm
 Description: BeagleBoard.org 6.6-ti for am57xx
  This metapackage will install linux-image-6.6-ti for am57xx in Debian.
@@ -142,25 +228,25 @@ Description: BeagleBoard.org 6.6-ti for am57xx
 Package: bbb.io-kernel-6.6-ti-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.58-ti-rt-arm32-r13
+Pre-Depends: linux-image-6.6.58-ti-rt-arm32-r14
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.6.58-ti-rt-arm32-r13
+Recommends: libpruio-modules-6.6.58-ti-rt-arm32-r14
 Description: BeagleBoard.org 6.6-ti-rt
  This metapackage will install linux-image-6.6-ti-rt in Debian.
 
 Package: bbb.io-kernel-6.6-ti-rt-am335x
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.58-ti-rt-arm32-r13
+Pre-Depends: linux-image-6.6.58-ti-rt-arm32-r14
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
 Recommends:
- libpruio-modules-6.6.58-ti-rt-arm32-r13
+ libpruio-modules-6.6.58-ti-rt-arm32-r14
  , rtw88-modprobe-conf
- , rtw88-modules-6.6.58-ti-rt-arm32-r13
+ , rtw88-modules-6.6.58-ti-rt-arm32-r14
  , bb-u-boot-am335x-evm
 Description: BeagleBoard.org 6.6-ti-rt for am335x
  This metapackage will install linux-image-6.6-ti-rt for am335x in Debian.
@@ -168,14 +254,14 @@ Description: BeagleBoard.org 6.6-ti-rt for am335x
 Package: bbb.io-kernel-6.6-ti-rt-am57xx
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.58-ti-rt-arm32-r13
+Pre-Depends: linux-image-6.6.58-ti-rt-arm32-r14
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
 Recommends:
- libpruio-modules-6.6.58-ti-rt-arm32-r13
+ libpruio-modules-6.6.58-ti-rt-arm32-r14
  , rtw88-modprobe-conf
- , rtw88-modules-6.6.58-ti-rt-arm32-r13
+ , rtw88-modules-6.6.58-ti-rt-arm32-r14
  , bb-u-boot-am57xx-evm
 Description: BeagleBoard.org 6.6-ti-rt for am57xx
  This metapackage will install linux-image-6.6-ti-rt for am57xx in Debian.
