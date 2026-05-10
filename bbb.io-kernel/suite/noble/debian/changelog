@@ -1,12 +1,9 @@
-bbb.io-kernel (1.20260507.1-0~noble+20260507) noble; urgency=low
+bbb.io-kernel (1.20260509.0-0~noble+20260509) noble; urgency=low
 
   * Kernel Updates
-  * linux-image-5.10.168-ti-r84
-  * linux-image-5.10.168-ti-rt-r84
-  * linux-image-6.1.83-ti-r42
-  * linux-image-6.1.83-ti-rt-r42
-  * linux-image-6.6.58-ti-arm32-r14
-  * linux-image-6.6.58-ti-rt-arm32-r14
+  * linux-image-6.18.28-bone31
+  * linux-image-6.19.14-bone19
+  * linux-image-7.0.5-bone12
 
- -- Robert Nelson <robertcnelson@gmail.com>  Thu, 07 May 2026 18:16:58 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Sat, 09 May 2026 20:57:27 -0500
 
