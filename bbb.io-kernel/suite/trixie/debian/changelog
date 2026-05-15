@@ -1,10 +1,10 @@
-bbb.io-kernel (1.20260511.1-0~trixie+20260511) trixie; urgency=low
+bbb.io-kernel (1.20260514.0-0~trixie+20260514) trixie; urgency=low
 
   * Kernel Updates
-  * linux-image-6.18.29-bone32
-  * linux-image-6.6.58-ti-arm32-r15
-  * linux-image-6.6.58-ti-rt-arm32-r15
-  * linux-image-7.0.6-bone13
+  * linux-image-6.12.88-bone57
+  * linux-image-6.12.88-bone-rt-r57
+  * linux-image-6.18.30-bone33
+  * linux-image-7.0.7-bone14
 
- -- Robert Nelson <robertcnelson@gmail.com>  Mon, 11 May 2026 20:28:55 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Thu, 14 May 2026 20:14:16 -0500
 
