@@ -1,7 +1,5 @@
   * Kernel Updates
-  * linux-image-6.12.90-bone59
-  * linux-image-6.12.90-bone-rt-r59
-  * linux-image-6.18.32-bone35
-  * linux-image-6.6.140-bone46
-  * linux-image-6.6.140-bone-rt-r46
-  * linux-image-7.0.9-bone16
+  * linux-image-6.12.91-bone60
+  * linux-image-6.12.91-bone-rt-r60
+  * linux-image-6.18.33-bone36
+  * linux-image-7.0.10-bone17
