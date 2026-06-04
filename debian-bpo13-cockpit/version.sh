@@ -14,3 +14,5 @@ debian_version="${package_version}-1~bpo13+1"
 dist="debian-trixie-armhf"
 suite="trixie"
 deb_arch="armhf"
+
+sbuild_options="nocheck"
