@@ -1,3 +1,9 @@
+libgpiod (2.2.3-1bbbio6~trixie+20260608) trixie; urgency=low
+
+  * gpiod.postinst: setup gpio-monitor user
+
+ -- Robert Nelson <robertcnelson@gmail.com>  Mon, 08 Jun 2026 16:19:37 -0500
+
 libgpiod (2.2.3-1bbbio5~trixie+20260608) trixie; urgency=low
 
   * install gpiocli/gpio-manager under gpiod
