@@ -1,6 +1,12 @@
+libgpiod (2.2.3-1bbbio3~trixie+20260608) trixie; urgency=low
+
+  * add build depend: libsystemd-dev
+
+ -- Robert Nelson <robertcnelson@gmail.com>  Mon, 08 Jun 2026 12:36:44 -0500
+
 libgpiod (2.2.3-1bbbio2~trixie+20260608) trixie; urgency=low
 
-  * add: libgudev-1.0-dev
+  * add build depend: libgudev-1.0-dev
 
  -- Robert Nelson <robertcnelson@gmail.com>  Mon, 08 Jun 2026 12:27:21 -0500
 

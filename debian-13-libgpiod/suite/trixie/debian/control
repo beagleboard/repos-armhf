@@ -18,7 +18,8 @@ Build-Depends: debhelper-compat (= 13),
                python3-pip <!nopython>,
                pybuild-plugin-pyproject <!nopython>,
                linux-libc-dev (>= 4.8),
-               libgudev-1.0-dev
+               libgudev-1.0-dev,
+               libsystemd-dev
 Standards-Version: 4.7.3
 Build-Depends-Indep: doxygen
 Homepage: https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git
