@@ -1,3 +1,9 @@
+libgpiod (2.2.3-1bbbio1~trixie+20260608) trixie; urgency=low
+
+  * enable: --enable-dbus --enable-systemd
+
+ -- Robert Nelson <robertcnelson@gmail.com>  Mon, 08 Jun 2026 12:08:28 -0500
+
 libgpiod (2.2.3-1bbbio0~trixie+20260608) trixie; urgency=low
 
   * Rebuild libgpiod_2.2.3-1 for repos.rcn-ee.com
