@@ -1,3 +1,9 @@
+libgpiod (2.2.3-1bbbio8~trixie+20260609) trixie; urgency=low
+
+  * cherrypick v2.2.4 and head, fix gpio-manager.service with multi-user.target
+
+ -- Robert Nelson <robertcnelson@gmail.com>  Tue, 09 Jun 2026 14:39:00 -0500
+
 libgpiod (2.2.3-1bbbio7~trixie+20260609) trixie; urgency=low
 
   * gpiod.postinst: setup correct gpio-manager user
