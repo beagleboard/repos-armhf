@@ -16,6 +16,6 @@ dl_path="pool/main/${reprepro_dir}/"
 debian_version="${package_version}-1"
 debian_untar="${package_name}_${debian_version}.debian.tar.xz"
 debian_patch=""
-local_patch="bbbio6"
+local_patch="bbbio7"
 
-trixie_version="~trixie+20260608"
+trixie_version="~trixie+20260609"
