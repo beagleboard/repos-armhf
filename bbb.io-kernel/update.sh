@@ -322,6 +322,8 @@ do_some_bone () {
 	msg="7.1-bone"  ; var="omap-psp" ; ver="V71X"  ; current_kernel ; generate_kernel_mainline_bone
 
 	unset rtw88
+
+	msg="7.2-bone"  ; var="omap-psp" ; ver="V72X"  ; current_kernel ; generate_kernel_mainline_bone
 }
 
 do_noble () {
