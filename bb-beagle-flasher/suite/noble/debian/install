@@ -4,4 +4,6 @@ debian/init-beagle-flasher /usr/sbin/
 debian/bbai-emmc-to-microsd /etc/beagle-flasher/
 debian/bbai-microsd-to-emmc /etc/beagle-flasher/
 debian/beaglebone-black-emmc-to-microsd /etc/beagle-flasher/
+debian/beaglebone-black-emmc-to-microsd-fat-swap /etc/beagle-flasher/
 debian/beaglebone-black-microsd-to-emmc /etc/beagle-flasher/
+debian/beaglebone-black-microsd-to-emmc-fat-swap /etc/beagle-flasher/

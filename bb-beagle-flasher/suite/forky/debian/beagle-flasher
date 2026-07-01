@@ -1,7 +1,8 @@
 #!/bin/bash -e
 
 if ! id | grep -q root; then
-	echo "must be run as root:"
+	echo "beagle-flasher must be run as root:"
+	echo "sudo beagle-flasher"
 	exit
 fi
 
@@ -11,7 +12,7 @@ version_message="1.20250527.0, add new fat-swap-rootfs layout..."
 #https://packages.debian.org/source/bookworm/e2fsprogs
 #e2fsprogs (1.47.0) added orphan_file first added in v5.15.x
 unset ext4_options
-ext4_options="-O ^metadata_csum,^64bit"
+ext4_options="-O ^metadata_csum,^64bit,^orphan_file"
 
 cylon_leds() {
 	#ls /sys/class/leds/beaglebone\:green\:usr*
@@ -159,24 +160,6 @@ write_failure () {
 }
 
 check_running_system () {
-	message="INFO: Giving system time to stablize..."                                          ; broadcast
-	message="--------------------------------------------------------------------------------" ; broadcast
-	message="5"                                                                                ; broadcast
-	sleep 1
-	message="4"                                                                                ; broadcast
-	sleep 1
-	message="3"                                                                                ; broadcast
-	sleep 1
-	message="2"                                                                                ; broadcast
-	sleep 1
-	message="1"                                                                                ; broadcast
-	sleep 1
-	message="--------------------------------------------------------------------------------" ; broadcast
-
-	message="INFO: Preparing /tmp"                                                             ; broadcast
-	message="INFO: [mount -t tmpfs tmpfs /tmp]"                                                ; broadcast
-	mount -t tmpfs tmpfs /tmp
-	message="--------------------------------------------------------------------------------" ; broadcast
 
 	message="INFO: /proc/cmdline"                                                              ; broadcast
 	message="INFO: [cat /proc/cmdline]"                                                        ; broadcast
@@ -235,6 +218,25 @@ check_running_system () {
 	else
 		message="INFO: [destination=${destination}] is a valid block device"                       ; broadcast
 	fi
+
+	if [ ! -f /boot/config-$(uname -r) ] ; then
+		zcat /proc/config.gz > /boot/config-$(uname -r) || true
+		message="INFO: Creating: [/boot/config-$(uname -r)]"                                       ; broadcast
+	else
+		message="INFO: [/boot/config-$(uname -r)]"                                                 ; broadcast
+	fi
+
+	if [ -f /usr/sbin/update-initramfs ] ; then
+		message="INFO: Generating: [/boot/initrd.img-$(uname -r)]"                                         ; broadcast
+		message="update-initramfs: Generating /boot/initrd.img-$(uname -r)"                                ; broadcast_over_display
+		if [ -f /boot/initrd.img-$(uname -r) ] ; then
+			update-initramfs -u -k $(uname -r) || true
+			message="--------------------------------------------------------------------------------" ; broadcast
+		else
+			update-initramfs -c -k $(uname -r) || true
+			message="--------------------------------------------------------------------------------" ; broadcast
+		fi
+	fi
 	flush_cache
 }
 
@@ -274,22 +276,6 @@ copy_boot () {
 	umount /boot/firmware || umount -l /boot/firmware || true
 }
 
-copy_boot_firmware () {
-	message="Copying: ${source}p1 -> ${destination}p1" ; broadcast
-	mount ${source}p1 /boot/firmware || true
-	mkdir -p /tmp/boot/ || true
-
-	mount ${destination}p1 /tmp/boot/ -o sync
-
-	message="cp -rv: /boot/firmware/ -> /tmp/boot/" ; broadcast
-	cp -rv /boot/firmware/* /tmp/boot/ || write_failure
-	flush_cache
-
-	umount /tmp/boot/ || umount -l /tmp/boot/ || write_failure
-	flush_cache
-	umount /boot/firmware || umount -l /boot/firmware || true
-}
-
 copy_rootfs () {
 	message="INFO: Copying: ${source}p${media_rootfs} -> ${destination}p${media_rootfs}"       ; broadcast
 	mkdir -p /tmp/rootfs/ || true
@@ -297,25 +283,25 @@ copy_rootfs () {
 	message="INFO: [mount ${destination}p${media_rootfs} /tmp/rootfs/ -o async,noatime]"       ; broadcast
 	mount ${destination}p${media_rootfs} /tmp/rootfs/ -o async,noatime
 
-	message="INFO: rsync: (-aHAXx) [/ -> /tmp/rootfs/]"                                ; broadcast
-	rsync -aHAXx --human-readable --info=progress2 /* /tmp/rootfs/ --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/media/*,/lost+found,/lib/modules/*,/usr/lib/modules/*,/uEnv.txt} || write_failure
+	message="INFO: rsync: (-aAXHx) [/ -> /tmp/rootfs/]"                                ; broadcast
+	rsync -aAXHx --human-readable --info=progress2 /* /tmp/rootfs/ --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/media/*,/lost+found,/lib/modules/*,/usr/lib/modules/*,/uEnv.txt} || write_failure
 	message="--------------------------------------------------------------------------------" ; broadcast
 	flush_cache
 
-	message="INFO: rsync: (-aHAXx) [/ -> /tmp/rootfs/]"                                ; broadcast
-	rsync -aHAXx --human-readable --info=progress2 /* /tmp/rootfs/ --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/media/*,/lost+found,/lib/modules/*,/usr/lib/modules/*,/uEnv.txt} || write_failure
+	message="INFO: rsync: (-aAXHx) [/ -> /tmp/rootfs/]"                                ; broadcast
+	rsync -aAXHx --human-readable --info=progress2 /* /tmp/rootfs/ --exclude={/dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/media/*,/lost+found,/lib/modules/*,/usr/lib/modules/*,/uEnv.txt} || write_failure
 	message="--------------------------------------------------------------------------------" ; broadcast
 	flush_cache
 
 	message="INFO: Copying: Kernel modules"                                                    ; broadcast
 	if [ -d /usr/lib/modules/ ] ; then
 		mkdir -p /tmp/rootfs/usr/lib/modules/$(uname -r)/ || true
-		message="INFO: rsync: (-aHAXx) /usr/lib/modules/$(uname -r)/ -> /tmp/rootfs/usr/lib/modules/$(uname -r)/" ; broadcast
-		rsync -aHAXx --human-readable --info=name0,progress2 /usr/lib/modules/$(uname -r)/* /tmp/rootfs/usr/lib/modules/$(uname -r)/ || write_failure
+		message="INFO: rsync: (-aAXHx) /usr/lib/modules/$(uname -r)/ -> /tmp/rootfs/usr/lib/modules/$(uname -r)/" ; broadcast
+		rsync -aAXHx --human-readable --info=name0,progress2 /usr/lib/modules/$(uname -r)/* /tmp/rootfs/usr/lib/modules/$(uname -r)/ || write_failure
 	else
 		mkdir -p /tmp/rootfs/lib/modules/$(uname -r)/ || true
-		message="INFO: rsync: (-aHAXx) /lib/modules/$(uname -r)/ -> /tmp/rootfs/lib/modules/$(uname -r)/" ; broadcast
-		rsync -aHAXx --human-readable --info=name0,progress2 /lib/modules/$(uname -r)/* /tmp/rootfs/lib/modules/$(uname -r)/ || write_failure
+		message="INFO: rsync: (-aAXHx) /lib/modules/$(uname -r)/ -> /tmp/rootfs/lib/modules/$(uname -r)/" ; broadcast
+		rsync -aAXHx --human-readable --info=name0,progress2 /lib/modules/$(uname -r)/* /tmp/rootfs/lib/modules/$(uname -r)/ || write_failure
 	fi
 	message="--------------------------------------------------------------------------------" ; broadcast
 	flush_cache
@@ -340,7 +326,6 @@ copy_rootfs () {
 	message="--------------------------------------------------------------------------------" ; broadcast
 	flush_cache
 
-	sed -i -e 's:cmdline=init:#cmdline=init:g' /tmp/rootfs/boot/uEnv.txt
 	message="INFO: [cat /tmp/rootfs/boot/uEnv.txt]"                                            ; broadcast
 	message="`cat /tmp/rootfs/boot/uEnv.txt`"                                                  ; broadcast
 	message="--------------------------------------------------------------------------------" ; broadcast
@@ -377,6 +362,16 @@ copy_rootfs () {
 	fi
 	flush_cache
 
+	if [ "x${generate_machine_id}" = "xenable" ] ; then
+		echo "truncate -s 0 /etc/machine-id"
+		truncate -s 0 /tmp/rootfs/etc/machine-id || true
+	fi
+
+	if [ "x${generate_ssh_keys}" = "xenable" ] ; then
+		echo "touch /etc/bbb.io/ssh_regenerate"
+		touch /tmp/rootfs/etc/bbb.io/ssh_regenerate || true
+	fi
+
 	message="Copying: ${source}p${media_rootfs} -> ${destination}p${media_rootfs} complete"    ; broadcast
 	message="--------------------------------------------------------------------------------" ; broadcast
 	flush_cache
@@ -384,11 +379,6 @@ copy_rootfs () {
 	message="INFO: [umount /tmp/rootfs/ || umount -l /tmp/rootfs/ || write_failure]"           ; broadcast
 	umount /tmp/rootfs/ || umount -l /tmp/rootfs/ || write_failure
 	message="--------------------------------------------------------------------------------" ; broadcast
-
-	message="INFO: [umount /tmp || true]"                                                      ; broadcast
-	umount /tmp || true
-	message="--------------------------------------------------------------------------------" ; broadcast
-	flush_cache
 
 	message="INFO: Force writeback of eMMC buffers by Syncing: ${destination}"                 ; broadcast
 	message="INFO: [dd if=${destination} of=/dev/null count=100000 status=progress]"           ; broadcast
@@ -398,47 +388,6 @@ copy_rootfs () {
 
 	if [ "x${has_usr_leds}" = "xenable" ] ; then
 		reset_leds
-	fi
-
-	unset are_we_flasher
-	are_we_flasher=$(grep init-beagle-flasher /proc/cmdline || true)
-	if [ ! "x${are_we_flasher}" = "x" ] ; then
-		message="INFO: [We are init, trying to shutdown, we may crash, data is RO so safe]" ; broadcast
-		message="5"                                                                                ; broadcast
-		sleep 1
-
-		if [ -f /proc/sysrq-trigger ] ; then
-			message="INFO: [found: /proc/sysrq-trigger]" ; broadcast
-			message="INFO: [found: echo s > /proc/sysrq-trigger" ; broadcast
-			message="INFO: [found: echo o > /proc/sysrq-trigger" ; broadcast
-			message="4"                                                                                ; broadcast
-			sleep 1
-			message="3"                                                                                ; broadcast
-			sleep 1
-			message="2"                                                                                ; broadcast
-			sleep 1
-			message="1"                                                                                ; broadcast
-			sleep 1
-			message="--------------------------------------------------------------------------------" ; broadcast
-			#For sync
-			echo s > /proc/sysrq-trigger
-			#For shutdown the system
-			echo o > /proc/sysrq-trigger
-		fi
-
-		message="4"                                                                                ; broadcast
-		sleep 1
-		message="3"                                                                                ; broadcast
-		sleep 1
-		message="2"                                                                                ; broadcast
-		sleep 1
-		message="1"                                                                                ; broadcast
-		sleep 1
-		message="--------------------------------------------------------------------------------" ; broadcast
-
-		#When run as init
-		exec /sbin/init
-		exit #We should not hit that
 	fi
 }
 
@@ -528,7 +477,7 @@ partition_drive () {
 	elif [ "x${rfs_partition}" = "xfat_swap" ] ; then
 		boot_startmb=4
 		boot_endmb=36
-		swap_sizemb=512
+		swap_sizemb=${swap_sizemb:-"512"}
 
 		partition_two_start_mb=$(($boot_startmb + $boot_endmb))
 		partition_three_start_mb=$(($partition_two_start_mb + $swap_sizemb))
@@ -560,7 +509,7 @@ partition_drive () {
 		message="INFO: Formatting: ${destination} complete"                                        ; broadcast
 		message="--------------------------------------------------------------------------------" ; broadcast
 
-		copy_boot_firmware
+		copy_boot
 		copy_rootfs
 	else
 		example_failure
