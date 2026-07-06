@@ -1,6 +1,6 @@
-bb-usb-gadgets (1.20260427.1-0~bookworm+20260427) bookworm; urgency=low
+bb-usb-gadgets (1.20260706.0-0~bookworm+20260706) bookworm; urgency=low
 
-  * Rebuild bb-usb-gadgets_1.20260427.1-0 for repos.rcn-ee.com
+  * Cleanup usb0-DHCPServer.network and add usb0 (PocketBeagle) only usb0-only-DHCPServer.network
 
- -- Robert Nelson <robertcnelson@gmail.com>  Mon, 27 Apr 2026 12:00:36 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Mon, 06 Jul 2026 13:18:28 -0500
 
