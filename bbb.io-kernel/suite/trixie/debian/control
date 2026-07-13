@@ -269,7 +269,7 @@ Description: BeagleBoard.org 6.6-ti-rt for am57xx
 Package: bbb.io-kernel-omap2plus
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-7.2.0-rc2-omap2plus-r1
+Pre-Depends: linux-image-7.2.0-rc3-omap2plus-r1
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
@@ -277,7 +277,7 @@ Description: BeagleBoard.org Mainline
 Package: bbb.io-kernel-multiv7
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-7.2.0-rc2-multiv7-r1
+Pre-Depends: linux-image-7.2.0-rc3-multiv7-r1
 Depends: ${misc:Depends}, bbb.io-kernel-tasks
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
@@ -1035,11 +1035,11 @@ Description: Header files for BeagleBoard.org 7.1-bone am335x (meta-package)
 Package: bbb.io-kernel-7.2-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-7.2.0-rc2-bone2
+Pre-Depends: linux-image-7.2.0-rc3-bone3
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
-Recommends: libpruio-modules-7.2.0-rc2-bone2
+Recommends: libpruio-modules-7.2.0-rc3-bone3
 Description: BeagleBoard.org 7.2-bone for am335x (meta-package)
  This package depends on the latest Linux 7.2-bone kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -1047,7 +1047,7 @@ Description: BeagleBoard.org 7.2-bone for am335x (meta-package)
 Package: bbb.io-headers-7.2-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-7.2.0-rc2-bone2
+Pre-Depends: linux-headers-7.2.0-rc3-bone3
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
