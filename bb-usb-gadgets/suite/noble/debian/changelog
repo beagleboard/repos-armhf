@@ -1,6 +1,7 @@
-bb-usb-gadgets (1.20260706.0-0~noble+20260706) noble; urgency=low
+bb-usb-gadgets (1.20260720.0-0~noble+20260720) noble; urgency=low
 
   * Cleanup usb0-DHCPServer.network and add usb0 (PocketBeagle) only usb0-only-DHCPServer.network
+  * systemd.network 256 needs PersistLeases=runtime https://forum.beagleboard.org/t/pocketbeagle-2-not-reachable-using-local-network-via-usb-tethering-on-macos-26-5/44010/23
 
- -- Robert Nelson <robertcnelson@gmail.com>  Mon, 06 Jul 2026 13:18:28 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Mon, 20 Jul 2026 15:49:49 -0500
 
