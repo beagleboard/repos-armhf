@@ -1,7 +1,10 @@
-bbb.io-kernel (1.20260721.0-0~noble+20260721) noble; urgency=low
+bbb.io-kernel (1.20260721.1-0~noble+20260721) noble; urgency=low
 
   * Kernel Updates
-  * linux-image-6.18.39-bone44
+  * linux-image-6.12.96-bone64
+  * linux-image-6.12.96-bone-rt-r64
+  * linux-image-6.6.144-bone48
+  * linux-image-6.6.144-bone-rt-r48
 
- -- Robert Nelson <robertcnelson@gmail.com>  Tue, 21 Jul 2026 09:40:42 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Tue, 21 Jul 2026 20:01:51 -0500
 

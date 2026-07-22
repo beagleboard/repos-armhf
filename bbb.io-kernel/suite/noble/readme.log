@@ -1,2 +1,5 @@
   * Kernel Updates
-  * linux-image-6.18.39-bone44
+  * linux-image-6.12.96-bone64
+  * linux-image-6.12.96-bone-rt-r64
+  * linux-image-6.6.144-bone48
+  * linux-image-6.6.144-bone-rt-r48
