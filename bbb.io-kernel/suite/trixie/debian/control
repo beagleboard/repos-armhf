@@ -310,13 +310,13 @@ Description: Header files for BeagleBoard.org 5.15-bone am335x (meta-package)
 Package: bbb.io-kernel-6.1-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.177-bone51
+Pre-Depends: linux-image-6.1.179-bone52
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.1.177-bone51
+Recommends: libpruio-modules-6.1.179-bone52
  , rtw88-modprobe-conf
- , rtw88-modules-6.1.177-bone51
+ , rtw88-modules-6.1.179-bone52
 Description: BeagleBoard.org 6.1-bone for am335x (meta-package)
  This package depends on the latest Linux 6.1-bone kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -324,7 +324,7 @@ Description: BeagleBoard.org 6.1-bone for am335x (meta-package)
 Package: bbb.io-headers-6.1-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-6.1.177-bone51
+Pre-Depends: linux-headers-6.1.179-bone52
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
@@ -335,13 +335,13 @@ Description: Header files for BeagleBoard.org 6.1-bone am335x (meta-package)
 Package: bbb.io-kernel-6.6-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.145-bone49
+Pre-Depends: linux-image-6.6.146-bone50
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.6.145-bone49
+Recommends: libpruio-modules-6.6.146-bone50
  , rtw88-modprobe-conf
- , rtw88-modules-6.6.145-bone49
+ , rtw88-modules-6.6.146-bone50
 Description: BeagleBoard.org 6.6-bone for am335x (meta-package)
  This package depends on the latest Linux 6.6-bone kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -349,7 +349,7 @@ Description: BeagleBoard.org 6.6-bone for am335x (meta-package)
 Package: bbb.io-headers-6.6-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-6.6.145-bone49
+Pre-Depends: linux-headers-6.6.146-bone50
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
@@ -385,13 +385,13 @@ Description: Header files for BeagleBoard.org 5.15-bone-rt am335x (meta-package)
 Package: bbb.io-kernel-6.1-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.177-bone-rt-r51
+Pre-Depends: linux-image-6.1.177-bone-rt-r52
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.1.177-bone-rt-r51
+Recommends: libpruio-modules-6.1.177-bone-rt-r52
  , rtw88-modprobe-conf
- , rtw88-modules-6.1.177-bone-rt-r51
+ , rtw88-modules-6.1.177-bone-rt-r52
 Description: BeagleBoard.org 6.1-bone-rt for am335x (meta-package)
  This package depends on the latest Linux 6.1-bone-rt kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -399,7 +399,7 @@ Description: BeagleBoard.org 6.1-bone-rt for am335x (meta-package)
 Package: bbb.io-headers-6.1-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-6.1.177-bone-rt-r51
+Pre-Depends: linux-headers-6.1.177-bone-rt-r52
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
@@ -410,13 +410,13 @@ Description: Header files for BeagleBoard.org 6.1-bone-rt am335x (meta-package)
 Package: bbb.io-kernel-6.6-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.144-bone-rt-r49
+Pre-Depends: linux-image-6.6.144-bone-rt-r50
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.6.144-bone-rt-r49
+Recommends: libpruio-modules-6.6.144-bone-rt-r50
  , rtw88-modprobe-conf
- , rtw88-modules-6.6.144-bone-rt-r49
+ , rtw88-modules-6.6.144-bone-rt-r50
 Description: BeagleBoard.org 6.6-bone-rt for am335x (meta-package)
  This package depends on the latest Linux 6.6-bone-rt kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -424,7 +424,7 @@ Description: BeagleBoard.org 6.6-bone-rt for am335x (meta-package)
 Package: bbb.io-headers-6.6-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-6.6.144-bone-rt-r49
+Pre-Depends: linux-headers-6.6.144-bone-rt-r50
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
@@ -760,13 +760,13 @@ Description: Header files for BeagleBoard.org 6.11-bone am335x (meta-package)
 Package: bbb.io-kernel-6.12-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.12.98-bone65
+Pre-Depends: linux-image-6.12.99-bone66
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.12.98-bone65
+Recommends: libpruio-modules-6.12.99-bone66
  , rtw88-modprobe-conf
- , rtw88-modules-6.12.98-bone65
+ , rtw88-modules-6.12.99-bone66
 Description: BeagleBoard.org 6.12-bone for am335x (meta-package)
  This package depends on the latest Linux 6.12-bone kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -774,7 +774,7 @@ Description: BeagleBoard.org 6.12-bone for am335x (meta-package)
 Package: bbb.io-headers-6.12-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-6.12.98-bone65
+Pre-Depends: linux-headers-6.12.99-bone66
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
@@ -785,13 +785,13 @@ Description: Header files for BeagleBoard.org 6.12-bone am335x (meta-package)
 Package: bbb.io-kernel-6.12-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.12.98-bone-rt-r65
+Pre-Depends: linux-image-6.12.99-bone-rt-r66
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
-Recommends: libpruio-modules-6.12.98-bone-rt-r65
+Recommends: libpruio-modules-6.12.99-bone-rt-r66
  , rtw88-modprobe-conf
- , rtw88-modules-6.12.98-bone-rt-r65
+ , rtw88-modules-6.12.99-bone-rt-r66
 Description: BeagleBoard.org 6.12-bone-rt for am335x (meta-package)
  This package depends on the latest Linux 6.12-bone-rt kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -799,7 +799,7 @@ Description: BeagleBoard.org 6.12-bone-rt for am335x (meta-package)
 Package: bbb.io-headers-6.12-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-6.12.98-bone-rt-r65
+Pre-Depends: linux-headers-6.12.99-bone-rt-r66
 Depends:
  ${misc:Depends}
  , bbb.io-kernel-tasks
