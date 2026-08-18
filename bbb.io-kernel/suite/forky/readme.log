@@ -1,8 +1,4 @@
   * Kernel Updates
-  * linux-image-6.12.100-bone68
-  * linux-image-6.12.100-bone-rt-r68
-  * linux-image-6.18.44-bone47
-  * linux-image-7.1.8-bone16
-  * linux-image-7.2.0-rc7-bone8
-  * linux-image-7.2.0-rc7-multiv7-r1
-  * linux-image-7.2.0-rc7-omap2plus-r1
+  * linux-image-7.2.0-bone9
+  * linux-image-7.2.0-multiv7-r1
+  * linux-image-7.2.0-omap2plus-r1

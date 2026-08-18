@@ -1,13 +1,9 @@
-bbb.io-kernel (1.20260812.0-0~bookworm+20260812) bookworm; urgency=low
+bbb.io-kernel (1.20260818.0-0~bookworm+20260818) bookworm; urgency=low
 
   * Kernel Updates
-  * linux-image-6.12.100-bone68
-  * linux-image-6.12.100-bone-rt-r68
-  * linux-image-6.18.44-bone47
-  * linux-image-7.1.8-bone16
-  * linux-image-7.2.0-rc7-bone8
-  * linux-image-7.2.0-rc7-multiv7-r1
-  * linux-image-7.2.0-rc7-omap2plus-r1
+  * linux-image-7.2.0-bone9
+  * linux-image-7.2.0-multiv7-r1
+  * linux-image-7.2.0-omap2plus-r1
 
- -- Robert Nelson <robertcnelson@gmail.com>  Wed, 12 Aug 2026 08:42:30 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Tue, 18 Aug 2026 08:34:29 -0500
 
