@@ -45,9 +45,7 @@ generate_kernel_ti () {
 		echo "Section: metapackages" >> ./suite/${dist}/debian/${wfile}
 		echo "Architecture: ${deb_arch}" >> ./suite/${dist}/debian/${wfile}
 		echo "Pre-Depends: linux-image-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
-		echo "Depends:" >> ./suite/${dist}/debian/${wfile}
-		echo " \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
-		echo " , bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
+		echo "Depends: \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
 		echo "Recommends: libpruio-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		echo "Description: BeagleBoard.org ${msg}" >> ./suite/${dist}/debian/${wfile}
 		echo " This metapackage will install linux-image-${msg} in Debian." >> ./suite/${dist}/debian/${wfile}
@@ -57,9 +55,7 @@ generate_kernel_ti () {
 		echo "Section: metapackages" >> ./suite/${dist}/debian/${wfile}
 		echo "Architecture: ${deb_arch}" >> ./suite/${dist}/debian/${wfile}
 		echo "Pre-Depends: linux-image-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
-		echo "Depends:" >> ./suite/${dist}/debian/${wfile}
-		echo " \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
-		echo " , bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
+		echo "Depends: \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
 		echo "Recommends:" >> ./suite/${dist}/debian/${wfile}
 		echo " libpruio-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${sgxti335x}" = "xenabled" ] ; then
@@ -90,9 +86,7 @@ generate_kernel_ti () {
 		echo "Section: metapackages" >> ./suite/${dist}/debian/${wfile}
 		echo "Architecture: ${deb_arch}" >> ./suite/${dist}/debian/${wfile}
 		echo "Pre-Depends: linux-image-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
-		echo "Depends:" >> ./suite/${dist}/debian/${wfile}
-		echo " \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
-		echo " , bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
+		echo "Depends: \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
 		echo "Recommends:" >> ./suite/${dist}/debian/${wfile}
 		echo " libpruio-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${sgxjacinto6evm}" = "xenabled" ] ; then
@@ -115,7 +109,7 @@ generate_mainline_kernel () {
 		echo "Section: metapackages" >> ./suite/${dist}/debian/${wfile}
 		echo "Architecture: ${deb_arch}" >> ./suite/${dist}/debian/${wfile}
 		echo "Pre-Depends: linux-image-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
-		echo "Depends: \${misc:Depends}, bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
+		echo "Depends: \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
 		echo "Description: BeagleBoard.org Mainline" >> ./suite/${dist}/debian/${wfile}
 		echo " This metapackage will install Mainline in Debian." >> ./suite/${dist}/debian/${wfile}
 	fi
@@ -128,9 +122,7 @@ generate_kernel_mainline_bone () {
 		echo "Section: metapackages" >> ./suite/${dist}/debian/${wfile}
 		echo "Architecture: ${deb_arch}" >> ./suite/${dist}/debian/${wfile}
 		echo "Pre-Depends: linux-image-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
-		echo "Depends:" >> ./suite/${dist}/debian/${wfile}
-		echo " \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
-		echo " , bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
+		echo "Depends: \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
 		echo "Recommends: libpruio-modules-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${rtw88}" = "xenabled" ] ; then
 			echo " , rtw88-modprobe-conf" >> ./suite/${dist}/debian/${wfile}
@@ -145,9 +137,7 @@ generate_kernel_mainline_bone () {
 		echo "Section: metapackages" >> ./suite/${dist}/debian/${wfile}
 		echo "Architecture: ${deb_arch}" >> ./suite/${dist}/debian/${wfile}
 		echo "Pre-Depends: linux-headers-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
-		echo "Depends:" >> ./suite/${dist}/debian/${wfile}
-		echo " \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
-		echo " , bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
+		echo "Depends: \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
 		echo "Description: Header files for BeagleBoard.org ${msg} am335x (meta-package)" >> ./suite/${dist}/debian/${wfile}
 		echo " This package depends on the architecture-specific header files for the" >> ./suite/${dist}/debian/${wfile}
 		echo " latest Linux ${msg} kernel am335x." >> ./suite/${dist}/debian/${wfile}
@@ -161,7 +151,7 @@ generate_kernel_mainline_armv7 () {
 		echo "Section: metapackages" >> ./suite/${dist}/debian/${wfile}
 		echo "Architecture: ${deb_arch}" >> ./suite/${dist}/debian/${wfile}
 		echo "Pre-Depends: linux-image-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
-		echo "Depends: \${misc:Depends}, bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
+		echo "Depends: \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${rtw88}" = "xenabled" ] ; then
 			echo "Recommends:" >> ./suite/${dist}/debian/${wfile}
 			echo " rtw88-modprobe-conf" >> ./suite/${dist}/debian/${wfile}
@@ -179,9 +169,7 @@ generate_kernel_mainline_armv7_lpae () {
 		echo "Section: metapackages" >> ./suite/${dist}/debian/${wfile}
 		echo "Architecture: ${deb_arch}" >> ./suite/${dist}/debian/${wfile}
 		echo "Pre-Depends: linux-image-${latest_kernel}" >> ./suite/${dist}/debian/${wfile}
-		echo "Depends:" >> ./suite/${dist}/debian/${wfile}
-		echo " \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
-		echo " , bbb.io-kernel-tasks" >> ./suite/${dist}/debian/${wfile}
+		echo "Depends: \${misc:Depends}" >> ./suite/${dist}/debian/${wfile}
 		if [ "x${rtw88}" = "xenabled" ] ; then
 			echo "Recommends:" >> ./suite/${dist}/debian/${wfile}
 			echo " rtw88-modprobe-conf" >> ./suite/${dist}/debian/${wfile}
