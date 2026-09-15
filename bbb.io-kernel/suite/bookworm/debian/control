@@ -389,11 +389,11 @@ Description: BeagleBoard.org Mainline
 Package: bbb.io-kernel-5.15-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-5.15.207-bone51
+Pre-Depends: linux-image-5.15.216-bone52
 Depends: ${misc:Depends}
-Recommends: libpruio-modules-5.15.207-bone51
+Recommends: libpruio-modules-5.15.216-bone52
  , rtw88-modprobe-conf
- , rtw88-modules-5.15.207-bone51
+ , rtw88-modules-5.15.216-bone52
 Description: BeagleBoard.org 5.15-bone for am335x (meta-package)
  This package depends on the latest Linux 5.15-bone kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -401,7 +401,7 @@ Description: BeagleBoard.org 5.15-bone for am335x (meta-package)
 Package: bbb.io-headers-5.15-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-5.15.207-bone51
+Pre-Depends: linux-headers-5.15.216-bone52
 Depends: ${misc:Depends}
 Description: Header files for BeagleBoard.org 5.15-bone am335x (meta-package)
  This package depends on the architecture-specific header files for the
@@ -410,11 +410,11 @@ Description: Header files for BeagleBoard.org 5.15-bone am335x (meta-package)
 Package: bbb.io-kernel-6.1-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.180-bone53
+Pre-Depends: linux-image-6.1.187-bone54
 Depends: ${misc:Depends}
-Recommends: libpruio-modules-6.1.180-bone53
+Recommends: libpruio-modules-6.1.187-bone54
  , rtw88-modprobe-conf
- , rtw88-modules-6.1.180-bone53
+ , rtw88-modules-6.1.187-bone54
 Description: BeagleBoard.org 6.1-bone for am335x (meta-package)
  This package depends on the latest Linux 6.1-bone kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -422,7 +422,7 @@ Description: BeagleBoard.org 6.1-bone for am335x (meta-package)
 Package: bbb.io-headers-6.1-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-6.1.180-bone53
+Pre-Depends: linux-headers-6.1.187-bone54
 Depends: ${misc:Depends}
 Description: Header files for BeagleBoard.org 6.1-bone am335x (meta-package)
  This package depends on the architecture-specific header files for the
@@ -431,11 +431,11 @@ Description: Header files for BeagleBoard.org 6.1-bone am335x (meta-package)
 Package: bbb.io-kernel-6.6-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.151-bone52
+Pre-Depends: linux-image-6.6.156-bone53
 Depends: ${misc:Depends}
-Recommends: libpruio-modules-6.6.151-bone52
+Recommends: libpruio-modules-6.6.156-bone53
  , rtw88-modprobe-conf
- , rtw88-modules-6.6.151-bone52
+ , rtw88-modules-6.6.156-bone53
 Description: BeagleBoard.org 6.6-bone for am335x (meta-package)
  This package depends on the latest Linux 6.6-bone kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -443,7 +443,7 @@ Description: BeagleBoard.org 6.6-bone for am335x (meta-package)
 Package: bbb.io-headers-6.6-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-6.6.151-bone52
+Pre-Depends: linux-headers-6.6.156-bone53
 Depends: ${misc:Depends}
 Description: Header files for BeagleBoard.org 6.6-bone am335x (meta-package)
  This package depends on the architecture-specific header files for the
@@ -452,11 +452,11 @@ Description: Header files for BeagleBoard.org 6.6-bone am335x (meta-package)
 Package: bbb.io-kernel-5.15-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-5.15.207-bone-rt-r51
+Pre-Depends: linux-image-5.15.216-bone-rt-r52
 Depends: ${misc:Depends}
-Recommends: libpruio-modules-5.15.207-bone-rt-r51
+Recommends: libpruio-modules-5.15.216-bone-rt-r52
  , rtw88-modprobe-conf
- , rtw88-modules-5.15.207-bone-rt-r51
+ , rtw88-modules-5.15.216-bone-rt-r52
 Description: BeagleBoard.org 5.15-bone-rt for am335x (meta-package)
  This package depends on the latest Linux 5.15-bone-rt kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -464,7 +464,7 @@ Description: BeagleBoard.org 5.15-bone-rt for am335x (meta-package)
 Package: bbb.io-headers-5.15-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-5.15.207-bone-rt-r51
+Pre-Depends: linux-headers-5.15.216-bone-rt-r52
 Depends: ${misc:Depends}
 Description: Header files for BeagleBoard.org 5.15-bone-rt am335x (meta-package)
  This package depends on the architecture-specific header files for the
@@ -473,11 +473,11 @@ Description: Header files for BeagleBoard.org 5.15-bone-rt am335x (meta-package)
 Package: bbb.io-kernel-6.1-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.1.180-bone-rt-r53
+Pre-Depends: linux-image-6.1.187-bone-rt-r54
 Depends: ${misc:Depends}
-Recommends: libpruio-modules-6.1.180-bone-rt-r53
+Recommends: libpruio-modules-6.1.187-bone-rt-r54
  , rtw88-modprobe-conf
- , rtw88-modules-6.1.180-bone-rt-r53
+ , rtw88-modules-6.1.187-bone-rt-r54
 Description: BeagleBoard.org 6.1-bone-rt for am335x (meta-package)
  This package depends on the latest Linux 6.1-bone-rt kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -485,7 +485,7 @@ Description: BeagleBoard.org 6.1-bone-rt for am335x (meta-package)
 Package: bbb.io-headers-6.1-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-6.1.180-bone-rt-r53
+Pre-Depends: linux-headers-6.1.187-bone-rt-r54
 Depends: ${misc:Depends}
 Description: Header files for BeagleBoard.org 6.1-bone-rt am335x (meta-package)
  This package depends on the architecture-specific header files for the
@@ -494,11 +494,11 @@ Description: Header files for BeagleBoard.org 6.1-bone-rt am335x (meta-package)
 Package: bbb.io-kernel-6.6-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.6.151-bone-rt-r52
+Pre-Depends: linux-image-6.6.156-bone-rt-r53
 Depends: ${misc:Depends}
-Recommends: libpruio-modules-6.6.151-bone-rt-r52
+Recommends: libpruio-modules-6.6.156-bone-rt-r53
  , rtw88-modprobe-conf
- , rtw88-modules-6.6.151-bone-rt-r52
+ , rtw88-modules-6.6.156-bone-rt-r53
 Description: BeagleBoard.org 6.6-bone-rt for am335x (meta-package)
  This package depends on the latest Linux 6.6-bone-rt kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -506,7 +506,7 @@ Description: BeagleBoard.org 6.6-bone-rt for am335x (meta-package)
 Package: bbb.io-headers-6.6-bone-rt
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-6.6.151-bone-rt-r52
+Pre-Depends: linux-headers-6.6.156-bone-rt-r53
 Depends: ${misc:Depends}
 Description: Header files for BeagleBoard.org 6.6-bone-rt am335x (meta-package)
  This package depends on the architecture-specific header files for the
