@@ -282,7 +282,7 @@ do_some_lts () {
 }
 
 do_some_bone () {
-	msg="6.2-bone"  ; var="omap-psp" ; ver="V62X"  ; current_kernel ; generate_kernel_mainline_bone
+	#msg="6.2-bone"  ; var="omap-psp" ; ver="V62X"  ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.3-bone"  ; var="omap-psp" ; ver="V63X"  ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.4-bone"  ; var="omap-psp" ; ver="V64X"  ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.5-bone"  ; var="omap-psp" ; ver="V65X"  ; current_kernel ; generate_kernel_mainline_bone
