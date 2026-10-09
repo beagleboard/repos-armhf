@@ -287,7 +287,7 @@ do_some_bone () {
 	#msg="6.4-bone"  ; var="omap-psp" ; ver="V64X"  ; current_kernel ; generate_kernel_mainline_bone
 	#msg="6.5-bone"  ; var="omap-psp" ; ver="V65X"  ; current_kernel ; generate_kernel_mainline_bone
 
-	msg="6.7-bone"  ; var="omap-psp" ; ver="V67X"  ; current_kernel ; generate_kernel_mainline_bone
+	#msg="6.7-bone"  ; var="omap-psp" ; ver="V67X"  ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.8-bone"  ; var="omap-psp" ; ver="V68X"  ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.9-bone"  ; var="omap-psp" ; ver="V69X"  ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.10-bone" ; var="omap-psp" ; ver="V610X" ; current_kernel ; generate_kernel_mainline_bone
@@ -332,37 +332,6 @@ do_noble () {
 
 	do_bone_bookworm
 
-	do_some_bone
-
-	changelog
-}
-
-do_bullseye () {
-	#11.x
-	dist="bullseye"
-	debhelper="13"
-	wfile="control"
-	generate_header
-
-	unset_all
-
-	sgxti335x="enabled"
-	sgxjacinto6evm="enabled"
-	rtl8723bu="enabled"
-	rtl8821cu="enabled"
-
-	msg="4.14-ti-xenomai" ; var="ti-xenomai" ; ver="LTS414X" ; current_kernel ; generate_kernel_ti
-
-	do_ti_bookworm
-	do_ti_trixie
-
-	msg="4.19-bone" ; var="omap-psp" ; ver="LTS419X" ; current_kernel ; generate_kernel_mainline_bone
-	msg="4.19-bone-rt" ; var="bone-rt" ; ver="LTS419X" ; current_kernel ; generate_kernel_mainline_bone
-	msg="4.19-armv7" ; var="armv7" ; ver="LTS419X" ; current_kernel ; generate_kernel_mainline_armv7
-	msg="4.19-armv7-rt" ; var="armv7-rt" ; ver="LTS419X" ; current_kernel ; generate_kernel_mainline_armv7
-	msg="4.19-armv7-lpae" ; var="armv7-lpae" ; ver="LTS419X" ; current_kernel ; generate_kernel_mainline_armv7_lpae
-
-	do_bone_bookworm
 	do_some_bone
 
 	changelog
@@ -433,7 +402,6 @@ do_forky () {
 }
 
 do_noble
-#do_bullseye
 do_bookworm
 do_trixie
 do_forky
