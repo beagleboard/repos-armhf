@@ -233,7 +233,7 @@ Description: BeagleBoard.org 6.6-ti-rt for am57xx
 Package: bbb.io-kernel-omap2plus
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-7.3.0-rc6-omap2plus-r1
+Pre-Depends: linux-image-7.3.0-rc7-omap2plus-r1
 Depends: ${misc:Depends}
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
@@ -241,7 +241,7 @@ Description: BeagleBoard.org Mainline
 Package: bbb.io-kernel-multiv7
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-7.3.0-rc6-multiv7-r1
+Pre-Depends: linux-image-7.3.0-rc7-multiv7-r1
 Depends: ${misc:Depends}
 Description: BeagleBoard.org Mainline
  This metapackage will install Mainline in Debian.
@@ -482,25 +482,6 @@ Recommends:
 Description: BeagleBoard.org 6.12-armv7-lpae for armv7-lpae
  This metapackage will install linux-image-6.12-armv7-lpae for armv7-lpae in Debian.
 
-Package: bbb.io-kernel-6.8-bone
-Section: metapackages
-Architecture: armhf
-Pre-Depends: linux-image-6.8.12-bone21
-Depends: ${misc:Depends}
-Recommends: libpruio-modules-6.8.12-bone21
-Description: BeagleBoard.org 6.8-bone for am335x (meta-package)
- This package depends on the latest Linux 6.8-bone kernel and modules
- for use on 32-bit am335x ARMv7 machines.
-
-Package: bbb.io-headers-6.8-bone
-Section: metapackages
-Architecture: armhf
-Pre-Depends: linux-headers-6.8.12-bone21
-Depends: ${misc:Depends}
-Description: Header files for BeagleBoard.org 6.8-bone am335x (meta-package)
- This package depends on the architecture-specific header files for the
- latest Linux 6.8-bone kernel am335x.
-
 Package: bbb.io-kernel-6.9-bone
 Section: metapackages
 Architecture: armhf
@@ -708,11 +689,11 @@ Description: Header files for BeagleBoard.org 6.17-bone am335x (meta-package)
 Package: bbb.io-kernel-6.18-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-6.18.55-bone57
+Pre-Depends: linux-image-6.18.56-bone58
 Depends: ${misc:Depends}
-Recommends: libpruio-modules-6.18.55-bone57
+Recommends: libpruio-modules-6.18.56-bone58
  , rtw88-modprobe-conf
- , rtw88-modules-6.18.55-bone57
+ , rtw88-modules-6.18.56-bone58
 Description: BeagleBoard.org 6.18-bone for am335x (meta-package)
  This package depends on the latest Linux 6.18-bone kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -720,7 +701,7 @@ Description: BeagleBoard.org 6.18-bone for am335x (meta-package)
 Package: bbb.io-headers-6.18-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-6.18.55-bone57
+Pre-Depends: linux-headers-6.18.56-bone58
 Depends: ${misc:Depends}
 Description: Header files for BeagleBoard.org 6.18-bone am335x (meta-package)
  This package depends on the architecture-specific header files for the
@@ -786,9 +767,9 @@ Description: Header files for BeagleBoard.org 7.1-bone am335x (meta-package)
 Package: bbb.io-kernel-7.2-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-7.2.9-bone17
+Pre-Depends: linux-image-7.2.10-bone18
 Depends: ${misc:Depends}
-Recommends: libpruio-modules-7.2.9-bone17
+Recommends: libpruio-modules-7.2.10-bone18
 Description: BeagleBoard.org 7.2-bone for am335x (meta-package)
  This package depends on the latest Linux 7.2-bone kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -796,7 +777,7 @@ Description: BeagleBoard.org 7.2-bone for am335x (meta-package)
 Package: bbb.io-headers-7.2-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-7.2.9-bone17
+Pre-Depends: linux-headers-7.2.10-bone18
 Depends: ${misc:Depends}
 Description: Header files for BeagleBoard.org 7.2-bone am335x (meta-package)
  This package depends on the architecture-specific header files for the
@@ -805,9 +786,9 @@ Description: Header files for BeagleBoard.org 7.2-bone am335x (meta-package)
 Package: bbb.io-kernel-7.3-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-image-7.3.0-rc6-bone6
+Pre-Depends: linux-image-7.3.0-rc7-bone7
 Depends: ${misc:Depends}
-Recommends: libpruio-modules-7.3.0-rc6-bone6
+Recommends: libpruio-modules-7.3.0-rc7-bone7
 Description: BeagleBoard.org 7.3-bone for am335x (meta-package)
  This package depends on the latest Linux 7.3-bone kernel and modules
  for use on 32-bit am335x ARMv7 machines.
@@ -815,7 +796,7 @@ Description: BeagleBoard.org 7.3-bone for am335x (meta-package)
 Package: bbb.io-headers-7.3-bone
 Section: metapackages
 Architecture: armhf
-Pre-Depends: linux-headers-7.3.0-rc6-bone6
+Pre-Depends: linux-headers-7.3.0-rc7-bone7
 Depends: ${misc:Depends}
 Description: Header files for BeagleBoard.org 7.3-bone am335x (meta-package)
  This package depends on the architecture-specific header files for the
