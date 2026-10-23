@@ -1,7 +1,7 @@
-bb-customizations (1.20250808.0-0~trixie+20250808) trixie; urgency=low
+bb-customizations (1.20261023.0-0~trixie+20261023) trixie; urgency=low
 
   * 20230714: Make sure to run depmod -a after linux-image install
   * 20230720: Starting with v6.5-rc1, overlays are dumpped into the base directory, work around that.
 
- -- Robert Nelson <robertcnelson@gmail.com>  Fri, 08 Aug 2025 13:38:46 -0500
+ -- Robert Nelson <robertcnelson@gmail.com>  Fri, 23 Oct 2026 10:28:02 -0500
 
