@@ -290,7 +290,7 @@ do_some_bone () {
 	#msg="6.7-bone"  ; var="omap-psp" ; ver="V67X"  ; current_kernel ; generate_kernel_mainline_bone
 	#msg="6.8-bone"  ; var="omap-psp" ; ver="V68X"  ; current_kernel ; generate_kernel_mainline_bone
 	#msg="6.9-bone"  ; var="omap-psp" ; ver="V69X"  ; current_kernel ; generate_kernel_mainline_bone
-	msg="6.10-bone" ; var="omap-psp" ; ver="V610X" ; current_kernel ; generate_kernel_mainline_bone
+	#msg="6.10-bone" ; var="omap-psp" ; ver="V610X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.11-bone" ; var="omap-psp" ; ver="V611X" ; current_kernel ; generate_kernel_mainline_bone
 
 	rtw88="enabled"
