@@ -1,17 +1,9 @@
-bbb.io-kernel (1.20261112.0-0~forky+20261112) forky; urgency=low
+bbb.io-kernel (1.20261117.0-0~forky+20261117) forky; urgency=low
 
   * Kernel Updates
-  * linux-image-6.1.191-bone57
-  * linux-image-6.1.191-bone-rt-r57
-  * linux-image-6.12.116-bone74
-  * linux-image-6.12.116-bone-rt-r74
-  * linux-image-6.18.63-bone63
-  * linux-image-6.6.161-bone57
-  * linux-image-6.6.161-bone-rt-r57
-  * linux-image-7.3.4-bone11
-  * linux-image-7.4.0-rc2-bone2
-  * linux-image-7.4.0-rc2-multiv7-r1
-  * linux-image-7.4.0-rc2-omap2plus-r1
+  * linux-image-7.4.0-rc3-bone3
+  * linux-image-7.4.0-rc3-multiv7-r1
+  * linux-image-7.4.0-rc3-omap2plus-r1
 
- -- Robert Nelson <robertcnelson@gmail.com>  Thu, 12 Nov 2026 10:35:26 -0600
+ -- Robert Nelson <robertcnelson@gmail.com>  Tue, 17 Nov 2026 09:12:17 -0600
 
