@@ -286,16 +286,10 @@ do_some_bone () {
 	msg="6.12-bone"    ; var="omap-psp" ; ver="V612X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="6.12-bone-rt" ; var="bone-rt"  ; ver="V612X" ; current_kernel ; generate_kernel_mainline_bone
 
-	#msg="6.13-bone" ; var="omap-psp" ; ver="V613X" ; current_kernel ; generate_kernel_mainline_bone
-	#msg="6.14-bone" ; var="omap-psp" ; ver="V614X" ; current_kernel ; generate_kernel_mainline_bone
-	#msg="6.15-bone" ; var="omap-psp" ; ver="V615X" ; current_kernel ; generate_kernel_mainline_bone
-	#msg="6.16-bone" ; var="omap-psp" ; ver="V616X" ; current_kernel ; generate_kernel_mainline_bone
-	#msg="6.17-bone" ; var="omap-psp" ; ver="V617X" ; current_kernel ; generate_kernel_mainline_bone
-
 	msg="6.18-bone" ; var="omap-psp" ; ver="V618X" ; current_kernel ; generate_kernel_mainline_bone
 	unset rtw88
 
-	msg="6.19-bone" ; var="omap-psp" ; ver="V619X" ; current_kernel ; generate_kernel_mainline_bone
+	#msg="6.19-bone" ; var="omap-psp" ; ver="V619X" ; current_kernel ; generate_kernel_mainline_bone
 	msg="7.0-bone"  ; var="omap-psp" ; ver="V70X"  ; current_kernel ; generate_kernel_mainline_bone
 	msg="7.1-bone"  ; var="omap-psp" ; ver="V71X"  ; current_kernel ; generate_kernel_mainline_bone
 	msg="7.2-bone"  ; var="omap-psp" ; ver="V72X"  ; current_kernel ; generate_kernel_mainline_bone
